@@ -10,6 +10,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 // 🌎 Project imports:
 import 'embed_external.dart';
 import 'embed_images.dart';
+import 'embed_video.dart';
 
 part 'embed_media.freezed.dart';
 
@@ -19,6 +20,10 @@ class EmbedMedia with _$EmbedMedia {
   const factory EmbedMedia.images({
     required EmbedImages data,
   }) = UEmbedMediaImages;
+
+  const factory EmbedMedia.video({
+    required EmbedVideo data,
+  }) = UEmbedMediaVideo;
 
   const factory EmbedMedia.external({
     required EmbedExternal data,

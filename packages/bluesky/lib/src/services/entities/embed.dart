@@ -29,6 +29,10 @@ class Embed with _$Embed {
     required EmbedImages data,
   }) = UEmbedImages;
 
+  const factory Embed.video({
+    required EmbedVideo data,
+  }) = UEmbedVideo;
+
   const factory Embed.external({
     required EmbedExternal data,
   }) = UEmbedExternal;
