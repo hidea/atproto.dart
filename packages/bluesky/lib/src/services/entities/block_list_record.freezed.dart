@@ -26,7 +26,11 @@ mixin _$BlockListRecord {
   AtUri get subject => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this BlockListRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of BlockListRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $BlockListRecordCopyWith<BlockListRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -54,6 +58,8 @@ class _$BlockListRecordCopyWithImpl<$Res, $Val extends BlockListRecord>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BlockListRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -100,6 +106,8 @@ class __$$BlockListRecordImplCopyWithImpl<$Res>
       _$BlockListRecordImpl _value, $Res Function(_$BlockListRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BlockListRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,6 +173,8 @@ class _$BlockListRecordImpl implements _BlockListRecord {
   @override
   int get hashCode => Object.hash(runtimeType, type, subject, createdAt);
 
+  /// Create a copy of BlockListRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -197,6 +207,9 @@ abstract class _BlockListRecord implements BlockListRecord {
   AtUri get subject;
   @override
   DateTime get createdAt;
+
+  /// Create a copy of BlockListRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$BlockListRecordImplCopyWith<_$BlockListRecordImpl> get copyWith =>

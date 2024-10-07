@@ -24,7 +24,11 @@ mixin _$Entity {
   String get value => throw _privateConstructorUsedError;
   ByteIndices get indices => throw _privateConstructorUsedError;
 
+  /// Serializes this Entity to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EntityCopyWith<Entity> get copyWith => throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$EntityCopyWithImpl<$Res, $Val extends Entity>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -72,6 +78,8 @@ class _$EntityCopyWithImpl<$Res, $Val extends Entity>
     ) as $Val);
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ByteIndicesCopyWith<$Res> get indices {
@@ -102,6 +110,8 @@ class __$$EntityImplCopyWithImpl<$Res>
       _$EntityImpl _value, $Res Function(_$EntityImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -162,6 +172,8 @@ class _$EntityImpl extends _Entity {
   @override
   int get hashCode => Object.hash(runtimeType, type, value, indices);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -191,6 +203,9 @@ abstract class _Entity extends Entity {
   String get value;
   @override
   ByteIndices get indices;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EntityImplCopyWith<_$EntityImpl> get copyWith =>

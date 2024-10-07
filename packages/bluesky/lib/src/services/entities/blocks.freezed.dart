@@ -23,7 +23,11 @@ mixin _$Blocks {
   List<Actor> get blocks => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this Blocks to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Blocks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $BlocksCopyWith<Blocks> get copyWith => throw _privateConstructorUsedError;
 }
@@ -46,6 +50,8 @@ class _$BlocksCopyWithImpl<$Res, $Val extends Blocks>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Blocks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -83,6 +89,8 @@ class __$$BlocksImplCopyWithImpl<$Res>
       _$BlocksImpl _value, $Res Function(_$BlocksImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Blocks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -142,6 +150,8 @@ class _$BlocksImpl implements _Blocks {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_blocks), cursor);
 
+  /// Create a copy of Blocks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -166,6 +176,9 @@ abstract class _Blocks implements Blocks {
   List<Actor> get blocks;
   @override
   String? get cursor;
+
+  /// Create a copy of Blocks
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$BlocksImplCopyWith<_$BlocksImpl> get copyWith =>

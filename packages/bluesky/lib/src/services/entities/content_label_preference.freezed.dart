@@ -27,7 +27,11 @@ mixin _$ContentLabelPreference {
   String? get labelerDid => throw _privateConstructorUsedError;
   ContentLabelVisibility get visibility => throw _privateConstructorUsedError;
 
+  /// Serializes this ContentLabelPreference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ContentLabelPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ContentLabelPreferenceCopyWith<ContentLabelPreference> get copyWith =>
       throw _privateConstructorUsedError;
@@ -57,6 +61,8 @@ class _$ContentLabelPreferenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ContentLabelPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -112,6 +118,8 @@ class __$$ContentLabelPreferenceImplCopyWithImpl<$Res>
       $Res Function(_$ContentLabelPreferenceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ContentLabelPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -187,6 +195,8 @@ class _$ContentLabelPreferenceImpl implements _ContentLabelPreference {
   int get hashCode =>
       Object.hash(runtimeType, type, label, labelerDid, visibility);
 
+  /// Create a copy of ContentLabelPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -222,6 +232,9 @@ abstract class _ContentLabelPreference implements ContentLabelPreference {
   String? get labelerDid;
   @override
   ContentLabelVisibility get visibility;
+
+  /// Create a copy of ContentLabelPreference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ContentLabelPreferenceImplCopyWith<_$ContentLabelPreferenceImpl>

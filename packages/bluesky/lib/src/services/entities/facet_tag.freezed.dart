@@ -24,7 +24,11 @@ mixin _$FacetTag {
   String get type => throw _privateConstructorUsedError;
   String get tag => throw _privateConstructorUsedError;
 
+  /// Serializes this FacetTag to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FacetTag
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FacetTagCopyWith<FacetTag> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$FacetTagCopyWithImpl<$Res, $Val extends FacetTag>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FacetTag
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$FacetTagImplCopyWithImpl<$Res>
       _$FacetTagImpl _value, $Res Function(_$FacetTagImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FacetTag
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,6 +146,8 @@ class _$FacetTagImpl implements _FacetTag {
   @override
   int get hashCode => Object.hash(runtimeType, type, tag);
 
+  /// Create a copy of FacetTag
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -164,6 +174,9 @@ abstract class _FacetTag implements FacetTag {
   String get type;
   @override
   String get tag;
+
+  /// Create a copy of FacetTag
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FacetTagImplCopyWith<_$FacetTagImpl> get copyWith =>

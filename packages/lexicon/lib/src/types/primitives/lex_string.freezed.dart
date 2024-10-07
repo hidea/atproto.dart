@@ -35,7 +35,11 @@ mixin _$LexString {
   String? get constValue => throw _privateConstructorUsedError;
   List<String>? get knownValues => throw _privateConstructorUsedError;
 
+  /// Serializes this LexString to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexString
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexStringCopyWith<LexString> get copyWith =>
       throw _privateConstructorUsedError;
@@ -70,6 +74,8 @@ class _$LexStringCopyWithImpl<$Res, $Val extends LexString>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexString
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -164,6 +170,8 @@ class __$$LexStringImplCopyWithImpl<$Res>
       _$LexStringImpl _value, $Res Function(_$LexStringImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexString
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -340,6 +348,8 @@ class _$LexStringImpl implements _LexString {
       constValue,
       const DeepCollectionEquality().hash(_knownValues));
 
+  /// Create a copy of LexString
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -396,6 +406,9 @@ abstract class _LexString implements LexString {
   String? get constValue;
   @override
   List<String>? get knownValues;
+
+  /// Create a copy of LexString
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexStringImplCopyWith<_$LexStringImpl> get copyWith =>

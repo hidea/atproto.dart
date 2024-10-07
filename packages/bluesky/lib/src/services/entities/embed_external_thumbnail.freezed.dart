@@ -28,7 +28,11 @@ mixin _$EmbedExternalThumbnail {
   @JsonKey(name: 'thumb')
   Blob? get blob => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedExternalThumbnail to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedExternalThumbnailCopyWith<EmbedExternalThumbnail> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$EmbedExternalThumbnailCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -88,6 +94,8 @@ class _$EmbedExternalThumbnailCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BlobCopyWith<$Res>? get blob {
@@ -130,6 +138,8 @@ class __$$EmbedExternalThumbnailImplCopyWithImpl<$Res>
       $Res Function(_$EmbedExternalThumbnailImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -204,6 +214,8 @@ class _$EmbedExternalThumbnailImpl implements _EmbedExternalThumbnail {
   @override
   int get hashCode => Object.hash(runtimeType, uri, title, description, blob);
 
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -240,6 +252,9 @@ abstract class _EmbedExternalThumbnail implements EmbedExternalThumbnail {
   @BlobConverter()
   @JsonKey(name: 'thumb')
   Blob? get blob;
+
+  /// Create a copy of EmbedExternalThumbnail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedExternalThumbnailImplCopyWith<_$EmbedExternalThumbnailImpl>

@@ -74,6 +74,9 @@ class _$UConvoMessageEmbedCopyWithImpl<$Res, $Val extends UConvoMessageEmbed>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -98,6 +101,8 @@ class __$$UConvoMessageEmbedViewRecordViewImplCopyWithImpl<$Res>
       $Res Function(_$UConvoMessageEmbedViewRecordViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -111,6 +116,8 @@ class __$$UConvoMessageEmbedViewRecordViewImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EmbedViewRecordViewCopyWith<$Res> get data {
@@ -146,6 +153,8 @@ class _$UConvoMessageEmbedViewRecordViewImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -226,6 +235,9 @@ abstract class UConvoMessageEmbedViewRecordView extends UConvoMessageEmbed {
 
   @override
   EmbedViewRecordView get data;
+
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoMessageEmbedViewRecordViewImplCopyWith<
           _$UConvoMessageEmbedViewRecordViewImpl>
@@ -252,6 +264,8 @@ class __$$UConvoMessageEmbedUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UConvoMessageEmbedUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -299,6 +313,8 @@ class _$UConvoMessageEmbedUnknownImpl extends UConvoMessageEmbedUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -378,6 +394,9 @@ abstract class UConvoMessageEmbedUnknown extends UConvoMessageEmbed {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of UConvoMessageEmbed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoMessageEmbedUnknownImplCopyWith<_$UConvoMessageEmbedUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;

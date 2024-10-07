@@ -18,6 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ModerationCauseSourceList {
   ListViewBasic get list => throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationCauseSourceListCopyWith<ModerationCauseSourceList> get copyWith =>
       throw _privateConstructorUsedError;
@@ -45,6 +47,8 @@ class _$ModerationCauseSourceListCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -58,6 +62,8 @@ class _$ModerationCauseSourceListCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ListViewBasicCopyWith<$Res> get list {
@@ -92,6 +98,8 @@ class __$$ModerationCauseSourceListImplCopyWithImpl<$Res>
       $Res Function(_$ModerationCauseSourceListImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,6 +138,8 @@ class _$ModerationCauseSourceListImpl implements _ModerationCauseSourceList {
   @override
   int get hashCode => Object.hash(runtimeType, list);
 
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -144,6 +154,9 @@ abstract class _ModerationCauseSourceList implements ModerationCauseSourceList {
 
   @override
   ListViewBasic get list;
+
+  /// Create a copy of ModerationCauseSourceList
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ModerationCauseSourceListImplCopyWith<_$ModerationCauseSourceListImpl>

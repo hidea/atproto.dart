@@ -25,7 +25,11 @@ mixin _$EmbedRecord {
   @JsonKey(name: 'record')
   StrongRef get ref => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedRecordCopyWith<EmbedRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,6 +56,8 @@ class _$EmbedRecordCopyWithImpl<$Res, $Val extends EmbedRecord>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -70,6 +76,8 @@ class _$EmbedRecordCopyWithImpl<$Res, $Val extends EmbedRecord>
     ) as $Val);
   }
 
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $StrongRefCopyWith<$Res> get ref {
@@ -101,6 +109,8 @@ class __$$EmbedRecordImplCopyWithImpl<$Res>
       _$EmbedRecordImpl _value, $Res Function(_$EmbedRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -155,6 +165,8 @@ class _$EmbedRecordImpl implements _EmbedRecord {
   @override
   int get hashCode => Object.hash(runtimeType, type, ref);
 
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -184,6 +196,9 @@ abstract class _EmbedRecord implements EmbedRecord {
   @override
   @JsonKey(name: 'record')
   StrongRef get ref;
+
+  /// Create a copy of EmbedRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedRecordImplCopyWith<_$EmbedRecordImpl> get copyWith =>

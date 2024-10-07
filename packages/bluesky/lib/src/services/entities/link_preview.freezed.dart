@@ -32,7 +32,11 @@ mixin _$LinkPreview {
   /// The preview image of the link.
   String get image => throw _privateConstructorUsedError;
 
+  /// Serializes this LinkPreview to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LinkPreview
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LinkPreviewCopyWith<LinkPreview> get copyWith =>
       throw _privateConstructorUsedError;
@@ -57,6 +61,8 @@ class _$LinkPreviewCopyWithImpl<$Res, $Val extends LinkPreview>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LinkPreview
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -105,6 +111,8 @@ class __$$LinkPreviewImplCopyWithImpl<$Res>
       _$LinkPreviewImpl _value, $Res Function(_$LinkPreviewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LinkPreview
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -183,6 +191,8 @@ class _$LinkPreviewImpl implements _LinkPreview {
   @override
   int get hashCode => Object.hash(runtimeType, url, title, description, image);
 
+  /// Create a copy of LinkPreview
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -207,22 +217,24 @@ abstract class _LinkPreview implements LinkPreview {
   factory _LinkPreview.fromJson(Map<String, dynamic> json) =
       _$LinkPreviewImpl.fromJson;
 
-  @override
-
   /// The preview url if the link.
-  String get url;
   @override
+  String get url;
 
   /// The preview title of the link.
-  String get title;
   @override
+  String get title;
 
   /// The preview description of the link.
-  String get description;
   @override
+  String get description;
 
   /// The preview image of the link.
+  @override
   String get image;
+
+  /// Create a copy of LinkPreview
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LinkPreviewImplCopyWith<_$LinkPreviewImpl> get copyWith =>

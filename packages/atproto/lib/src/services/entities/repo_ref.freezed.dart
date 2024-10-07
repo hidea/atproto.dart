@@ -24,7 +24,11 @@ mixin _$RepoRef {
   String get type => throw _privateConstructorUsedError;
   String get did => throw _privateConstructorUsedError;
 
+  /// Serializes this RepoRef to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RepoRef
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $RepoRefCopyWith<RepoRef> get copyWith => throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$RepoRefCopyWithImpl<$Res, $Val extends RepoRef>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RepoRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -84,6 +90,8 @@ class __$$RepoRefImplCopyWithImpl<$Res>
       _$RepoRefImpl _value, $Res Function(_$RepoRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RepoRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,6 +144,8 @@ class _$RepoRefImpl implements _RepoRef {
   @override
   int get hashCode => Object.hash(runtimeType, type, did);
 
+  /// Create a copy of RepoRef
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -161,6 +171,9 @@ abstract class _RepoRef implements RepoRef {
   String get type;
   @override
   String get did;
+
+  /// Create a copy of RepoRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$RepoRefImplCopyWith<_$RepoRefImpl> get copyWith =>

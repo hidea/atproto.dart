@@ -22,7 +22,7 @@ class Video with _$Video {
   const factory Video({
     String? alt,
     List<Caption>? captions,
-    @BlobConverter() required Blob video,
+    @JsonKey(name: 'video') required Blob blob,
     ImageAspectRatio? aspectRatio,
   }) = _Video;
 

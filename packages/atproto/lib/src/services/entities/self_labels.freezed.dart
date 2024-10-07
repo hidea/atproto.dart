@@ -24,7 +24,11 @@ mixin _$SelfLabels {
   String get type => throw _privateConstructorUsedError;
   List<SelfLabel> get values => throw _privateConstructorUsedError;
 
+  /// Serializes this SelfLabels to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SelfLabels
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SelfLabelsCopyWith<SelfLabels> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$SelfLabelsCopyWithImpl<$Res, $Val extends SelfLabels>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SelfLabels
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$SelfLabelsImplCopyWithImpl<$Res>
       _$SelfLabelsImpl _value, $Res Function(_$SelfLabelsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SelfLabels
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +155,8 @@ class _$SelfLabelsImpl implements _SelfLabels {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_values));
 
+  /// Create a copy of SelfLabels
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -174,6 +184,9 @@ abstract class _SelfLabels implements SelfLabels {
   String get type;
   @override
   List<SelfLabel> get values;
+
+  /// Create a copy of SelfLabels
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SelfLabelsImplCopyWith<_$SelfLabelsImpl> get copyWith =>

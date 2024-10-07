@@ -79,6 +79,9 @@ class _$ReportSubjectCopyWithImpl<$Res, $Val extends ReportSubject>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -101,6 +104,8 @@ class __$$UReportSubjectRepoRefImplCopyWithImpl<$Res>
       $Res Function(_$UReportSubjectRepoRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,6 +119,8 @@ class __$$UReportSubjectRepoRefImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RepoRefCopyWith<$Res> get data {
@@ -147,6 +154,8 @@ class _$UReportSubjectRepoRefImpl extends UReportSubjectRepoRef {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -230,6 +239,9 @@ abstract class UReportSubjectRepoRef extends ReportSubject {
 
   @override
   RepoRef get data;
+
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReportSubjectRepoRefImplCopyWith<_$UReportSubjectRepoRefImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -256,6 +268,8 @@ class __$$UReportSubjectStrongRefImplCopyWithImpl<$Res>
       $Res Function(_$UReportSubjectStrongRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -269,6 +283,8 @@ class __$$UReportSubjectStrongRefImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $StrongRefCopyWith<$Res> get data {
@@ -302,6 +318,8 @@ class _$UReportSubjectStrongRefImpl extends UReportSubjectStrongRef {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -385,6 +403,9 @@ abstract class UReportSubjectStrongRef extends ReportSubject {
 
   @override
   StrongRef get data;
+
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReportSubjectStrongRefImplCopyWith<_$UReportSubjectStrongRefImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -408,6 +429,8 @@ class __$$UReportSubjectUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UReportSubjectUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -454,6 +477,8 @@ class _$UReportSubjectUnknownImpl extends UReportSubjectUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -537,6 +562,9 @@ abstract class UReportSubjectUnknown extends ReportSubject {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of ReportSubject
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReportSubjectUnknownImplCopyWith<_$UReportSubjectUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;

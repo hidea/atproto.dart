@@ -25,7 +25,11 @@ mixin _$LogCreateMessage {
   @unionConvoMessageViewConverter
   UConvoMessageView get message => throw _privateConstructorUsedError;
 
+  /// Serializes this LogCreateMessage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LogCreateMessageCopyWith<LogCreateMessage> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$LogCreateMessageCopyWithImpl<$Res, $Val extends LogCreateMessage>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -78,6 +84,8 @@ class _$LogCreateMessageCopyWithImpl<$Res, $Val extends LogCreateMessage>
     ) as $Val);
   }
 
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UConvoMessageViewCopyWith<$Res> get message {
@@ -112,6 +120,8 @@ class __$$LogCreateMessageImplCopyWithImpl<$Res>
       $Res Function(_$LogCreateMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -175,6 +185,8 @@ class _$LogCreateMessageImpl implements _LogCreateMessage {
   @override
   int get hashCode => Object.hash(runtimeType, rev, convoId, message);
 
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -207,6 +219,9 @@ abstract class _LogCreateMessage implements LogCreateMessage {
   @override
   @unionConvoMessageViewConverter
   UConvoMessageView get message;
+
+  /// Create a copy of LogCreateMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LogCreateMessageImplCopyWith<_$LogCreateMessageImpl> get copyWith =>

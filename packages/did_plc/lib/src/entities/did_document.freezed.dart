@@ -28,7 +28,11 @@ mixin _$DidDocument {
       throw _privateConstructorUsedError;
   List<Service> get service => throw _privateConstructorUsedError;
 
+  /// Serializes this DidDocument to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of DidDocument
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $DidDocumentCopyWith<DidDocument> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,6 +62,8 @@ class _$DidDocumentCopyWithImpl<$Res, $Val extends DidDocument>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DidDocument
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -116,6 +122,8 @@ class __$$DidDocumentImplCopyWithImpl<$Res>
       _$DidDocumentImpl _value, $Res Function(_$DidDocumentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DidDocument
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -233,6 +241,8 @@ class _$DidDocumentImpl implements _DidDocument {
       const DeepCollectionEquality().hash(_verificationMethod),
       const DeepCollectionEquality().hash(_service));
 
+  /// Create a copy of DidDocument
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -269,6 +279,9 @@ abstract class _DidDocument implements DidDocument {
   List<VerificationMethod> get verificationMethod;
   @override
   List<Service> get service;
+
+  /// Create a copy of DidDocument
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$DidDocumentImplCopyWith<_$DidDocumentImpl> get copyWith =>

@@ -22,7 +22,11 @@ PlcOperation _$PlcOperationFromJson(Map<String, dynamic> json) {
 mixin _$PlcOperation {
   Map<String, dynamic> get operation => throw _privateConstructorUsedError;
 
+  /// Serializes this PlcOperation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of PlcOperation
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PlcOperationCopyWith<PlcOperation> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$PlcOperationCopyWithImpl<$Res, $Val extends PlcOperation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PlcOperation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$PlcOperationImplCopyWithImpl<$Res>
       _$PlcOperationImpl _value, $Res Function(_$PlcOperationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PlcOperation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -131,6 +139,8 @@ class _$PlcOperationImpl implements _PlcOperation {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_operation));
 
+  /// Create a copy of PlcOperation
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -154,6 +164,9 @@ abstract class _PlcOperation implements PlcOperation {
 
   @override
   Map<String, dynamic> get operation;
+
+  /// Create a copy of PlcOperation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PlcOperationImplCopyWith<_$PlcOperationImpl> get copyWith =>

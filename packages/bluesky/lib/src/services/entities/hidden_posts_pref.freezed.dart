@@ -25,7 +25,11 @@ mixin _$HiddenPostsPref {
   @AtUriConverter()
   List<AtUri> get items => throw _privateConstructorUsedError;
 
+  /// Serializes this HiddenPostsPref to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of HiddenPostsPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $HiddenPostsPrefCopyWith<HiddenPostsPref> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$HiddenPostsPrefCopyWithImpl<$Res, $Val extends HiddenPostsPref>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of HiddenPostsPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -88,6 +94,8 @@ class __$$HiddenPostsPrefImplCopyWithImpl<$Res>
       _$HiddenPostsPrefImpl _value, $Res Function(_$HiddenPostsPrefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of HiddenPostsPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +157,8 @@ class _$HiddenPostsPrefImpl implements _HiddenPostsPref {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_items));
 
+  /// Create a copy of HiddenPostsPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -179,6 +189,9 @@ abstract class _HiddenPostsPref implements HiddenPostsPref {
   @override
   @AtUriConverter()
   List<AtUri> get items;
+
+  /// Create a copy of HiddenPostsPref
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$HiddenPostsPrefImplCopyWith<_$HiddenPostsPrefImpl> get copyWith =>

@@ -24,7 +24,11 @@ mixin _$Follows {
   List<Actor> get follows => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this Follows to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FollowsCopyWith<Follows> get copyWith => throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$FollowsCopyWithImpl<$Res, $Val extends Follows>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -72,6 +78,8 @@ class _$FollowsCopyWithImpl<$Res, $Val extends Follows>
     ) as $Val);
   }
 
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get subject {
@@ -102,6 +110,8 @@ class __$$FollowsImplCopyWithImpl<$Res>
       _$FollowsImpl _value, $Res Function(_$FollowsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -169,6 +179,8 @@ class _$FollowsImpl implements _Follows {
   int get hashCode => Object.hash(runtimeType, subject,
       const DeepCollectionEquality().hash(_follows), cursor);
 
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -197,6 +209,9 @@ abstract class _Follows implements Follows {
   List<Actor> get follows;
   @override
   String? get cursor;
+
+  /// Create a copy of Follows
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FollowsImplCopyWith<_$FollowsImpl> get copyWith =>

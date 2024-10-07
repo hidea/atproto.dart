@@ -88,6 +88,9 @@ class _$ModerationSubjectProfileCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -112,6 +115,8 @@ class __$$UModerationSubjectProfileProfileViewBasicImplCopyWithImpl<$Res>
       $Res Function(_$UModerationSubjectProfileProfileViewBasicImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -125,6 +130,8 @@ class __$$UModerationSubjectProfileProfileViewBasicImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorBasicCopyWith<$Res> get data {
@@ -159,6 +166,8 @@ class _$UModerationSubjectProfileProfileViewBasicImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -254,6 +263,9 @@ abstract class UModerationSubjectProfileProfileViewBasic
 
   @override
   ActorBasic get data;
+
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationSubjectProfileProfileViewBasicImplCopyWith<
           _$UModerationSubjectProfileProfileViewBasicImpl>
@@ -282,6 +294,8 @@ class __$$UModerationSubjectProfileProfileViewImplCopyWithImpl<$Res>
       $Res Function(_$UModerationSubjectProfileProfileViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -295,6 +309,8 @@ class __$$UModerationSubjectProfileProfileViewImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get data {
@@ -329,6 +345,8 @@ class _$UModerationSubjectProfileProfileViewImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -421,6 +439,9 @@ abstract class UModerationSubjectProfileProfileView
 
   @override
   Actor get data;
+
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationSubjectProfileProfileViewImplCopyWith<
           _$UModerationSubjectProfileProfileViewImpl>
@@ -452,6 +473,8 @@ class __$$UModerationSubjectProfileProfileViewDetailedImplCopyWithImpl<$Res>
       $Res Function(_$UModerationSubjectProfileProfileViewDetailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -465,6 +488,8 @@ class __$$UModerationSubjectProfileProfileViewDetailedImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorProfileCopyWith<$Res> get data {
@@ -500,6 +525,8 @@ class _$UModerationSubjectProfileProfileViewDetailedImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -595,6 +622,9 @@ abstract class UModerationSubjectProfileProfileViewDetailed
 
   @override
   ActorProfile get data;
+
+  /// Create a copy of ModerationSubjectProfile
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationSubjectProfileProfileViewDetailedImplCopyWith<
           _$UModerationSubjectProfileProfileViewDetailedImpl>

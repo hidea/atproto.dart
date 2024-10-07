@@ -35,7 +35,11 @@ mixin _$FeedViewPreference {
   @JsonKey(name: 'hideQuotePosts')
   bool get isHideQuotePosts => throw _privateConstructorUsedError;
 
+  /// Serializes this FeedViewPreference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FeedViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FeedViewPreferenceCopyWith<FeedViewPreference> get copyWith =>
       throw _privateConstructorUsedError;
@@ -68,6 +72,8 @@ class _$FeedViewPreferenceCopyWithImpl<$Res, $Val extends FeedViewPreference>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FeedViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -144,6 +150,8 @@ class __$$FeedViewPreferenceImplCopyWithImpl<$Res>
       $Res Function(_$FeedViewPreferenceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FeedViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -275,6 +283,8 @@ class _$FeedViewPreferenceImpl implements _FeedViewPreference {
       isHideReposts,
       isHideQuotePosts);
 
+  /// Create a copy of FeedViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -328,6 +338,9 @@ abstract class _FeedViewPreference implements FeedViewPreference {
   @override
   @JsonKey(name: 'hideQuotePosts')
   bool get isHideQuotePosts;
+
+  /// Create a copy of FeedViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FeedViewPreferenceImplCopyWith<_$FeedViewPreferenceImpl> get copyWith =>

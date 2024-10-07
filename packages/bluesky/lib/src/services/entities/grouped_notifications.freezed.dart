@@ -24,7 +24,11 @@ mixin _$GroupedNotifications {
       throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this GroupedNotifications to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of GroupedNotifications
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $GroupedNotificationsCopyWith<GroupedNotifications> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$GroupedNotificationsCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GroupedNotifications
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -88,6 +94,8 @@ class __$$GroupedNotificationsImplCopyWithImpl<$Res>
       $Res Function(_$GroupedNotificationsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GroupedNotifications
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -148,6 +156,8 @@ class _$GroupedNotificationsImpl implements _GroupedNotifications {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_notifications), cursor);
 
+  /// Create a copy of GroupedNotifications
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -176,6 +186,9 @@ abstract class _GroupedNotifications implements GroupedNotifications {
   List<GroupedNotification> get notifications;
   @override
   String? get cursor;
+
+  /// Create a copy of GroupedNotifications
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$GroupedNotificationsImplCopyWith<_$GroupedNotificationsImpl>

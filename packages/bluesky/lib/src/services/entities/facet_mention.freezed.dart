@@ -24,7 +24,11 @@ mixin _$FacetMention {
   String get type => throw _privateConstructorUsedError;
   String get did => throw _privateConstructorUsedError;
 
+  /// Serializes this FacetMention to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FacetMention
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FacetMentionCopyWith<FacetMention> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$FacetMentionCopyWithImpl<$Res, $Val extends FacetMention>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FacetMention
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$FacetMentionImplCopyWithImpl<$Res>
       _$FacetMentionImpl _value, $Res Function(_$FacetMentionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FacetMention
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +147,8 @@ class _$FacetMentionImpl implements _FacetMention {
   @override
   int get hashCode => Object.hash(runtimeType, type, did);
 
+  /// Create a copy of FacetMention
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -166,6 +176,9 @@ abstract class _FacetMention implements FacetMention {
   String get type;
   @override
   String get did;
+
+  /// Create a copy of FacetMention
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FacetMentionImplCopyWith<_$FacetMentionImpl> get copyWith =>

@@ -15,16 +15,32 @@ _$EmbedVideoImpl _$$EmbedVideoImplFromJson(Map json) => $checkedCreate(
         final val = _$EmbedVideoImpl(
           type: $checkedConvert(
               r'$type', (v) => v as String? ?? appBskyEmbedVideo),
-          video: $checkedConvert('video',
-              (v) => Video.fromJson(Map<String, Object?>.from(v as Map))),
+          alt: $checkedConvert('alt', (v) => v as String?),
+          captions: $checkedConvert(
+              'captions',
+              (v) => (v as List<dynamic>?)
+                  ?.map((e) =>
+                      Caption.fromJson(Map<String, Object?>.from(e as Map)))
+                  .toList()),
+          blob: $checkedConvert('video',
+              (v) => Blob.fromJson(Map<String, Object?>.from(v as Map))),
+          aspectRatio: $checkedConvert(
+              'aspectRatio',
+              (v) => v == null
+                  ? null
+                  : ImageAspectRatio.fromJson(
+                      Map<String, Object?>.from(v as Map))),
         );
         return val;
       },
-      fieldKeyMap: const {'type': r'$type'},
+      fieldKeyMap: const {'type': r'$type', 'blob': 'video'},
     );
 
 Map<String, dynamic> _$$EmbedVideoImplToJson(_$EmbedVideoImpl instance) =>
     <String, dynamic>{
       r'$type': instance.type,
-      'video': instance.video.toJson(),
+      'alt': instance.alt,
+      'captions': instance.captions?.map((e) => e.toJson()).toList(),
+      'video': instance.blob.toJson(),
+      'aspectRatio': instance.aspectRatio?.toJson(),
     };

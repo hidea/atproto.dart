@@ -84,6 +84,9 @@ class _$ReplyPostCopyWithImpl<$Res, $Val extends ReplyPost>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -105,6 +108,8 @@ class __$$UReplyPostRecordImplCopyWithImpl<$Res>
       $Res Function(_$UReplyPostRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,6 +123,8 @@ class __$$UReplyPostRecordImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PostCopyWith<$Res> get data {
@@ -151,6 +158,8 @@ class _$UReplyPostRecordImpl implements UReplyPostRecord {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -239,6 +248,9 @@ abstract class UReplyPostRecord implements ReplyPost {
 
   @override
   Post get data;
+
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReplyPostRecordImplCopyWith<_$UReplyPostRecordImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -263,6 +275,8 @@ class __$$UReplyPostNotFoundImplCopyWithImpl<$Res>
       $Res Function(_$UReplyPostNotFoundImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -276,6 +290,8 @@ class __$$UReplyPostNotFoundImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NotFoundPostCopyWith<$Res> get data {
@@ -309,6 +325,8 @@ class _$UReplyPostNotFoundImpl implements UReplyPostNotFound {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -397,6 +415,9 @@ abstract class UReplyPostNotFound implements ReplyPost {
 
   @override
   NotFoundPost get data;
+
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReplyPostNotFoundImplCopyWith<_$UReplyPostNotFoundImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -421,6 +442,8 @@ class __$$UReplyPostBlockedImplCopyWithImpl<$Res>
       $Res Function(_$UReplyPostBlockedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -434,6 +457,8 @@ class __$$UReplyPostBlockedImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BlockedPostCopyWith<$Res> get data {
@@ -467,6 +492,8 @@ class _$UReplyPostBlockedImpl implements UReplyPostBlocked {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -555,6 +582,9 @@ abstract class UReplyPostBlocked implements ReplyPost {
 
   @override
   BlockedPost get data;
+
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReplyPostBlockedImplCopyWith<_$UReplyPostBlockedImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -577,6 +607,8 @@ class __$$UReplyPostUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UReplyPostUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -622,6 +654,8 @@ class _$UReplyPostUnknownImpl implements UReplyPostUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -710,6 +744,9 @@ abstract class UReplyPostUnknown implements ReplyPost {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of ReplyPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UReplyPostUnknownImplCopyWith<_$UReplyPostUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;

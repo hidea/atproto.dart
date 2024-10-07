@@ -228,6 +228,7 @@ abstract class UBatchActionCreate implements BatchAction {
 
   @override
   CreateAction get data;
+
   @JsonKey(ignore: true)
   _$$UBatchActionCreateImplCopyWith<_$UBatchActionCreateImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -380,6 +381,7 @@ abstract class UBatchActionUpdate implements BatchAction {
 
   @override
   UpdateAction get data;
+
   @JsonKey(ignore: true)
   _$$UBatchActionUpdateImplCopyWith<_$UBatchActionUpdateImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -532,6 +534,7 @@ abstract class UBatchActionDelete implements BatchAction {
 
   @override
   DeleteAction get data;
+
   @JsonKey(ignore: true)
   _$$UBatchActionDeleteImplCopyWith<_$UBatchActionDeleteImpl> get copyWith =>
       throw _privateConstructorUsedError;

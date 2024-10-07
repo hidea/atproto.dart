@@ -29,7 +29,11 @@ mixin _$Operation {
       throw _privateConstructorUsedError;
   String? get prev => throw _privateConstructorUsedError;
 
+  /// Serializes this Operation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Operation
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $OperationCopyWith<Operation> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$OperationCopyWithImpl<$Res, $Val extends Operation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Operation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,6 +136,8 @@ class __$$OperationImplCopyWithImpl<$Res>
       _$OperationImpl _value, $Res Function(_$OperationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Operation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -269,6 +277,8 @@ class _$OperationImpl implements _Operation {
       const DeepCollectionEquality().hash(_verificationMethods),
       prev);
 
+  /// Create a copy of Operation
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -310,6 +320,9 @@ abstract class _Operation implements Operation {
   Map<String, dynamic> get verificationMethods;
   @override
   String? get prev;
+
+  /// Create a copy of Operation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$OperationImplCopyWith<_$OperationImpl> get copyWith =>

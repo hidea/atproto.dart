@@ -25,7 +25,11 @@ mixin _$LexXrpcSubscriptionMessage {
   @lexXrpcSchemaConverter
   LexXrpcSchema? get schema => throw _privateConstructorUsedError;
 
+  /// Serializes this LexXrpcSubscriptionMessage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexXrpcSubscriptionMessageCopyWith<LexXrpcSubscriptionMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$LexXrpcSubscriptionMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -73,6 +79,8 @@ class _$LexXrpcSubscriptionMessageCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexXrpcSchemaCopyWith<$Res>? get schema {
@@ -112,6 +120,8 @@ class __$$LexXrpcSubscriptionMessageImplCopyWithImpl<$Res>
       $Res Function(_$LexXrpcSubscriptionMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -167,6 +177,8 @@ class _$LexXrpcSubscriptionMessageImpl implements _LexXrpcSubscriptionMessage {
   @override
   int get hashCode => Object.hash(runtimeType, description, schema);
 
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -197,6 +209,9 @@ abstract class _LexXrpcSubscriptionMessage
   @override
   @lexXrpcSchemaConverter
   LexXrpcSchema? get schema;
+
+  /// Create a copy of LexXrpcSubscriptionMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexXrpcSubscriptionMessageImplCopyWith<_$LexXrpcSubscriptionMessageImpl>

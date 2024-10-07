@@ -36,7 +36,11 @@ mixin _$ListView {
   ListViewer get viewer => throw _privateConstructorUsedError;
   DateTime get indexedAt => throw _privateConstructorUsedError;
 
+  /// Serializes this ListView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ListViewCopyWith<ListView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -75,6 +79,8 @@ class _$ListViewCopyWithImpl<$Res, $Val extends ListView>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -143,6 +149,8 @@ class _$ListViewCopyWithImpl<$Res, $Val extends ListView>
     ) as $Val);
   }
 
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get createdBy {
@@ -151,6 +159,8 @@ class _$ListViewCopyWithImpl<$Res, $Val extends ListView>
     });
   }
 
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ListViewerCopyWith<$Res> get viewer {
@@ -196,6 +206,8 @@ class __$$ListViewImplCopyWithImpl<$Res>
       _$ListViewImpl _value, $Res Function(_$ListViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -380,6 +392,8 @@ class _$ListViewImpl extends _ListView {
       viewer,
       indexedAt);
 
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -440,6 +454,9 @@ abstract class _ListView extends ListView {
   ListViewer get viewer;
   @override
   DateTime get indexedAt;
+
+  /// Create a copy of ListView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ListViewImplCopyWith<_$ListViewImpl> get copyWith =>

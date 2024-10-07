@@ -28,7 +28,11 @@ mixin _$ConvoView {
   bool get muted => throw _privateConstructorUsedError;
   int get unreadCount => throw _privateConstructorUsedError;
 
+  /// Serializes this ConvoView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ConvoViewCopyWith<ConvoView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$ConvoViewCopyWithImpl<$Res, $Val extends ConvoView>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -98,6 +104,8 @@ class _$ConvoViewCopyWithImpl<$Res, $Val extends ConvoView>
     ) as $Val);
   }
 
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UConvoMessageViewCopyWith<$Res>? get lastMessage {
@@ -139,6 +147,8 @@ class __$$ConvoViewImplCopyWithImpl<$Res>
       _$ConvoViewImpl _value, $Res Function(_$ConvoViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -245,6 +255,8 @@ class _$ConvoViewImpl implements _ConvoView {
       muted,
       unreadCount);
 
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -284,6 +296,9 @@ abstract class _ConvoView implements ConvoView {
   bool get muted;
   @override
   int get unreadCount;
+
+  /// Create a copy of ConvoView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ConvoViewImplCopyWith<_$ConvoViewImpl> get copyWith =>

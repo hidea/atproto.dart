@@ -23,7 +23,11 @@ mixin _$OperationLog {
   @compatibleOpOrTombstoneConverter
   List<CompatibleOpOrTombstone> get log => throw _privateConstructorUsedError;
 
+  /// Serializes this OperationLog to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of OperationLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $OperationLogCopyWith<OperationLog> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$OperationLogCopyWithImpl<$Res, $Val extends OperationLog>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OperationLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -83,6 +89,8 @@ class __$$OperationLogImplCopyWithImpl<$Res>
       _$OperationLogImpl _value, $Res Function(_$OperationLogImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OperationLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,6 +144,8 @@ class _$OperationLogImpl implements _OperationLog {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_log));
 
+  /// Create a copy of OperationLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -161,6 +171,9 @@ abstract class _OperationLog implements OperationLog {
   @override
   @compatibleOpOrTombstoneConverter
   List<CompatibleOpOrTombstone> get log;
+
+  /// Create a copy of OperationLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$OperationLogImplCopyWith<_$OperationLogImpl> get copyWith =>

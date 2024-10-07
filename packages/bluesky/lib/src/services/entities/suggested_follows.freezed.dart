@@ -22,7 +22,11 @@ SuggestedFollows _$SuggestedFollowsFromJson(Map<String, dynamic> json) {
 mixin _$SuggestedFollows {
   List<Actor> get suggestions => throw _privateConstructorUsedError;
 
+  /// Serializes this SuggestedFollows to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SuggestedFollows
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SuggestedFollowsCopyWith<SuggestedFollows> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$SuggestedFollowsCopyWithImpl<$Res, $Val extends SuggestedFollows>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SuggestedFollows
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$SuggestedFollowsImplCopyWithImpl<$Res>
       $Res Function(_$SuggestedFollowsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SuggestedFollows
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,6 +138,8 @@ class _$SuggestedFollowsImpl implements _SuggestedFollows {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_suggestions));
 
+  /// Create a copy of SuggestedFollows
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -154,6 +164,9 @@ abstract class _SuggestedFollows implements SuggestedFollows {
 
   @override
   List<Actor> get suggestions;
+
+  /// Create a copy of SuggestedFollows
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SuggestedFollowsImplCopyWith<_$SuggestedFollowsImpl> get copyWith =>

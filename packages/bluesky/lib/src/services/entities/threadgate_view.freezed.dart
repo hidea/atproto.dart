@@ -28,7 +28,11 @@ mixin _$ThreadgateView {
   ThreadgateRecord? get record => throw _privateConstructorUsedError;
   List<ListViewBasic>? get lists => throw _privateConstructorUsedError;
 
+  /// Serializes this ThreadgateView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ThreadgateViewCopyWith<ThreadgateView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$ThreadgateViewCopyWithImpl<$Res, $Val extends ThreadgateView>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class _$ThreadgateViewCopyWithImpl<$Res, $Val extends ThreadgateView>
     ) as $Val);
   }
 
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ThreadgateRecordCopyWith<$Res>? get record {
@@ -133,6 +141,8 @@ class __$$ThreadgateViewImplCopyWithImpl<$Res>
       _$ThreadgateViewImpl _value, $Res Function(_$ThreadgateViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -224,6 +234,8 @@ class _$ThreadgateViewImpl implements _ThreadgateView {
   int get hashCode => Object.hash(runtimeType, type, uri, cid, record,
       const DeepCollectionEquality().hash(_lists));
 
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -262,6 +274,9 @@ abstract class _ThreadgateView implements ThreadgateView {
   ThreadgateRecord? get record;
   @override
   List<ListViewBasic>? get lists;
+
+  /// Create a copy of ThreadgateView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ThreadgateViewImplCopyWith<_$ThreadgateViewImpl> get copyWith =>

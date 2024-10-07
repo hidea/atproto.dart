@@ -24,7 +24,11 @@ mixin _$LabelersPref {
   String get type => throw _privateConstructorUsedError;
   List<LabelerPrefItem> get labelers => throw _privateConstructorUsedError;
 
+  /// Serializes this LabelersPref to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelersPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelersPrefCopyWith<LabelersPref> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$LabelersPrefCopyWithImpl<$Res, $Val extends LabelersPref>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelersPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$LabelersPrefImplCopyWithImpl<$Res>
       _$LabelersPrefImpl _value, $Res Function(_$LabelersPrefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelersPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +155,8 @@ class _$LabelersPrefImpl implements _LabelersPref {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_labelers));
 
+  /// Create a copy of LabelersPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -174,6 +184,9 @@ abstract class _LabelersPref implements LabelersPref {
   String get type;
   @override
   List<LabelerPrefItem> get labelers;
+
+  /// Create a copy of LabelersPref
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelersPrefImplCopyWith<_$LabelersPrefImpl> get copyWith =>

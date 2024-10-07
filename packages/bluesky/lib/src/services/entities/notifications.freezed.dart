@@ -24,7 +24,11 @@ mixin _$Notifications {
   String? get cursor => throw _privateConstructorUsedError;
   DateTime? get seenAt => throw _privateConstructorUsedError;
 
+  /// Serializes this Notifications to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Notifications
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $NotificationsCopyWith<Notifications> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$NotificationsCopyWithImpl<$Res, $Val extends Notifications>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Notifications
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -94,6 +100,8 @@ class __$$NotificationsImplCopyWithImpl<$Res>
       _$NotificationsImpl _value, $Res Function(_$NotificationsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Notifications
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,6 +173,8 @@ class _$NotificationsImpl extends _Notifications {
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_notifications), cursor, seenAt);
 
+  /// Create a copy of Notifications
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -195,6 +205,9 @@ abstract class _Notifications extends Notifications {
   String? get cursor;
   @override
   DateTime? get seenAt;
+
+  /// Create a copy of Notifications
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$NotificationsImplCopyWith<_$NotificationsImpl> get copyWith =>

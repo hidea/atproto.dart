@@ -90,6 +90,9 @@ class _$CompatibleOpOrTombstoneCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -114,6 +117,8 @@ class __$$UCompatibleOpOrTombstoneOpImplCopyWithImpl<$Res>
       $Res Function(_$UCompatibleOpOrTombstoneOpImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -127,6 +132,8 @@ class __$$UCompatibleOpOrTombstoneOpImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $OperationCopyWith<$Res> get data {
@@ -160,6 +167,8 @@ class _$UCompatibleOpOrTombstoneOpImpl extends UCompatibleOpOrTombstoneOp {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -253,6 +262,9 @@ abstract class UCompatibleOpOrTombstoneOp extends CompatibleOpOrTombstone {
 
   @override
   Operation get data;
+
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UCompatibleOpOrTombstoneOpImplCopyWith<_$UCompatibleOpOrTombstoneOpImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -280,6 +292,8 @@ class __$$UCompatibleOpOrTombstoneTombstoneImplCopyWithImpl<$Res>
       $Res Function(_$UCompatibleOpOrTombstoneTombstoneImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -293,6 +307,8 @@ class __$$UCompatibleOpOrTombstoneTombstoneImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TombstoneCopyWith<$Res> get data {
@@ -328,6 +344,8 @@ class _$UCompatibleOpOrTombstoneTombstoneImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -424,6 +442,9 @@ abstract class UCompatibleOpOrTombstoneTombstone
 
   @override
   Tombstone get data;
+
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UCompatibleOpOrTombstoneTombstoneImplCopyWith<
           _$UCompatibleOpOrTombstoneTombstoneImpl>
@@ -452,6 +473,8 @@ class __$$UCompatibleOpOrTombstoneCreateOperationV1ImplCopyWithImpl<$Res>
       $Res Function(_$UCompatibleOpOrTombstoneCreateOperationV1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -465,6 +488,8 @@ class __$$UCompatibleOpOrTombstoneCreateOperationV1ImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CreateOperationV1CopyWith<$Res> get data {
@@ -500,6 +525,8 @@ class _$UCompatibleOpOrTombstoneCreateOperationV1Impl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -598,6 +625,9 @@ abstract class UCompatibleOpOrTombstoneCreateOperationV1
 
   @override
   CreateOperationV1 get data;
+
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UCompatibleOpOrTombstoneCreateOperationV1ImplCopyWith<
           _$UCompatibleOpOrTombstoneCreateOperationV1Impl>
@@ -624,6 +654,8 @@ class __$$UCompatibleOpOrTombstoneUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UCompatibleOpOrTombstoneUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -672,6 +704,8 @@ class _$UCompatibleOpOrTombstoneUnknownImpl
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -767,6 +801,9 @@ abstract class UCompatibleOpOrTombstoneUnknown extends CompatibleOpOrTombstone {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of CompatibleOpOrTombstone
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UCompatibleOpOrTombstoneUnknownImplCopyWith<
           _$UCompatibleOpOrTombstoneUnknownImpl>

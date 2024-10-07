@@ -10,6 +10,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../../ids.g.dart' as ids;
 import '../embed_external.dart';
 import '../embed_images.dart';
+import '../embed_video.dart';
 import '../embed_media.dart';
 
 const embedMediaConverter = _EmbedMediaConverter();
@@ -28,6 +29,10 @@ final class _EmbedMediaConverter
         return EmbedMedia.images(
           data: EmbedImages.fromJson(json),
         );
+      } else if (type == ids.appBskyEmbedVideo) {
+        return EmbedMedia.video(
+          data: EmbedVideo.fromJson(json),
+        );
       } else if (type == ids.appBskyEmbedExternal) {
         return EmbedMedia.external(
           data: EmbedExternal.fromJson(json),
@@ -43,6 +48,7 @@ final class _EmbedMediaConverter
   @override
   Map<String, dynamic> toJson(EmbedMedia object) => object.when(
         images: (data) => data.toJson(),
+        video: (data) => data.toJson(),
         external: (data) => data.toJson(),
         unknown: (data) => data,
       );

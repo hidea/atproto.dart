@@ -23,7 +23,11 @@ mixin _$Relationships {
   @relationshipConverter
   List<Relationship> get relationships => throw _privateConstructorUsedError;
 
+  /// Serializes this Relationships to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Relationships
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $RelationshipsCopyWith<Relationships> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$RelationshipsCopyWithImpl<$Res, $Val extends Relationships>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Relationships
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$RelationshipsImplCopyWithImpl<$Res>
       _$RelationshipsImpl _value, $Res Function(_$RelationshipsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Relationships
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +141,8 @@ class _$RelationshipsImpl implements _Relationships {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_relationships));
 
+  /// Create a copy of Relationships
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -158,6 +168,9 @@ abstract class _Relationships implements Relationships {
   @override
   @relationshipConverter
   List<Relationship> get relationships;
+
+  /// Create a copy of Relationships
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$RelationshipsImplCopyWith<_$RelationshipsImpl> get copyWith =>

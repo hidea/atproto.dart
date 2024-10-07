@@ -16,7 +16,7 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$Embed {
-  InvalidType get data => throw _privateConstructorUsedError;
+  Object get data => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(EmbedRecord data) record,
@@ -172,7 +172,7 @@ class _$UEmbedRecordImpl extends UEmbedRecord {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedRecordImplCopyWith<_$UEmbedRecordImpl> get copyWith =>
@@ -275,7 +275,7 @@ abstract class UEmbedRecord extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedRecordImplCopyWith<_$UEmbedRecordImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -351,7 +351,7 @@ class _$UEmbedImagesImpl extends UEmbedImages {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedImagesImplCopyWith<_$UEmbedImagesImpl> get copyWith =>
@@ -454,7 +454,7 @@ abstract class UEmbedImages extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedImagesImplCopyWith<_$UEmbedImagesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -466,6 +466,8 @@ abstract class _$$UEmbedVideoImplCopyWith<$Res> {
       __$$UEmbedVideoImplCopyWithImpl<$Res>;
   @useResult
   $Res call({EmbedVideo data});
+
+  $EmbedVideoCopyWith<$Res> get data;
 }
 
 /// @nodoc
@@ -481,14 +483,24 @@ class __$$UEmbedVideoImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? data = freezed,
+    Object? data = null,
   }) {
     return _then(_$UEmbedVideoImpl(
-      data: freezed == data
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as EmbedVideo,
     ));
+  }
+
+  /// Create a copy of Embed
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $EmbedVideoCopyWith<$Res> get data {
+    return $EmbedVideoCopyWith<$Res>(_value.data, (value) {
+      return _then(_value.copyWith(data: value));
+    });
   }
 }
 
@@ -510,16 +522,15 @@ class _$UEmbedVideoImpl extends UEmbedVideo {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$UEmbedVideoImpl &&
-            const DeepCollectionEquality().equals(other.data, data));
+            (identical(other.data, data) || other.data == data));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, data);
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedVideoImplCopyWith<_$UEmbedVideoImpl> get copyWith =>
@@ -622,7 +633,7 @@ abstract class UEmbedVideo extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedVideoImplCopyWith<_$UEmbedVideoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -698,7 +709,7 @@ class _$UEmbedExternalImpl extends UEmbedExternal {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedExternalImplCopyWith<_$UEmbedExternalImpl> get copyWith =>
@@ -802,7 +813,7 @@ abstract class UEmbedExternal extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedExternalImplCopyWith<_$UEmbedExternalImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -879,7 +890,7 @@ class _$UEmbedRecordWithMediaImpl extends UEmbedRecordWithMedia {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedRecordWithMediaImplCopyWith<_$UEmbedRecordWithMediaImpl>
@@ -983,7 +994,7 @@ abstract class UEmbedRecordWithMedia extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedRecordWithMediaImplCopyWith<_$UEmbedRecordWithMediaImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1055,7 +1066,7 @@ class _$UEmbedUnknownImpl extends UEmbedUnknown {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedUnknownImplCopyWith<_$UEmbedUnknownImpl> get copyWith =>
@@ -1158,7 +1169,7 @@ abstract class UEmbedUnknown extends Embed {
 
   /// Create a copy of Embed
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedUnknownImplCopyWith<_$UEmbedUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

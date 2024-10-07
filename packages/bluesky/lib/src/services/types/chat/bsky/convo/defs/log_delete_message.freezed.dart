@@ -25,7 +25,11 @@ mixin _$LogDeleteMessage {
   @unionConvoMessageViewConverter
   UConvoMessageView get message => throw _privateConstructorUsedError;
 
+  /// Serializes this LogDeleteMessage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LogDeleteMessageCopyWith<LogDeleteMessage> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$LogDeleteMessageCopyWithImpl<$Res, $Val extends LogDeleteMessage>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -78,6 +84,8 @@ class _$LogDeleteMessageCopyWithImpl<$Res, $Val extends LogDeleteMessage>
     ) as $Val);
   }
 
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UConvoMessageViewCopyWith<$Res> get message {
@@ -112,6 +120,8 @@ class __$$LogDeleteMessageImplCopyWithImpl<$Res>
       $Res Function(_$LogDeleteMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -175,6 +185,8 @@ class _$LogDeleteMessageImpl implements _LogDeleteMessage {
   @override
   int get hashCode => Object.hash(runtimeType, rev, convoId, message);
 
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -207,6 +219,9 @@ abstract class _LogDeleteMessage implements LogDeleteMessage {
   @override
   @unionConvoMessageViewConverter
   UConvoMessageView get message;
+
+  /// Create a copy of LogDeleteMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LogDeleteMessageImplCopyWith<_$LogDeleteMessageImpl> get copyWith =>

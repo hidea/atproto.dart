@@ -24,7 +24,11 @@ mixin _$EmbedExternal {
   String get type => throw _privateConstructorUsedError;
   EmbedExternalThumbnail get external => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedExternal to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedExternalCopyWith<EmbedExternal> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$EmbedExternalCopyWithImpl<$Res, $Val extends EmbedExternal>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -69,6 +75,8 @@ class _$EmbedExternalCopyWithImpl<$Res, $Val extends EmbedExternal>
     ) as $Val);
   }
 
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EmbedExternalThumbnailCopyWith<$Res> get external {
@@ -100,6 +108,8 @@ class __$$EmbedExternalImplCopyWithImpl<$Res>
       _$EmbedExternalImpl _value, $Res Function(_$EmbedExternalImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,6 +163,8 @@ class _$EmbedExternalImpl implements _EmbedExternal {
   @override
   int get hashCode => Object.hash(runtimeType, type, external);
 
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -180,6 +192,9 @@ abstract class _EmbedExternal implements EmbedExternal {
   String get type;
   @override
   EmbedExternalThumbnail get external;
+
+  /// Create a copy of EmbedExternal
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedExternalImplCopyWith<_$EmbedExternalImpl> get copyWith =>

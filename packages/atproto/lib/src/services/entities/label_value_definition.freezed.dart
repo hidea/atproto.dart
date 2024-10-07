@@ -28,7 +28,11 @@ mixin _$LabelValueDefinition {
   List<LabelValueDefinitionStrings> get locales =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this LabelValueDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelValueDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelValueDefinitionCopyWith<LabelValueDefinition> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$LabelValueDefinitionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelValueDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,6 +130,8 @@ class __$$LabelValueDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$LabelValueDefinitionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelValueDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -226,6 +234,8 @@ class _$LabelValueDefinitionImpl implements _LabelValueDefinition {
   int get hashCode => Object.hash(runtimeType, identifier, severity, blurs,
       defaultSetting, adultOnly, const DeepCollectionEquality().hash(_locales));
 
+  /// Create a copy of LabelValueDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -267,6 +277,9 @@ abstract class _LabelValueDefinition implements LabelValueDefinition {
   bool get adultOnly;
   @override
   List<LabelValueDefinitionStrings> get locales;
+
+  /// Create a copy of LabelValueDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelValueDefinitionImplCopyWith<_$LabelValueDefinitionImpl>

@@ -22,8 +22,8 @@ Video _$VideoFromJson(Map<String, dynamic> json) {
 mixin _$Video {
   String? get alt => throw _privateConstructorUsedError;
   List<Caption>? get captions => throw _privateConstructorUsedError;
-  @BlobConverter()
-  Blob get video => throw _privateConstructorUsedError;
+  @JsonKey(name: 'video')
+  Blob get blob => throw _privateConstructorUsedError;
   ImageAspectRatio? get aspectRatio => throw _privateConstructorUsedError;
 
   /// Serializes this Video to a JSON map.
@@ -31,7 +31,7 @@ mixin _$Video {
 
   /// Create a copy of Video
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $VideoCopyWith<Video> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -43,10 +43,10 @@ abstract class $VideoCopyWith<$Res> {
   $Res call(
       {String? alt,
       List<Caption>? captions,
-      @BlobConverter() Blob video,
+      @JsonKey(name: 'video') Blob blob,
       ImageAspectRatio? aspectRatio});
 
-  $BlobCopyWith<$Res> get video;
+  $BlobCopyWith<$Res> get blob;
   $ImageAspectRatioCopyWith<$Res>? get aspectRatio;
 }
 
@@ -67,7 +67,7 @@ class _$VideoCopyWithImpl<$Res, $Val extends Video>
   $Res call({
     Object? alt = freezed,
     Object? captions = freezed,
-    Object? video = null,
+    Object? blob = null,
     Object? aspectRatio = freezed,
   }) {
     return _then(_value.copyWith(
@@ -79,9 +79,9 @@ class _$VideoCopyWithImpl<$Res, $Val extends Video>
           ? _value.captions
           : captions // ignore: cast_nullable_to_non_nullable
               as List<Caption>?,
-      video: null == video
-          ? _value.video
-          : video // ignore: cast_nullable_to_non_nullable
+      blob: null == blob
+          ? _value.blob
+          : blob // ignore: cast_nullable_to_non_nullable
               as Blob,
       aspectRatio: freezed == aspectRatio
           ? _value.aspectRatio
@@ -94,9 +94,9 @@ class _$VideoCopyWithImpl<$Res, $Val extends Video>
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $BlobCopyWith<$Res> get video {
-    return $BlobCopyWith<$Res>(_value.video, (value) {
-      return _then(_value.copyWith(video: value) as $Val);
+  $BlobCopyWith<$Res> get blob {
+    return $BlobCopyWith<$Res>(_value.blob, (value) {
+      return _then(_value.copyWith(blob: value) as $Val);
     });
   }
 
@@ -125,11 +125,11 @@ abstract class _$$VideoImplCopyWith<$Res> implements $VideoCopyWith<$Res> {
   $Res call(
       {String? alt,
       List<Caption>? captions,
-      @BlobConverter() Blob video,
+      @JsonKey(name: 'video') Blob blob,
       ImageAspectRatio? aspectRatio});
 
   @override
-  $BlobCopyWith<$Res> get video;
+  $BlobCopyWith<$Res> get blob;
   @override
   $ImageAspectRatioCopyWith<$Res>? get aspectRatio;
 }
@@ -149,7 +149,7 @@ class __$$VideoImplCopyWithImpl<$Res>
   $Res call({
     Object? alt = freezed,
     Object? captions = freezed,
-    Object? video = null,
+    Object? blob = null,
     Object? aspectRatio = freezed,
   }) {
     return _then(_$VideoImpl(
@@ -161,9 +161,9 @@ class __$$VideoImplCopyWithImpl<$Res>
           ? _value._captions
           : captions // ignore: cast_nullable_to_non_nullable
               as List<Caption>?,
-      video: null == video
-          ? _value.video
-          : video // ignore: cast_nullable_to_non_nullable
+      blob: null == blob
+          ? _value.blob
+          : blob // ignore: cast_nullable_to_non_nullable
               as Blob,
       aspectRatio: freezed == aspectRatio
           ? _value.aspectRatio
@@ -180,7 +180,7 @@ class _$VideoImpl implements _Video {
   const _$VideoImpl(
       {this.alt,
       final List<Caption>? captions,
-      @BlobConverter() required this.video,
+      @JsonKey(name: 'video') required this.blob,
       this.aspectRatio})
       : _captions = captions;
 
@@ -200,14 +200,14 @@ class _$VideoImpl implements _Video {
   }
 
   @override
-  @BlobConverter()
-  final Blob video;
+  @JsonKey(name: 'video')
+  final Blob blob;
   @override
   final ImageAspectRatio? aspectRatio;
 
   @override
   String toString() {
-    return 'Video(alt: $alt, captions: $captions, video: $video, aspectRatio: $aspectRatio)';
+    return 'Video(alt: $alt, captions: $captions, blob: $blob, aspectRatio: $aspectRatio)';
   }
 
   @override
@@ -217,19 +217,19 @@ class _$VideoImpl implements _Video {
             other is _$VideoImpl &&
             (identical(other.alt, alt) || other.alt == alt) &&
             const DeepCollectionEquality().equals(other._captions, _captions) &&
-            (identical(other.video, video) || other.video == video) &&
+            (identical(other.blob, blob) || other.blob == blob) &&
             (identical(other.aspectRatio, aspectRatio) ||
                 other.aspectRatio == aspectRatio));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, alt,
-      const DeepCollectionEquality().hash(_captions), video, aspectRatio);
+      const DeepCollectionEquality().hash(_captions), blob, aspectRatio);
 
   /// Create a copy of Video
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
@@ -247,7 +247,7 @@ abstract class _Video implements Video {
   const factory _Video(
       {final String? alt,
       final List<Caption>? captions,
-      @BlobConverter() required final Blob video,
+      @JsonKey(name: 'video') required final Blob blob,
       final ImageAspectRatio? aspectRatio}) = _$VideoImpl;
 
   factory _Video.fromJson(Map<String, dynamic> json) = _$VideoImpl.fromJson;
@@ -257,15 +257,15 @@ abstract class _Video implements Video {
   @override
   List<Caption>? get captions;
   @override
-  @BlobConverter()
-  Blob get video;
+  @JsonKey(name: 'video')
+  Blob get blob;
   @override
   ImageAspectRatio? get aspectRatio;
 
   /// Create a copy of Video
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

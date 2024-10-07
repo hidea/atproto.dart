@@ -27,7 +27,11 @@ mixin _$LexPrimitiveArray {
   int? get minLength => throw _privateConstructorUsedError;
   int? get maxLength => throw _privateConstructorUsedError;
 
+  /// Serializes this LexPrimitiveArray to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexPrimitiveArrayCopyWith<LexPrimitiveArray> get copyWith =>
       throw _privateConstructorUsedError;
@@ -59,6 +63,8 @@ class _$LexPrimitiveArrayCopyWithImpl<$Res, $Val extends LexPrimitiveArray>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -92,6 +98,8 @@ class _$LexPrimitiveArrayCopyWithImpl<$Res, $Val extends LexPrimitiveArray>
     ) as $Val);
   }
 
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexPrimitiveCopyWith<$Res> get items {
@@ -128,6 +136,8 @@ class __$$LexPrimitiveArrayImplCopyWithImpl<$Res>
       $Res Function(_$LexPrimitiveArrayImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -214,6 +224,8 @@ class _$LexPrimitiveArrayImpl implements _LexPrimitiveArray {
   int get hashCode =>
       Object.hash(runtimeType, type, description, items, minLength, maxLength);
 
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -251,6 +263,9 @@ abstract class _LexPrimitiveArray implements LexPrimitiveArray {
   int? get minLength;
   @override
   int? get maxLength;
+
+  /// Create a copy of LexPrimitiveArray
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexPrimitiveArrayImplCopyWith<_$LexPrimitiveArrayImpl> get copyWith =>

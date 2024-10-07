@@ -33,7 +33,11 @@ mixin _$PostRecord {
   List<String>? get tags => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this PostRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PostRecordCopyWith<PostRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -71,6 +75,8 @@ class _$PostRecordCopyWithImpl<$Res, $Val extends PostRecord>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,6 +130,8 @@ class _$PostRecordCopyWithImpl<$Res, $Val extends PostRecord>
     ) as $Val);
   }
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReplyRefCopyWith<$Res>? get reply {
@@ -136,6 +144,8 @@ class _$PostRecordCopyWithImpl<$Res, $Val extends PostRecord>
     });
   }
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EmbedCopyWith<$Res>? get embed {
@@ -148,6 +158,8 @@ class _$PostRecordCopyWithImpl<$Res, $Val extends PostRecord>
     });
   }
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelsCopyWith<$Res>? get labels {
@@ -196,6 +208,8 @@ class __$$PostRecordImplCopyWithImpl<$Res>
       _$PostRecordImpl _value, $Res Function(_$PostRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -353,6 +367,8 @@ class _$PostRecordImpl implements _PostRecord {
       const DeepCollectionEquality().hash(_tags),
       createdAt);
 
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -403,6 +419,9 @@ abstract class _PostRecord implements PostRecord {
   List<String>? get tags;
   @override
   DateTime get createdAt;
+
+  /// Create a copy of PostRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PostRecordImplCopyWith<_$PostRecordImpl> get copyWith =>

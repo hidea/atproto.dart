@@ -23,7 +23,11 @@ mixin _$LeaveConvoOutput {
   String get convoId => throw _privateConstructorUsedError;
   String get rev => throw _privateConstructorUsedError;
 
+  /// Serializes this LeaveConvoOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LeaveConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LeaveConvoOutputCopyWith<LeaveConvoOutput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$LeaveConvoOutputCopyWithImpl<$Res, $Val extends LeaveConvoOutput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LeaveConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$LeaveConvoOutputImplCopyWithImpl<$Res>
       $Res Function(_$LeaveConvoOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LeaveConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -137,6 +145,8 @@ class _$LeaveConvoOutputImpl implements _LeaveConvoOutput {
   @override
   int get hashCode => Object.hash(runtimeType, convoId, rev);
 
+  /// Create a copy of LeaveConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -164,6 +174,9 @@ abstract class _LeaveConvoOutput implements LeaveConvoOutput {
   String get convoId;
   @override
   String get rev;
+
+  /// Create a copy of LeaveConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LeaveConvoOutputImplCopyWith<_$LeaveConvoOutputImpl> get copyWith =>

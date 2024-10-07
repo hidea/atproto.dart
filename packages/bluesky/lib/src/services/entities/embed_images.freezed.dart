@@ -24,7 +24,11 @@ mixin _$EmbedImages {
   String get type => throw _privateConstructorUsedError;
   List<Image> get images => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedImages to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedImages
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedImagesCopyWith<EmbedImages> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$EmbedImagesCopyWithImpl<$Res, $Val extends EmbedImages>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedImages
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$EmbedImagesImplCopyWithImpl<$Res>
       _$EmbedImagesImpl _value, $Res Function(_$EmbedImagesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedImages
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +155,8 @@ class _$EmbedImagesImpl implements _EmbedImages {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_images));
 
+  /// Create a copy of EmbedImages
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -174,6 +184,9 @@ abstract class _EmbedImages implements EmbedImages {
   String get type;
   @override
   List<Image> get images;
+
+  /// Create a copy of EmbedImages
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedImagesImplCopyWith<_$EmbedImagesImpl> get copyWith =>

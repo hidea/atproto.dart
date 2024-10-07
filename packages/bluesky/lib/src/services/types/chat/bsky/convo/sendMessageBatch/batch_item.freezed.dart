@@ -23,7 +23,11 @@ mixin _$BatchItem {
   String get convoId => throw _privateConstructorUsedError;
   MessageInput get message => throw _privateConstructorUsedError;
 
+  /// Serializes this BatchItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $BatchItemCopyWith<BatchItem> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$BatchItemCopyWithImpl<$Res, $Val extends BatchItem>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -67,6 +73,8 @@ class _$BatchItemCopyWithImpl<$Res, $Val extends BatchItem>
     ) as $Val);
   }
 
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MessageInputCopyWith<$Res> get message {
@@ -98,6 +106,8 @@ class __$$BatchItemImplCopyWithImpl<$Res>
       _$BatchItemImpl _value, $Res Function(_$BatchItemImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +159,8 @@ class _$BatchItemImpl implements _BatchItem {
   @override
   int get hashCode => Object.hash(runtimeType, convoId, message);
 
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -175,6 +187,9 @@ abstract class _BatchItem implements BatchItem {
   String get convoId;
   @override
   MessageInput get message;
+
+  /// Create a copy of BatchItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$BatchItemImplCopyWith<_$BatchItemImpl> get copyWith =>

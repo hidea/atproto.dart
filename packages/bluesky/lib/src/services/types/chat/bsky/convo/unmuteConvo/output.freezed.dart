@@ -22,7 +22,11 @@ UnmuteConvoOutput _$UnmuteConvoOutputFromJson(Map<String, dynamic> json) {
 mixin _$UnmuteConvoOutput {
   ConvoView get convo => throw _privateConstructorUsedError;
 
+  /// Serializes this UnmuteConvoOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $UnmuteConvoOutputCopyWith<UnmuteConvoOutput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$UnmuteConvoOutputCopyWithImpl<$Res, $Val extends UnmuteConvoOutput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -62,6 +68,8 @@ class _$UnmuteConvoOutputCopyWithImpl<$Res, $Val extends UnmuteConvoOutput>
     ) as $Val);
   }
 
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ConvoViewCopyWith<$Res> get convo {
@@ -93,6 +101,8 @@ class __$$UnmuteConvoOutputImplCopyWithImpl<$Res>
       $Res Function(_$UnmuteConvoOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,6 +146,8 @@ class _$UnmuteConvoOutputImpl implements _UnmuteConvoOutput {
   @override
   int get hashCode => Object.hash(runtimeType, convo);
 
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -160,6 +172,9 @@ abstract class _UnmuteConvoOutput implements UnmuteConvoOutput {
 
   @override
   ConvoView get convo;
+
+  /// Create a copy of UnmuteConvoOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$UnmuteConvoOutputImplCopyWith<_$UnmuteConvoOutputImpl> get copyWith =>

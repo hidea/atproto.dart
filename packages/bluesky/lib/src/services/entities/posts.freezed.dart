@@ -22,7 +22,11 @@ Posts _$PostsFromJson(Map<String, dynamic> json) {
 mixin _$Posts {
   List<Post> get posts => throw _privateConstructorUsedError;
 
+  /// Serializes this Posts to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Posts
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PostsCopyWith<Posts> get copyWith => throw _privateConstructorUsedError;
 }
@@ -45,6 +49,8 @@ class _$PostsCopyWithImpl<$Res, $Val extends Posts>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Posts
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -77,6 +83,8 @@ class __$$PostsImplCopyWithImpl<$Res>
       _$PostsImpl _value, $Res Function(_$PostsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Posts
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -125,6 +133,8 @@ class _$PostsImpl implements _Posts {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_posts));
 
+  /// Create a copy of Posts
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -146,6 +156,9 @@ abstract class _Posts implements Posts {
 
   @override
   List<Post> get posts;
+
+  /// Create a copy of Posts
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PostsImplCopyWith<_$PostsImpl> get copyWith =>

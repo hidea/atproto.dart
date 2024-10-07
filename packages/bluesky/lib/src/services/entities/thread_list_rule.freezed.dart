@@ -26,7 +26,11 @@ mixin _$ThreadListRule {
   @AtUriConverter()
   AtUri get listUri => throw _privateConstructorUsedError;
 
+  /// Serializes this ThreadListRule to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ThreadListRule
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ThreadListRuleCopyWith<ThreadListRule> get copyWith =>
       throw _privateConstructorUsedError;
@@ -53,6 +57,8 @@ class _$ThreadListRuleCopyWithImpl<$Res, $Val extends ThreadListRule>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ThreadListRule
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class __$$ThreadListRuleImplCopyWithImpl<$Res>
       _$ThreadListRuleImpl _value, $Res Function(_$ThreadListRuleImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ThreadListRule
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +157,8 @@ class _$ThreadListRuleImpl implements _ThreadListRule {
   @override
   int get hashCode => Object.hash(runtimeType, type, listUri);
 
+  /// Create a copy of ThreadListRule
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -181,6 +191,9 @@ abstract class _ThreadListRule implements ThreadListRule {
   @JsonKey(name: 'list')
   @AtUriConverter()
   AtUri get listUri;
+
+  /// Create a copy of ThreadListRule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ThreadListRuleImplCopyWith<_$ThreadListRuleImpl> get copyWith =>

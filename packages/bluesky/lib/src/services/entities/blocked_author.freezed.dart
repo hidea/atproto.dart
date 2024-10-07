@@ -25,7 +25,11 @@ mixin _$BlockedAuthor {
   String get did => throw _privateConstructorUsedError;
   ActorViewer get viewer => throw _privateConstructorUsedError;
 
+  /// Serializes this BlockedAuthor to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $BlockedAuthorCopyWith<BlockedAuthor> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,6 +56,8 @@ class _$BlockedAuthorCopyWithImpl<$Res, $Val extends BlockedAuthor>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +81,8 @@ class _$BlockedAuthorCopyWithImpl<$Res, $Val extends BlockedAuthor>
     ) as $Val);
   }
 
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorViewerCopyWith<$Res> get viewer {
@@ -106,6 +114,8 @@ class __$$BlockedAuthorImplCopyWithImpl<$Res>
       _$BlockedAuthorImpl _value, $Res Function(_$BlockedAuthorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -169,6 +179,8 @@ class _$BlockedAuthorImpl implements _BlockedAuthor {
   @override
   int get hashCode => Object.hash(runtimeType, type, did, viewer);
 
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -199,6 +211,9 @@ abstract class _BlockedAuthor implements BlockedAuthor {
   String get did;
   @override
   ActorViewer get viewer;
+
+  /// Create a copy of BlockedAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$BlockedAuthorImplCopyWith<_$BlockedAuthorImpl> get copyWith =>

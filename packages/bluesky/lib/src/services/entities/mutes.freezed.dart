@@ -23,7 +23,11 @@ mixin _$Mutes {
   List<Actor> get mutes => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this Mutes to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Mutes
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $MutesCopyWith<Mutes> get copyWith => throw _privateConstructorUsedError;
 }
@@ -46,6 +50,8 @@ class _$MutesCopyWithImpl<$Res, $Val extends Mutes>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Mutes
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -83,6 +89,8 @@ class __$$MutesImplCopyWithImpl<$Res>
       _$MutesImpl _value, $Res Function(_$MutesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Mutes
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,6 +149,8 @@ class _$MutesImpl implements _Mutes {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_mutes), cursor);
 
+  /// Create a copy of Mutes
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -165,6 +175,9 @@ abstract class _Mutes implements Mutes {
   List<Actor> get mutes;
   @override
   String? get cursor;
+
+  /// Create a copy of Mutes
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$MutesImplCopyWith<_$MutesImpl> get copyWith =>

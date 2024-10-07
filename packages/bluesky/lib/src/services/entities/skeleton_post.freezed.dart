@@ -23,7 +23,11 @@ mixin _$SkeletonPost {
   @AtUriConverter()
   AtUri get uri => throw _privateConstructorUsedError;
 
+  /// Serializes this SkeletonPost to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SkeletonPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SkeletonPostCopyWith<SkeletonPost> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$SkeletonPostCopyWithImpl<$Res, $Val extends SkeletonPost>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SkeletonPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$SkeletonPostImplCopyWithImpl<$Res>
       _$SkeletonPostImpl _value, $Res Function(_$SkeletonPostImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SkeletonPost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,6 +132,8 @@ class _$SkeletonPostImpl implements _SkeletonPost {
   @override
   int get hashCode => Object.hash(runtimeType, uri);
 
+  /// Create a copy of SkeletonPost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -148,6 +158,9 @@ abstract class _SkeletonPost implements SkeletonPost {
   @override
   @AtUriConverter()
   AtUri get uri;
+
+  /// Create a copy of SkeletonPost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SkeletonPostImplCopyWith<_$SkeletonPostImpl> get copyWith =>

@@ -24,7 +24,11 @@ mixin _$Followers {
   List<Actor> get followers => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this Followers to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FollowersCopyWith<Followers> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$FollowersCopyWithImpl<$Res, $Val extends Followers>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -73,6 +79,8 @@ class _$FollowersCopyWithImpl<$Res, $Val extends Followers>
     ) as $Val);
   }
 
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get subject {
@@ -104,6 +112,8 @@ class __$$FollowersImplCopyWithImpl<$Res>
       _$FollowersImpl _value, $Res Function(_$FollowersImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -174,6 +184,8 @@ class _$FollowersImpl implements _Followers {
   int get hashCode => Object.hash(runtimeType, subject,
       const DeepCollectionEquality().hash(_followers), cursor);
 
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -203,6 +215,9 @@ abstract class _Followers implements Followers {
   List<Actor> get followers;
   @override
   String? get cursor;
+
+  /// Create a copy of Followers
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FollowersImplCopyWith<_$FollowersImpl> get copyWith =>

@@ -156,6 +156,7 @@ abstract class _BlobData implements BlobData {
 
   @override
   Blob get blob;
+
   @override
   @JsonKey(ignore: true)
   _$$BlobDataImplCopyWith<_$BlobDataImpl> get copyWith =>

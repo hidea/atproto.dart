@@ -25,7 +25,11 @@ mixin _$TransferredAccount {
   String get accessJwt => throw _privateConstructorUsedError;
   String get refreshJwt => throw _privateConstructorUsedError;
 
+  /// Serializes this TransferredAccount to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of TransferredAccount
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $TransferredAccountCopyWith<TransferredAccount> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$TransferredAccountCopyWithImpl<$Res, $Val extends TransferredAccount>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TransferredAccount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -98,6 +104,8 @@ class __$$TransferredAccountImplCopyWithImpl<$Res>
       $Res Function(_$TransferredAccountImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TransferredAccount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -173,6 +181,8 @@ class _$TransferredAccountImpl extends _TransferredAccount {
   int get hashCode =>
       Object.hash(runtimeType, did, handle, accessJwt, refreshJwt);
 
+  /// Create a copy of TransferredAccount
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -207,6 +217,9 @@ abstract class _TransferredAccount extends TransferredAccount {
   String get accessJwt;
   @override
   String get refreshJwt;
+
+  /// Create a copy of TransferredAccount
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$TransferredAccountImplCopyWith<_$TransferredAccountImpl> get copyWith =>

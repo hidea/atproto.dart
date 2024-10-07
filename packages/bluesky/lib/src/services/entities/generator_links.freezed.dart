@@ -23,7 +23,11 @@ mixin _$GeneratorLinks {
   String? get privacyPolicy => throw _privateConstructorUsedError;
   String? get termsOfService => throw _privateConstructorUsedError;
 
+  /// Serializes this GeneratorLinks to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of GeneratorLinks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $GeneratorLinksCopyWith<GeneratorLinks> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$GeneratorLinksCopyWithImpl<$Res, $Val extends GeneratorLinks>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GeneratorLinks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$GeneratorLinksImplCopyWithImpl<$Res>
       _$GeneratorLinksImpl _value, $Res Function(_$GeneratorLinksImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GeneratorLinks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +147,8 @@ class _$GeneratorLinksImpl implements _GeneratorLinks {
   @override
   int get hashCode => Object.hash(runtimeType, privacyPolicy, termsOfService);
 
+  /// Create a copy of GeneratorLinks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -166,6 +176,9 @@ abstract class _GeneratorLinks implements GeneratorLinks {
   String? get privacyPolicy;
   @override
   String? get termsOfService;
+
+  /// Create a copy of GeneratorLinks
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$GeneratorLinksImplCopyWith<_$GeneratorLinksImpl> get copyWith =>

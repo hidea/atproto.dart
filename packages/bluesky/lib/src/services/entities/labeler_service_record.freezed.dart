@@ -26,7 +26,11 @@ mixin _$LabelerServiceRecord {
   SelfLabels? get labels => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this LabelerServiceRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelerServiceRecordCopyWith<LabelerServiceRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -59,6 +63,8 @@ class _$LabelerServiceRecordCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class _$LabelerServiceRecordCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelerPoliciesCopyWith<$Res> get policies {
@@ -95,6 +103,8 @@ class _$LabelerServiceRecordCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SelfLabelsCopyWith<$Res>? get labels {
@@ -136,6 +146,8 @@ class __$$LabelerServiceRecordImplCopyWithImpl<$Res>
       $Res Function(_$LabelerServiceRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -211,6 +223,8 @@ class _$LabelerServiceRecordImpl implements _LabelerServiceRecord {
   int get hashCode =>
       Object.hash(runtimeType, type, policies, labels, createdAt);
 
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -246,6 +260,9 @@ abstract class _LabelerServiceRecord implements LabelerServiceRecord {
   SelfLabels? get labels;
   @override
   DateTime get createdAt;
+
+  /// Create a copy of LabelerServiceRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelerServiceRecordImplCopyWith<_$LabelerServiceRecordImpl>

@@ -25,7 +25,11 @@ mixin _$ReasonRepost {
   ActorBasic get by => throw _privateConstructorUsedError;
   DateTime get indexedAt => throw _privateConstructorUsedError;
 
+  /// Serializes this ReasonRepost to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ReasonRepostCopyWith<ReasonRepost> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,6 +56,8 @@ class _$ReasonRepostCopyWithImpl<$Res, $Val extends ReasonRepost>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +81,8 @@ class _$ReasonRepostCopyWithImpl<$Res, $Val extends ReasonRepost>
     ) as $Val);
   }
 
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorBasicCopyWith<$Res> get by {
@@ -106,6 +114,8 @@ class __$$ReasonRepostImplCopyWithImpl<$Res>
       _$ReasonRepostImpl _value, $Res Function(_$ReasonRepostImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -169,6 +179,8 @@ class _$ReasonRepostImpl implements _ReasonRepost {
   @override
   int get hashCode => Object.hash(runtimeType, type, by, indexedAt);
 
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -199,6 +211,9 @@ abstract class _ReasonRepost implements ReasonRepost {
   ActorBasic get by;
   @override
   DateTime get indexedAt;
+
+  /// Create a copy of ReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ReasonRepostImplCopyWith<_$ReasonRepostImpl> get copyWith =>

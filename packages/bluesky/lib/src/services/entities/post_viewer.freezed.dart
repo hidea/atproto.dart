@@ -27,7 +27,11 @@ mixin _$PostViewer {
   @JsonKey(name: 'replyDisabled')
   bool get isReplyDisabled => throw _privateConstructorUsedError;
 
+  /// Serializes this PostViewer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of PostViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PostViewerCopyWith<PostViewer> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$PostViewerCopyWithImpl<$Res, $Val extends PostViewer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PostViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +107,8 @@ class __$$PostViewerImplCopyWithImpl<$Res>
       _$PostViewerImpl _value, $Res Function(_$PostViewerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PostViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -168,6 +176,8 @@ class _$PostViewerImpl extends _PostViewer {
   @override
   int get hashCode => Object.hash(runtimeType, repost, like, isReplyDisabled);
 
+  /// Create a copy of PostViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -202,6 +212,9 @@ abstract class _PostViewer extends PostViewer {
   @override
   @JsonKey(name: 'replyDisabled')
   bool get isReplyDisabled;
+
+  /// Create a copy of PostViewer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PostViewerImplCopyWith<_$PostViewerImpl> get copyWith =>

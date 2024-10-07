@@ -26,7 +26,11 @@ mixin _$StrongRefParam {
   DateTime? get createdAt => throw _privateConstructorUsedError;
   Map<String, dynamic> get unspecced => throw _privateConstructorUsedError;
 
+  /// Serializes this StrongRefParam to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of StrongRefParam
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $StrongRefParamCopyWith<StrongRefParam> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$StrongRefParamCopyWithImpl<$Res, $Val extends StrongRefParam>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StrongRefParam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -107,6 +113,8 @@ class __$$StrongRefParamImplCopyWithImpl<$Res>
       _$StrongRefParamImpl _value, $Res Function(_$StrongRefParamImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StrongRefParam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -189,6 +197,8 @@ class _$StrongRefParamImpl implements _StrongRefParam {
   int get hashCode => Object.hash(runtimeType, cid, uri, createdAt,
       const DeepCollectionEquality().hash(_unspecced));
 
+  /// Create a copy of StrongRefParam
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -223,6 +233,9 @@ abstract class _StrongRefParam implements StrongRefParam {
   DateTime? get createdAt;
   @override
   Map<String, dynamic> get unspecced;
+
+  /// Create a copy of StrongRefParam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$StrongRefParamImplCopyWith<_$StrongRefParamImpl> get copyWith =>

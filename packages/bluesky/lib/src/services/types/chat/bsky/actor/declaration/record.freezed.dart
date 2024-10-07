@@ -22,7 +22,11 @@ DeclarationRecord _$DeclarationRecordFromJson(Map<String, dynamic> json) {
 mixin _$DeclarationRecord {
   String get allowIncoming => throw _privateConstructorUsedError;
 
+  /// Serializes this DeclarationRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of DeclarationRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $DeclarationRecordCopyWith<DeclarationRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$DeclarationRecordCopyWithImpl<$Res, $Val extends DeclarationRecord>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeclarationRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$DeclarationRecordImplCopyWithImpl<$Res>
       $Res Function(_$DeclarationRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeclarationRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,6 +132,8 @@ class _$DeclarationRecordImpl implements _DeclarationRecord {
   @override
   int get hashCode => Object.hash(runtimeType, allowIncoming);
 
+  /// Create a copy of DeclarationRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -148,6 +158,9 @@ abstract class _DeclarationRecord implements DeclarationRecord {
 
   @override
   String get allowIncoming;
+
+  /// Create a copy of DeclarationRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$DeclarationRecordImplCopyWith<_$DeclarationRecordImpl> get copyWith =>

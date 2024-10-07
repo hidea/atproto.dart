@@ -23,7 +23,11 @@ mixin _$LabelerServices {
   @labelerServiceViewConverter
   List<LabelerServiceView> get views => throw _privateConstructorUsedError;
 
+  /// Serializes this LabelerServices to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelerServices
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelerServicesCopyWith<LabelerServices> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$LabelerServicesCopyWithImpl<$Res, $Val extends LabelerServices>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelerServices
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$LabelerServicesImplCopyWithImpl<$Res>
       _$LabelerServicesImpl _value, $Res Function(_$LabelerServicesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelerServices
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -134,6 +142,8 @@ class _$LabelerServicesImpl implements _LabelerServices {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_views));
 
+  /// Create a copy of LabelerServices
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -160,6 +170,9 @@ abstract class _LabelerServices implements LabelerServices {
   @override
   @labelerServiceViewConverter
   List<LabelerServiceView> get views;
+
+  /// Create a copy of LabelerServices
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelerServicesImplCopyWith<_$LabelerServicesImpl> get copyWith =>

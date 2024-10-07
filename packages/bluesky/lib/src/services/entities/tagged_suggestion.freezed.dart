@@ -24,7 +24,11 @@ mixin _$TaggedSuggestion {
   SubjectType get subjectType => throw _privateConstructorUsedError;
   String get subject => throw _privateConstructorUsedError;
 
+  /// Serializes this TaggedSuggestion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of TaggedSuggestion
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $TaggedSuggestionCopyWith<TaggedSuggestion> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$TaggedSuggestionCopyWithImpl<$Res, $Val extends TaggedSuggestion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TaggedSuggestion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -92,6 +98,8 @@ class __$$TaggedSuggestionImplCopyWithImpl<$Res>
       $Res Function(_$TaggedSuggestionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TaggedSuggestion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,6 +161,8 @@ class _$TaggedSuggestionImpl implements _TaggedSuggestion {
   @override
   int get hashCode => Object.hash(runtimeType, tag, subjectType, subject);
 
+  /// Create a copy of TaggedSuggestion
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -183,6 +193,9 @@ abstract class _TaggedSuggestion implements TaggedSuggestion {
   SubjectType get subjectType;
   @override
   String get subject;
+
+  /// Create a copy of TaggedSuggestion
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$TaggedSuggestionImplCopyWith<_$TaggedSuggestionImpl> get copyWith =>

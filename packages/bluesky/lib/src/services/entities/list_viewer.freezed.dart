@@ -25,7 +25,11 @@ mixin _$ListViewer {
   @AtUriConverter()
   AtUri? get blocked => throw _privateConstructorUsedError;
 
+  /// Serializes this ListViewer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ListViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ListViewerCopyWith<ListViewer> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$ListViewerCopyWithImpl<$Res, $Val extends ListViewer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ListViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -90,6 +96,8 @@ class __$$ListViewerImplCopyWithImpl<$Res>
       _$ListViewerImpl _value, $Res Function(_$ListViewerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ListViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -146,6 +154,8 @@ class _$ListViewerImpl extends _ListViewer {
   @override
   int get hashCode => Object.hash(runtimeType, isMuted, blocked);
 
+  /// Create a copy of ListViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -175,6 +185,9 @@ abstract class _ListViewer extends ListViewer {
   @override
   @AtUriConverter()
   AtUri? get blocked;
+
+  /// Create a copy of ListViewer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ListViewerImplCopyWith<_$ListViewerImpl> get copyWith =>

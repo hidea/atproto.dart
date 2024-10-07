@@ -25,7 +25,11 @@ mixin _$LexBlob {
   List<String>? get accept => throw _privateConstructorUsedError;
   int? get maxSize => throw _privateConstructorUsedError;
 
+  /// Serializes this LexBlob to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexBlob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexBlobCopyWith<LexBlob> get copyWith => throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$LexBlobCopyWithImpl<$Res, $Val extends LexBlob>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexBlob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +103,8 @@ class __$$LexBlobImplCopyWithImpl<$Res>
       _$LexBlobImpl _value, $Res Function(_$LexBlobImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexBlob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -180,6 +188,8 @@ class _$LexBlobImpl implements _LexBlob {
   int get hashCode => Object.hash(runtimeType, type, description,
       const DeepCollectionEquality().hash(_accept), maxSize);
 
+  /// Create a copy of LexBlob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -211,6 +221,9 @@ abstract class _LexBlob implements LexBlob {
   List<String>? get accept;
   @override
   int? get maxSize;
+
+  /// Create a copy of LexBlob
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexBlobImplCopyWith<_$LexBlobImpl> get copyWith =>

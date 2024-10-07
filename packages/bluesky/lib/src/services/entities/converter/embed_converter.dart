@@ -11,6 +11,7 @@ import '../../../ids.g.dart' as ids;
 import '../embed.dart';
 import '../embed_external.dart';
 import '../embed_images.dart';
+import '../embed_video.dart';
 import '../embed_record.dart';
 import '../embed_record_with_media.dart';
 
@@ -34,6 +35,10 @@ final class _EmbedConverter
         return Embed.images(
           data: EmbedImages.fromJson(json),
         );
+      } else if (type == ids.appBskyEmbedVideo) {
+        return Embed.video(
+          data: EmbedVideo.fromJson(json),
+        );
       } else if (type == ids.appBskyEmbedExternal) {
         return Embed.external(
           data: EmbedExternal.fromJson(json),
@@ -54,6 +59,7 @@ final class _EmbedConverter
   Map<String, dynamic> toJson(Embed object) => object.when(
         record: (data) => data.toJson(),
         images: (data) => data.toJson(),
+        video: (data) => data.toJson(),
         external: (data) => data.toJson(),
         recordWithMedia: (data) => data.toJson(),
         unknown: (data) => data,

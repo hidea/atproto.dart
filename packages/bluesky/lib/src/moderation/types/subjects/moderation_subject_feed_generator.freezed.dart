@@ -51,6 +51,8 @@ mixin _$ModerationSubjectFeedGenerator {
   }) =>
       throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationSubjectFeedGeneratorCopyWith<ModerationSubjectFeedGenerator>
       get copyWith => throw _privateConstructorUsedError;
@@ -80,6 +82,8 @@ class _$ModerationSubjectFeedGeneratorCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +97,8 @@ class _$ModerationSubjectFeedGeneratorCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FeedGeneratorViewCopyWith<$Res> get data {
@@ -127,6 +133,8 @@ class __$$UModerationSubjectFeedGeneratorImplCopyWithImpl<$Res>
       $Res Function(_$UModerationSubjectFeedGeneratorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -166,6 +174,8 @@ class _$UModerationSubjectFeedGeneratorImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -240,6 +250,9 @@ abstract class UModerationSubjectFeedGenerator
 
   @override
   FeedGeneratorView get data;
+
+  /// Create a copy of ModerationSubjectFeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$UModerationSubjectFeedGeneratorImplCopyWith<

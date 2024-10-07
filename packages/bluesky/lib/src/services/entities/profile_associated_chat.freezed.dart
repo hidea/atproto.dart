@@ -25,7 +25,11 @@ mixin _$ActorProfileAssociatedChat {
   String get type => throw _privateConstructorUsedError;
   String get allowIncoming => throw _privateConstructorUsedError;
 
+  /// Serializes this ActorProfileAssociatedChat to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ActorProfileAssociatedChat
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ActorProfileAssociatedChatCopyWith<ActorProfileAssociatedChat>
       get copyWith => throw _privateConstructorUsedError;
@@ -52,6 +56,8 @@ class _$ActorProfileAssociatedChatCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ActorProfileAssociatedChat
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class __$$ActorProfileAssociatedChatImplCopyWithImpl<$Res>
       $Res Function(_$ActorProfileAssociatedChatImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ActorProfileAssociatedChat
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +157,8 @@ class _$ActorProfileAssociatedChatImpl implements _ActorProfileAssociatedChat {
   @override
   int get hashCode => Object.hash(runtimeType, type, allowIncoming);
 
+  /// Create a copy of ActorProfileAssociatedChat
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -178,6 +188,9 @@ abstract class _ActorProfileAssociatedChat
   String get type;
   @override
   String get allowIncoming;
+
+  /// Create a copy of ActorProfileAssociatedChat
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ActorProfileAssociatedChatImplCopyWith<_$ActorProfileAssociatedChatImpl>

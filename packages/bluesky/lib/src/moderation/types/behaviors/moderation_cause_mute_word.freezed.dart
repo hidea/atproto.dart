@@ -20,6 +20,8 @@ mixin _$ModerationCauseMuteWord {
   int get priority => throw _privateConstructorUsedError;
   bool get downgraded => throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationCauseMuteWordCopyWith<ModerationCauseMuteWord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +49,8 @@ class _$ModerationCauseMuteWordCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -70,6 +74,8 @@ class _$ModerationCauseMuteWordCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseSourceCopyWith<$Res> get source {
@@ -104,6 +110,8 @@ class __$$ModerationCauseMuteWordImplCopyWithImpl<$Res>
       $Res Function(_$ModerationCauseMuteWordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -163,6 +171,8 @@ class _$ModerationCauseMuteWordImpl implements _ModerationCauseMuteWord {
   @override
   int get hashCode => Object.hash(runtimeType, source, priority, downgraded);
 
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -183,6 +193,9 @@ abstract class _ModerationCauseMuteWord implements ModerationCauseMuteWord {
   int get priority;
   @override
   bool get downgraded;
+
+  /// Create a copy of ModerationCauseMuteWord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ModerationCauseMuteWordImplCopyWith<_$ModerationCauseMuteWordImpl>

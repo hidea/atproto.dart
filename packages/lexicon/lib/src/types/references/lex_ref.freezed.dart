@@ -24,7 +24,11 @@ mixin _$LexRef {
   String? get description => throw _privateConstructorUsedError;
   String? get ref => throw _privateConstructorUsedError;
 
+  /// Serializes this LexRef to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexRef
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexRefCopyWith<LexRef> get copyWith => throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$LexRefCopyWithImpl<$Res, $Val extends LexRef>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +95,8 @@ class __$$LexRefImplCopyWithImpl<$Res>
       _$LexRefImpl _value, $Res Function(_$LexRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,6 +158,8 @@ class _$LexRefImpl implements _LexRef {
   @override
   int get hashCode => Object.hash(runtimeType, type, description, ref);
 
+  /// Create a copy of LexRef
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -178,6 +188,9 @@ abstract class _LexRef implements LexRef {
   String? get description;
   @override
   String? get ref;
+
+  /// Create a copy of LexRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexRefImplCopyWith<_$LexRefImpl> get copyWith =>

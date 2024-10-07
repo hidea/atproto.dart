@@ -29,7 +29,11 @@ mixin _$EmbedViewExternalView {
   @JsonKey(name: 'thumb')
   String? get thumbnail => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedViewExternalView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedViewExternalView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedViewExternalViewCopyWith<EmbedViewExternalView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$EmbedViewExternalViewCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedViewExternalView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -120,6 +126,8 @@ class __$$EmbedViewExternalViewImplCopyWithImpl<$Res>
       $Res Function(_$EmbedViewExternalViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedViewExternalView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -205,6 +213,8 @@ class _$EmbedViewExternalViewImpl implements _EmbedViewExternalView {
   int get hashCode =>
       Object.hash(runtimeType, type, uri, title, description, thumbnail);
 
+  /// Create a copy of EmbedViewExternalView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -244,6 +254,9 @@ abstract class _EmbedViewExternalView implements EmbedViewExternalView {
   @override
   @JsonKey(name: 'thumb')
   String? get thumbnail;
+
+  /// Create a copy of EmbedViewExternalView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedViewExternalViewImplCopyWith<_$EmbedViewExternalViewImpl>

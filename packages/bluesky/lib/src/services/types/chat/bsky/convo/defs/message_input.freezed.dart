@@ -25,7 +25,11 @@ mixin _$MessageInput {
   @unionConvoMessageEmbedConverter
   UConvoMessageEmbed? get embed => throw _privateConstructorUsedError;
 
+  /// Serializes this MessageInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $MessageInputCopyWith<MessageInput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$MessageInputCopyWithImpl<$Res, $Val extends MessageInput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -78,6 +84,8 @@ class _$MessageInputCopyWithImpl<$Res, $Val extends MessageInput>
     ) as $Val);
   }
 
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UConvoMessageEmbedCopyWith<$Res>? get embed {
@@ -116,6 +124,8 @@ class __$$MessageInputImplCopyWithImpl<$Res>
       _$MessageInputImpl _value, $Res Function(_$MessageInputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -189,6 +199,8 @@ class _$MessageInputImpl implements _MessageInput {
   int get hashCode => Object.hash(
       runtimeType, text, const DeepCollectionEquality().hash(_facets), embed);
 
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -220,6 +232,9 @@ abstract class _MessageInput implements MessageInput {
   @override
   @unionConvoMessageEmbedConverter
   UConvoMessageEmbed? get embed;
+
+  /// Create a copy of MessageInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$MessageInputImplCopyWith<_$MessageInputImpl> get copyWith =>

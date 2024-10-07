@@ -23,7 +23,11 @@ mixin _$FeedGeneratorViewer {
   @AtUriConverter()
   AtUri? get like => throw _privateConstructorUsedError;
 
+  /// Serializes this FeedGeneratorViewer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FeedGeneratorViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FeedGeneratorViewerCopyWith<FeedGeneratorViewer> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$FeedGeneratorViewerCopyWithImpl<$Res, $Val extends FeedGeneratorViewer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FeedGeneratorViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$FeedGeneratorViewerImplCopyWithImpl<$Res>
       $Res Function(_$FeedGeneratorViewerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FeedGeneratorViewer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -125,6 +133,8 @@ class _$FeedGeneratorViewerImpl implements _FeedGeneratorViewer {
   @override
   int get hashCode => Object.hash(runtimeType, like);
 
+  /// Create a copy of FeedGeneratorViewer
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -150,6 +160,9 @@ abstract class _FeedGeneratorViewer implements FeedGeneratorViewer {
   @override
   @AtUriConverter()
   AtUri? get like;
+
+  /// Create a copy of FeedGeneratorViewer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FeedGeneratorViewerImplCopyWith<_$FeedGeneratorViewerImpl> get copyWith =>

@@ -24,7 +24,11 @@ mixin _$Service {
   String get type => throw _privateConstructorUsedError;
   String get serviceEndpoint => throw _privateConstructorUsedError;
 
+  /// Serializes this Service to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Service
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ServiceCopyWith<Service> get copyWith => throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$ServiceCopyWithImpl<$Res, $Val extends Service>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Service
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +95,8 @@ class __$$ServiceImplCopyWithImpl<$Res>
       _$ServiceImpl _value, $Res Function(_$ServiceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Service
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,6 +158,8 @@ class _$ServiceImpl implements _Service {
   @override
   int get hashCode => Object.hash(runtimeType, id, type, serviceEndpoint);
 
+  /// Create a copy of Service
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -178,6 +188,9 @@ abstract class _Service implements Service {
   String get type;
   @override
   String get serviceEndpoint;
+
+  /// Create a copy of Service
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ServiceImplCopyWith<_$ServiceImpl> get copyWith =>

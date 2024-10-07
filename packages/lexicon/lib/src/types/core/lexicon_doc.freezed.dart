@@ -28,7 +28,11 @@ mixin _$LexiconDoc {
   @lexUserTypeConverter
   Map<String, LexUserType> get defs => throw _privateConstructorUsedError;
 
+  /// Serializes this LexiconDoc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexiconDoc
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexiconDocCopyWith<LexiconDoc> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,6 +62,8 @@ class _$LexiconDocCopyWithImpl<$Res, $Val extends LexiconDoc>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexiconDoc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -116,6 +122,8 @@ class __$$LexiconDocImplCopyWithImpl<$Res>
       _$LexiconDocImpl _value, $Res Function(_$LexiconDocImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexiconDoc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -207,6 +215,8 @@ class _$LexiconDocImpl implements _LexiconDoc {
   int get hashCode => Object.hash(runtimeType, lexicon, id, revision,
       description, const DeepCollectionEquality().hash(_defs));
 
+  /// Create a copy of LexiconDoc
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -245,6 +255,9 @@ abstract class _LexiconDoc implements LexiconDoc {
   @override
   @lexUserTypeConverter
   Map<String, LexUserType> get defs;
+
+  /// Create a copy of LexiconDoc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexiconDocImplCopyWith<_$LexiconDocImpl> get copyWith =>

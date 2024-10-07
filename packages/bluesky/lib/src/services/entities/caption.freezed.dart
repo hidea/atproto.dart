@@ -29,7 +29,7 @@ mixin _$Caption {
 
   /// Create a copy of Caption
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $CaptionCopyWith<Caption> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -156,13 +156,13 @@ class _$CaptionImpl implements _Caption {
             (identical(other.file, file) || other.file == file));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, lang, file);
 
   /// Create a copy of Caption
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CaptionImplCopyWith<_$CaptionImpl> get copyWith =>
@@ -192,7 +192,7 @@ abstract class _Caption implements Caption {
   /// Create a copy of Caption
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CaptionImplCopyWith<_$CaptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

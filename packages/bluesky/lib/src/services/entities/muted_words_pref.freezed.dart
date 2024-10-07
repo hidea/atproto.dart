@@ -24,7 +24,11 @@ mixin _$MutedWordsPref {
   String get type => throw _privateConstructorUsedError;
   List<MutedWord> get items => throw _privateConstructorUsedError;
 
+  /// Serializes this MutedWordsPref to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of MutedWordsPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $MutedWordsPrefCopyWith<MutedWordsPref> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$MutedWordsPrefCopyWithImpl<$Res, $Val extends MutedWordsPref>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MutedWordsPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$MutedWordsPrefImplCopyWithImpl<$Res>
       _$MutedWordsPrefImpl _value, $Res Function(_$MutedWordsPrefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MutedWordsPref
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +155,8 @@ class _$MutedWordsPrefImpl implements _MutedWordsPref {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_items));
 
+  /// Create a copy of MutedWordsPref
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -175,6 +185,9 @@ abstract class _MutedWordsPref implements MutedWordsPref {
   String get type;
   @override
   List<MutedWord> get items;
+
+  /// Create a copy of MutedWordsPref
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$MutedWordsPrefImplCopyWith<_$MutedWordsPrefImpl> get copyWith =>

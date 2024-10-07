@@ -28,7 +28,11 @@ mixin _$EmbedViewImagesView {
   String get alt => throw _privateConstructorUsedError;
   ImageAspectRatio? get aspectRatio => throw _privateConstructorUsedError;
 
+  /// Serializes this EmbedViewImagesView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $EmbedViewImagesViewCopyWith<EmbedViewImagesView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -60,6 +64,8 @@ class _$EmbedViewImagesViewCopyWithImpl<$Res, $Val extends EmbedViewImagesView>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class _$EmbedViewImagesViewCopyWithImpl<$Res, $Val extends EmbedViewImagesView>
     ) as $Val);
   }
 
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ImageAspectRatioCopyWith<$Res>? get aspectRatio {
@@ -133,6 +141,8 @@ class __$$EmbedViewImagesViewImplCopyWithImpl<$Res>
       $Res Function(_$EmbedViewImagesViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -218,6 +228,8 @@ class _$EmbedViewImagesViewImpl implements _EmbedViewImagesView {
   int get hashCode =>
       Object.hash(runtimeType, type, thumbnail, fullsize, alt, aspectRatio);
 
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -256,6 +268,9 @@ abstract class _EmbedViewImagesView implements EmbedViewImagesView {
   String get alt;
   @override
   ImageAspectRatio? get aspectRatio;
+
+  /// Create a copy of EmbedViewImagesView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$EmbedViewImagesViewImplCopyWith<_$EmbedViewImagesViewImpl> get copyWith =>

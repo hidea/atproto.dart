@@ -23,7 +23,11 @@ GetConvoForMembersOutput _$GetConvoForMembersOutputFromJson(
 mixin _$GetConvoForMembersOutput {
   ConvoView get convo => throw _privateConstructorUsedError;
 
+  /// Serializes this GetConvoForMembersOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $GetConvoForMembersOutputCopyWith<GetConvoForMembersOutput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$GetConvoForMembersOutputCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -64,6 +70,8 @@ class _$GetConvoForMembersOutputCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ConvoViewCopyWith<$Res> get convo {
@@ -98,6 +106,8 @@ class __$$GetConvoForMembersOutputImplCopyWithImpl<$Res>
       $Res Function(_$GetConvoForMembersOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,6 +151,8 @@ class _$GetConvoForMembersOutputImpl implements _GetConvoForMembersOutput {
   @override
   int get hashCode => Object.hash(runtimeType, convo);
 
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -165,6 +177,9 @@ abstract class _GetConvoForMembersOutput implements GetConvoForMembersOutput {
 
   @override
   ConvoView get convo;
+
+  /// Create a copy of GetConvoForMembersOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$GetConvoForMembersOutputImplCopyWith<_$GetConvoForMembersOutputImpl>

@@ -28,7 +28,11 @@ mixin _$ThreadViewPreference {
   @JsonKey(name: 'lab_treeViewEnabled')
   bool get treeViewEnabled => throw _privateConstructorUsedError;
 
+  /// Serializes this ThreadViewPreference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ThreadViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ThreadViewPreferenceCopyWith<ThreadViewPreference> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,6 +62,8 @@ class _$ThreadViewPreferenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ThreadViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -110,6 +116,8 @@ class __$$ThreadViewPreferenceImplCopyWithImpl<$Res>
       $Res Function(_$ThreadViewPreferenceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ThreadViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -189,6 +197,8 @@ class _$ThreadViewPreferenceImpl implements _ThreadViewPreference {
   int get hashCode => Object.hash(
       runtimeType, type, sort, isPrioritizeFollowedUsers, treeViewEnabled);
 
+  /// Create a copy of ThreadViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -228,6 +238,9 @@ abstract class _ThreadViewPreference implements ThreadViewPreference {
   @override
   @JsonKey(name: 'lab_treeViewEnabled')
   bool get treeViewEnabled;
+
+  /// Create a copy of ThreadViewPreference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ThreadViewPreferenceImplCopyWith<_$ThreadViewPreferenceImpl>

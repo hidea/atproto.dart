@@ -24,7 +24,11 @@ mixin _$RecordBlob {
   @AtUriConverter()
   AtUri get recordUri => throw _privateConstructorUsedError;
 
+  /// Serializes this RecordBlob to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RecordBlob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $RecordBlobCopyWith<RecordBlob> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$RecordBlobCopyWithImpl<$Res, $Val extends RecordBlob>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RecordBlob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$RecordBlobImplCopyWithImpl<$Res>
       _$RecordBlobImpl _value, $Res Function(_$RecordBlobImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RecordBlob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,6 +149,8 @@ class _$RecordBlobImpl implements _RecordBlob {
   @override
   int get hashCode => Object.hash(runtimeType, cid, recordUri);
 
+  /// Create a copy of RecordBlob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -168,6 +178,9 @@ abstract class _RecordBlob implements RecordBlob {
   @override
   @AtUriConverter()
   AtUri get recordUri;
+
+  /// Create a copy of RecordBlob
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$RecordBlobImplCopyWith<_$RecordBlobImpl> get copyWith =>

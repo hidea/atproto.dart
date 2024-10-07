@@ -22,7 +22,11 @@ ActorsTypeahead _$ActorsTypeaheadFromJson(Map<String, dynamic> json) {
 mixin _$ActorsTypeahead {
   List<ActorBasic> get actors => throw _privateConstructorUsedError;
 
+  /// Serializes this ActorsTypeahead to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ActorsTypeahead
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ActorsTypeaheadCopyWith<ActorsTypeahead> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$ActorsTypeaheadCopyWithImpl<$Res, $Val extends ActorsTypeahead>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ActorsTypeahead
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$ActorsTypeaheadImplCopyWithImpl<$Res>
       _$ActorsTypeaheadImpl _value, $Res Function(_$ActorsTypeaheadImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ActorsTypeahead
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -129,6 +137,8 @@ class _$ActorsTypeaheadImpl implements _ActorsTypeahead {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_actors));
 
+  /// Create a copy of ActorsTypeahead
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -153,6 +163,9 @@ abstract class _ActorsTypeahead implements ActorsTypeahead {
 
   @override
   List<ActorBasic> get actors;
+
+  /// Create a copy of ActorsTypeahead
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ActorsTypeaheadImplCopyWith<_$ActorsTypeaheadImpl> get copyWith =>

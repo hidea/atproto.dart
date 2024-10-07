@@ -24,7 +24,11 @@ mixin _$FeedGenerator {
   bool get isOnline => throw _privateConstructorUsedError;
   bool get isValid => throw _privateConstructorUsedError;
 
+  /// Serializes this FeedGenerator to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FeedGeneratorCopyWith<FeedGenerator> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$FeedGeneratorCopyWithImpl<$Res, $Val extends FeedGenerator>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -74,6 +80,8 @@ class _$FeedGeneratorCopyWithImpl<$Res, $Val extends FeedGenerator>
     ) as $Val);
   }
 
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FeedGeneratorViewCopyWith<$Res> get view {
@@ -105,6 +113,8 @@ class __$$FeedGeneratorImplCopyWithImpl<$Res>
       _$FeedGeneratorImpl _value, $Res Function(_$FeedGeneratorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -168,6 +178,8 @@ class _$FeedGeneratorImpl implements _FeedGenerator {
   @override
   int get hashCode => Object.hash(runtimeType, view, isOnline, isValid);
 
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -197,6 +209,9 @@ abstract class _FeedGenerator implements FeedGenerator {
   bool get isOnline;
   @override
   bool get isValid;
+
+  /// Create a copy of FeedGenerator
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FeedGeneratorImplCopyWith<_$FeedGeneratorImpl> get copyWith =>

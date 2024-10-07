@@ -36,7 +36,11 @@ mixin _$Commit {
   @JsonKey(name: 'time')
   DateTime get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this Commit to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Commit
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $CommitCopyWith<Commit> get copyWith => throw _privateConstructorUsedError;
 }
@@ -66,6 +70,8 @@ class _$CommitCopyWithImpl<$Res, $Val extends Commit>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Commit
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -135,6 +141,8 @@ class __$$CommitImplCopyWithImpl<$Res>
       _$CommitImpl _value, $Res Function(_$CommitImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Commit
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -258,6 +266,8 @@ class _$CommitImpl implements _Commit {
       isTooBig,
       createdAt);
 
+  /// Create a copy of Commit
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -292,13 +302,13 @@ abstract class _Commit implements Commit {
   @override
   @JsonKey(name: 'seq')
   int get cursor;
-  @override
 
   /// The rev of the emitted commit.
-  String get rev;
   @override
+  String get rev;
 
   /// The rev of the last emitted commit from this repo.
+  @override
   String? get since;
   @override
   @JsonKey(name: 'tooBig')
@@ -306,6 +316,9 @@ abstract class _Commit implements Commit {
   @override
   @JsonKey(name: 'time')
   DateTime get createdAt;
+
+  /// Create a copy of Commit
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$CommitImplCopyWith<_$CommitImpl> get copyWith =>

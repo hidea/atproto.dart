@@ -23,7 +23,11 @@ mixin _$SkeletonFeed {
   List<SkeletonFeedView> get feed => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this SkeletonFeed to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SkeletonFeed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SkeletonFeedCopyWith<SkeletonFeed> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$SkeletonFeedCopyWithImpl<$Res, $Val extends SkeletonFeed>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SkeletonFeed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$SkeletonFeedImplCopyWithImpl<$Res>
       _$SkeletonFeedImpl _value, $Res Function(_$SkeletonFeedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SkeletonFeed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -146,6 +154,8 @@ class _$SkeletonFeedImpl implements _SkeletonFeed {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_feed), cursor);
 
+  /// Create a copy of SkeletonFeed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -172,6 +182,9 @@ abstract class _SkeletonFeed implements SkeletonFeed {
   List<SkeletonFeedView> get feed;
   @override
   String? get cursor;
+
+  /// Create a copy of SkeletonFeed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SkeletonFeedImplCopyWith<_$SkeletonFeedImpl> get copyWith =>

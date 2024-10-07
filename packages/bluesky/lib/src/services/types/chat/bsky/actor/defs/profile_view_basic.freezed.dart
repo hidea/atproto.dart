@@ -29,7 +29,11 @@ mixin _$ProfileViewBasic {
   List<Label>? get labels => throw _privateConstructorUsedError;
   bool get chatDisabled => throw _privateConstructorUsedError;
 
+  /// Serializes this ProfileViewBasic to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ProfileViewBasicCopyWith<ProfileViewBasic> get copyWith =>
       throw _privateConstructorUsedError;
@@ -65,6 +69,8 @@ class _$ProfileViewBasicCopyWithImpl<$Res, $Val extends ProfileViewBasic>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -113,6 +119,8 @@ class _$ProfileViewBasicCopyWithImpl<$Res, $Val extends ProfileViewBasic>
     ) as $Val);
   }
 
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ProfileAssociatedCopyWith<$Res>? get associated {
@@ -125,6 +133,8 @@ class _$ProfileViewBasicCopyWithImpl<$Res, $Val extends ProfileViewBasic>
     });
   }
 
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorViewerCopyWith<$Res> get viewer {
@@ -166,6 +176,8 @@ class __$$ProfileViewBasicImplCopyWithImpl<$Res>
       $Res Function(_$ProfileViewBasicImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -296,6 +308,8 @@ class _$ProfileViewBasicImpl implements _ProfileViewBasic {
       const DeepCollectionEquality().hash(_labels),
       chatDisabled);
 
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -341,6 +355,9 @@ abstract class _ProfileViewBasic implements ProfileViewBasic {
   List<Label>? get labels;
   @override
   bool get chatDisabled;
+
+  /// Create a copy of ProfileViewBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ProfileViewBasicImplCopyWith<_$ProfileViewBasicImpl> get copyWith =>

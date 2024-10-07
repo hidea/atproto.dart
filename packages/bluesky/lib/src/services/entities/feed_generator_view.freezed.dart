@@ -38,7 +38,11 @@ mixin _$FeedGeneratorView {
   FeedGeneratorViewer get viewer => throw _privateConstructorUsedError;
   DateTime get indexedAt => throw _privateConstructorUsedError;
 
+  /// Serializes this FeedGeneratorView to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $FeedGeneratorViewCopyWith<FeedGeneratorView> get copyWith =>
       throw _privateConstructorUsedError;
@@ -80,6 +84,8 @@ class _$FeedGeneratorViewCopyWithImpl<$Res, $Val extends FeedGeneratorView>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,6 +164,8 @@ class _$FeedGeneratorViewCopyWithImpl<$Res, $Val extends FeedGeneratorView>
     ) as $Val);
   }
 
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get createdBy {
@@ -166,6 +174,8 @@ class _$FeedGeneratorViewCopyWithImpl<$Res, $Val extends FeedGeneratorView>
     });
   }
 
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FeedGeneratorViewerCopyWith<$Res> get viewer {
@@ -213,6 +223,8 @@ class __$$FeedGeneratorViewImplCopyWithImpl<$Res>
       $Res Function(_$FeedGeneratorViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -421,6 +433,8 @@ class _$FeedGeneratorViewImpl implements _FeedGeneratorView {
       viewer,
       indexedAt);
 
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -487,6 +501,9 @@ abstract class _FeedGeneratorView implements FeedGeneratorView {
   FeedGeneratorViewer get viewer;
   @override
   DateTime get indexedAt;
+
+  /// Create a copy of FeedGeneratorView
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$FeedGeneratorViewImplCopyWith<_$FeedGeneratorViewImpl> get copyWith =>

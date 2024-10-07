@@ -30,7 +30,11 @@ mixin _$LabelerViewDetailed {
   LabelerViewerState get viewer => throw _privateConstructorUsedError;
   DateTime get indexedAt => throw _privateConstructorUsedError;
 
+  /// Serializes this LabelerViewDetailed to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelerViewDetailedCopyWith<LabelerViewDetailed> get copyWith =>
       throw _privateConstructorUsedError;
@@ -67,6 +71,8 @@ class _$LabelerViewDetailedCopyWithImpl<$Res, $Val extends LabelerViewDetailed>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -115,6 +121,8 @@ class _$LabelerViewDetailedCopyWithImpl<$Res, $Val extends LabelerViewDetailed>
     ) as $Val);
   }
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorCopyWith<$Res> get creator {
@@ -123,6 +131,8 @@ class _$LabelerViewDetailedCopyWithImpl<$Res, $Val extends LabelerViewDetailed>
     });
   }
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelerPoliciesCopyWith<$Res> get policies {
@@ -131,6 +141,8 @@ class _$LabelerViewDetailedCopyWithImpl<$Res, $Val extends LabelerViewDetailed>
     });
   }
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelerViewerStateCopyWith<$Res> get viewer {
@@ -174,6 +186,8 @@ class __$$LabelerViewDetailedImplCopyWithImpl<$Res>
       $Res Function(_$LabelerViewDetailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -305,6 +319,8 @@ class _$LabelerViewDetailedImpl implements _LabelerViewDetailed {
       viewer,
       indexedAt);
 
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -351,6 +367,9 @@ abstract class _LabelerViewDetailed implements LabelerViewDetailed {
   LabelerViewerState get viewer;
   @override
   DateTime get indexedAt;
+
+  /// Create a copy of LabelerViewDetailed
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelerViewDetailedImplCopyWith<_$LabelerViewDetailedImpl> get copyWith =>

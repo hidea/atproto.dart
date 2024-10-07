@@ -22,7 +22,11 @@ Instance _$InstanceFromJson(Map<String, dynamic> json) {
 mixin _$Instance {
   String get version => throw _privateConstructorUsedError;
 
+  /// Serializes this Instance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Instance
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $InstanceCopyWith<Instance> get copyWith =>
       throw _privateConstructorUsedError;
@@ -46,6 +50,8 @@ class _$InstanceCopyWithImpl<$Res, $Val extends Instance>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Instance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -79,6 +85,8 @@ class __$$InstanceImplCopyWithImpl<$Res>
       _$InstanceImpl _value, $Res Function(_$InstanceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Instance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -122,6 +130,8 @@ class _$InstanceImpl implements _Instance {
   @override
   int get hashCode => Object.hash(runtimeType, version);
 
+  /// Create a copy of Instance
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -144,6 +154,9 @@ abstract class _Instance implements Instance {
 
   @override
   String get version;
+
+  /// Create a copy of Instance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$InstanceImplCopyWith<_$InstanceImpl> get copyWith =>

@@ -23,7 +23,11 @@ mixin _$ByteSlice {
   int get byteStart => throw _privateConstructorUsedError;
   int get byteEnd => throw _privateConstructorUsedError;
 
+  /// Serializes this ByteSlice to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ByteSlice
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ByteSliceCopyWith<ByteSlice> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$ByteSliceCopyWithImpl<$Res, $Val extends ByteSlice>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ByteSlice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +91,8 @@ class __$$ByteSliceImplCopyWithImpl<$Res>
       _$ByteSliceImpl _value, $Res Function(_$ByteSliceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ByteSlice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,6 +144,8 @@ class _$ByteSliceImpl implements _ByteSlice {
   @override
   int get hashCode => Object.hash(runtimeType, byteStart, byteEnd);
 
+  /// Create a copy of ByteSlice
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -162,6 +172,9 @@ abstract class _ByteSlice implements ByteSlice {
   int get byteStart;
   @override
   int get byteEnd;
+
+  /// Create a copy of ByteSlice
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ByteSliceImplCopyWith<_$ByteSliceImpl> get copyWith =>

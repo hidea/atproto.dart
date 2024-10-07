@@ -51,6 +51,8 @@ mixin _$ModerationSubjectNotification {
   }) =>
       throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationSubjectNotificationCopyWith<ModerationSubjectNotification>
       get copyWith => throw _privateConstructorUsedError;
@@ -80,6 +82,8 @@ class _$ModerationSubjectNotificationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +97,8 @@ class _$ModerationSubjectNotificationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NotificationCopyWith<$Res> get data {
@@ -127,6 +133,8 @@ class __$$UModerationSubjectNotificationImplCopyWithImpl<$Res>
       $Res Function(_$UModerationSubjectNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -166,6 +174,8 @@ class _$UModerationSubjectNotificationImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -240,6 +250,9 @@ abstract class UModerationSubjectNotification
 
   @override
   Notification get data;
+
+  /// Create a copy of ModerationSubjectNotification
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$UModerationSubjectNotificationImplCopyWith<

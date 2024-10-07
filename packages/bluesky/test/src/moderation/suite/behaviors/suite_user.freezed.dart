@@ -27,7 +27,11 @@ mixin _$ModerationTestSuiteUser {
   bool get muted => throw _privateConstructorUsedError;
   bool get mutedByList => throw _privateConstructorUsedError;
 
+  /// Serializes this ModerationTestSuiteUser to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ModerationTestSuiteUser
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationTestSuiteUserCopyWith<ModerationTestSuiteUser> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,6 +62,8 @@ class _$ModerationTestSuiteUserCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationTestSuiteUser
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -119,6 +125,8 @@ class __$$ModerationTestSuiteUserImplCopyWithImpl<$Res>
       $Res Function(_$ModerationTestSuiteUserImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationTestSuiteUser
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -208,6 +216,8 @@ class _$ModerationTestSuiteUserImpl implements _ModerationTestSuiteUser {
   int get hashCode => Object.hash(
       runtimeType, blocking, blockingByList, blockedBy, muted, mutedByList);
 
+  /// Create a copy of ModerationTestSuiteUser
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -244,6 +254,9 @@ abstract class _ModerationTestSuiteUser implements ModerationTestSuiteUser {
   bool get muted;
   @override
   bool get mutedByList;
+
+  /// Create a copy of ModerationTestSuiteUser
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ModerationTestSuiteUserImplCopyWith<_$ModerationTestSuiteUserImpl>

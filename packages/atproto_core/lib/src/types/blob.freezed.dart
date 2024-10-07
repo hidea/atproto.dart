@@ -26,7 +26,11 @@ mixin _$Blob {
   int get size => throw _privateConstructorUsedError;
   BlobRef get ref => throw _privateConstructorUsedError;
 
+  /// Serializes this Blob to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $BlobCopyWith<Blob> get copyWith => throw _privateConstructorUsedError;
 }
@@ -51,6 +55,8 @@ class _$BlobCopyWithImpl<$Res, $Val extends Blob>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -79,6 +85,8 @@ class _$BlobCopyWithImpl<$Res, $Val extends Blob>
     ) as $Val);
   }
 
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BlobRefCopyWith<$Res> get ref {
@@ -108,6 +116,8 @@ class __$$BlobImplCopyWithImpl<$Res>
   __$$BlobImplCopyWithImpl(_$BlobImpl _value, $Res Function(_$BlobImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -180,6 +190,8 @@ class _$BlobImpl implements _Blob {
   @override
   int get hashCode => Object.hash(runtimeType, type, mimeType, size, ref);
 
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -212,6 +224,9 @@ abstract class _Blob implements Blob {
   int get size;
   @override
   BlobRef get ref;
+
+  /// Create a copy of Blob
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$BlobImplCopyWith<_$BlobImpl> get copyWith =>

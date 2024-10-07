@@ -28,7 +28,11 @@ mixin _$PostThreadViewRecord {
   @postThreadViewConverter
   List<PostThreadView>? get replies => throw _privateConstructorUsedError;
 
+  /// Serializes this PostThreadViewRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PostThreadViewRecordCopyWith<PostThreadViewRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -61,6 +65,8 @@ class _$PostThreadViewRecordCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +95,8 @@ class _$PostThreadViewRecordCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PostCopyWith<$Res> get post {
@@ -97,6 +105,8 @@ class _$PostThreadViewRecordCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PostThreadViewCopyWith<$Res>? get parent {
@@ -138,6 +148,8 @@ class __$$PostThreadViewRecordImplCopyWithImpl<$Res>
       $Res Function(_$PostThreadViewRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -220,6 +232,8 @@ class _$PostThreadViewRecordImpl implements _PostThreadViewRecord {
   int get hashCode => Object.hash(runtimeType, type, post, parent,
       const DeepCollectionEquality().hash(_replies));
 
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -258,6 +272,9 @@ abstract class _PostThreadViewRecord implements PostThreadViewRecord {
   @override
   @postThreadViewConverter
   List<PostThreadView>? get replies;
+
+  /// Create a copy of PostThreadViewRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PostThreadViewRecordImplCopyWith<_$PostThreadViewRecordImpl>

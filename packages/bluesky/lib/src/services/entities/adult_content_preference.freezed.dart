@@ -26,7 +26,11 @@ mixin _$AdultContentPreference {
   @JsonKey(name: 'enabled')
   bool get isEnabled => throw _privateConstructorUsedError;
 
+  /// Serializes this AdultContentPreference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of AdultContentPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $AdultContentPreferenceCopyWith<AdultContentPreference> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,6 +56,8 @@ class _$AdultContentPreferenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdultContentPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class __$$AdultContentPreferenceImplCopyWithImpl<$Res>
       $Res Function(_$AdultContentPreferenceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdultContentPreference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +157,8 @@ class _$AdultContentPreferenceImpl implements _AdultContentPreference {
   @override
   int get hashCode => Object.hash(runtimeType, type, isEnabled);
 
+  /// Create a copy of AdultContentPreference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -179,6 +189,9 @@ abstract class _AdultContentPreference implements AdultContentPreference {
   @override
   @JsonKey(name: 'enabled')
   bool get isEnabled;
+
+  /// Create a copy of AdultContentPreference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$AdultContentPreferenceImplCopyWith<_$AdultContentPreferenceImpl>

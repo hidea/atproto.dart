@@ -11,6 +11,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'converter/embed_converter.dart';
 import 'embed_external.dart';
 import 'embed_images.dart';
+import 'embed_video.dart';
 import 'embed_record.dart';
 import 'embed_record_with_media.dart';
 

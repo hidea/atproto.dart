@@ -23,7 +23,11 @@ mixin _$ServerInfoLinks {
   String? get privacyPolicy => throw _privateConstructorUsedError;
   String? get termsOfService => throw _privateConstructorUsedError;
 
+  /// Serializes this ServerInfoLinks to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ServerInfoLinks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ServerInfoLinksCopyWith<ServerInfoLinks> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$ServerInfoLinksCopyWithImpl<$Res, $Val extends ServerInfoLinks>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServerInfoLinks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$ServerInfoLinksImplCopyWithImpl<$Res>
       _$ServerInfoLinksImpl _value, $Res Function(_$ServerInfoLinksImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServerInfoLinks
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +147,8 @@ class _$ServerInfoLinksImpl implements _ServerInfoLinks {
   @override
   int get hashCode => Object.hash(runtimeType, privacyPolicy, termsOfService);
 
+  /// Create a copy of ServerInfoLinks
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -166,6 +176,9 @@ abstract class _ServerInfoLinks implements ServerInfoLinks {
   String? get privacyPolicy;
   @override
   String? get termsOfService;
+
+  /// Create a copy of ServerInfoLinks
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ServerInfoLinksImplCopyWith<_$ServerInfoLinksImpl> get copyWith =>

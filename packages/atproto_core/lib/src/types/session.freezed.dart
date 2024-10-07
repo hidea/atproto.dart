@@ -44,7 +44,11 @@ mixin _$Session {
   bool get active => throw _privateConstructorUsedError;
   String? get status => throw _privateConstructorUsedError;
 
+  /// Serializes this Session to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Session
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SessionCopyWith<Session> get copyWith => throw _privateConstructorUsedError;
 }
@@ -77,6 +81,8 @@ class _$SessionCopyWithImpl<$Res, $Val extends Session>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Session
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -164,6 +170,8 @@ class __$$SessionImplCopyWithImpl<$Res>
       _$SessionImpl _value, $Res Function(_$SessionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Session
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -331,6 +339,8 @@ class _$SessionImpl implements _Session {
       active,
       status);
 
+  /// Create a copy of Session
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -360,40 +370,42 @@ abstract class _Session implements Session {
 
   factory _Session.fromJson(Map<String, dynamic> json) = _$SessionImpl.fromJson;
 
-  @override
-
   /// Decentralized Identifier for the user.
-  String get did;
   @override
+  String get did;
 
   /// User handle.
-  String get handle;
   @override
+  String get handle;
 
   /// User's email address.
-  String? get email;
   @override
+  String? get email;
 
   /// A flag indicating whether the email address is confirmed.
+  @override
   bool get emailConfirmed;
   @override
   bool get emailAuthFactor;
-  @override
 
   /// Access JSON Web Token.
-  String get accessJwt;
   @override
+  String get accessJwt;
 
   /// Refresh JSON Web Token.
-  String get refreshJwt;
   @override
+  String get refreshJwt;
 
   /// DID plc document.
+  @override
   Map<String, dynamic>? get didDoc;
   @override
   bool get active;
   @override
   String? get status;
+
+  /// Create a copy of Session
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SessionImplCopyWith<_$SessionImpl> get copyWith =>

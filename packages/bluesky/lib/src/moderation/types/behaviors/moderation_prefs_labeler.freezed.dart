@@ -19,6 +19,8 @@ mixin _$ModerationPrefsLabeler {
   String get did => throw _privateConstructorUsedError;
   Map<String, LabelPreference> get labels => throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationPrefsLabeler
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationPrefsLabelerCopyWith<ModerationPrefsLabeler> get copyWith =>
       throw _privateConstructorUsedError;
@@ -44,6 +46,8 @@ class _$ModerationPrefsLabelerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationPrefsLabeler
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +89,8 @@ class __$$ModerationPrefsLabelerImplCopyWithImpl<$Res>
       $Res Function(_$ModerationPrefsLabelerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationPrefsLabeler
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +145,8 @@ class _$ModerationPrefsLabelerImpl implements _ModerationPrefsLabeler {
   int get hashCode => Object.hash(
       runtimeType, did, const DeepCollectionEquality().hash(_labels));
 
+  /// Create a copy of ModerationPrefsLabeler
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -157,6 +165,9 @@ abstract class _ModerationPrefsLabeler implements ModerationPrefsLabeler {
   String get did;
   @override
   Map<String, LabelPreference> get labels;
+
+  /// Create a copy of ModerationPrefsLabeler
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ModerationPrefsLabelerImplCopyWith<_$ModerationPrefsLabelerImpl>

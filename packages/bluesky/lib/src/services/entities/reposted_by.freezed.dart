@@ -26,7 +26,11 @@ mixin _$RepostedBy {
   String? get cid => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this RepostedBy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RepostedBy
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $RepostedByCopyWith<RepostedBy> get copyWith =>
       throw _privateConstructorUsedError;
@@ -55,6 +59,8 @@ class _$RepostedByCopyWithImpl<$Res, $Val extends RepostedBy>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RepostedBy
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -107,6 +113,8 @@ class __$$RepostedByImplCopyWithImpl<$Res>
       _$RepostedByImpl _value, $Res Function(_$RepostedByImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RepostedBy
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -187,6 +195,8 @@ class _$RepostedByImpl implements _RepostedBy {
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_repostedBy), uri, cid, cursor);
 
+  /// Create a copy of RepostedBy
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -220,6 +230,9 @@ abstract class _RepostedBy implements RepostedBy {
   String? get cid;
   @override
   String? get cursor;
+
+  /// Create a copy of RepostedBy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$RepostedByImplCopyWith<_$RepostedByImpl> get copyWith =>

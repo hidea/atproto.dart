@@ -32,7 +32,11 @@ mixin _$PostParam {
   DateTime? get createdAt => throw _privateConstructorUsedError;
   Map<String, dynamic> get unspecced => throw _privateConstructorUsedError;
 
+  /// Serializes this PostParam to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $PostParamCopyWith<PostParam> get copyWith =>
       throw _privateConstructorUsedError;
@@ -69,6 +73,8 @@ class _$PostParamCopyWithImpl<$Res, $Val extends PostParam>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -122,6 +128,8 @@ class _$PostParamCopyWithImpl<$Res, $Val extends PostParam>
     ) as $Val);
   }
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReplyRefCopyWith<$Res>? get reply {
@@ -134,6 +142,8 @@ class _$PostParamCopyWithImpl<$Res, $Val extends PostParam>
     });
   }
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EmbedCopyWith<$Res>? get embed {
@@ -146,6 +156,8 @@ class _$PostParamCopyWithImpl<$Res, $Val extends PostParam>
     });
   }
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelsCopyWith<$Res>? get labels {
@@ -194,6 +206,8 @@ class __$$PostParamImplCopyWithImpl<$Res>
       _$PostParamImpl _value, $Res Function(_$PostParamImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -359,6 +373,8 @@ class _$PostParamImpl implements _PostParam {
       createdAt,
       const DeepCollectionEquality().hash(_unspecced));
 
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -408,6 +424,9 @@ abstract class _PostParam implements PostParam {
   DateTime? get createdAt;
   @override
   Map<String, dynamic> get unspecced;
+
+  /// Create a copy of PostParam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$PostParamImplCopyWith<_$PostParamImpl> get copyWith =>

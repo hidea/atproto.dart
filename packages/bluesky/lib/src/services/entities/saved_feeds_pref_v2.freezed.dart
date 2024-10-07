@@ -24,7 +24,11 @@ mixin _$SavedFeedsPrefV2 {
   String get type => throw _privateConstructorUsedError;
   List<SavedFeed> get items => throw _privateConstructorUsedError;
 
+  /// Serializes this SavedFeedsPrefV2 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SavedFeedsPrefV2
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SavedFeedsPrefV2CopyWith<SavedFeedsPrefV2> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$SavedFeedsPrefV2CopyWithImpl<$Res, $Val extends SavedFeedsPrefV2>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SavedFeedsPrefV2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$SavedFeedsPrefV2ImplCopyWithImpl<$Res>
       $Res Function(_$SavedFeedsPrefV2Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SavedFeedsPrefV2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -148,6 +156,8 @@ class _$SavedFeedsPrefV2Impl implements _SavedFeedsPrefV2 {
   int get hashCode => Object.hash(
       runtimeType, type, const DeepCollectionEquality().hash(_items));
 
+  /// Create a copy of SavedFeedsPrefV2
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -176,6 +186,9 @@ abstract class _SavedFeedsPrefV2 implements SavedFeedsPrefV2 {
   String get type;
   @override
   List<SavedFeed> get items;
+
+  /// Create a copy of SavedFeedsPrefV2
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SavedFeedsPrefV2ImplCopyWith<_$SavedFeedsPrefV2Impl> get copyWith =>

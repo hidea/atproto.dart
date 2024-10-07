@@ -22,7 +22,11 @@ MessageViewSender _$MessageViewSenderFromJson(Map<String, dynamic> json) {
 mixin _$MessageViewSender {
   String get did => throw _privateConstructorUsedError;
 
+  /// Serializes this MessageViewSender to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of MessageViewSender
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $MessageViewSenderCopyWith<MessageViewSender> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$MessageViewSenderCopyWithImpl<$Res, $Val extends MessageViewSender>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MessageViewSender
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$MessageViewSenderImplCopyWithImpl<$Res>
       $Res Function(_$MessageViewSenderImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MessageViewSender
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -123,6 +131,8 @@ class _$MessageViewSenderImpl implements _MessageViewSender {
   @override
   int get hashCode => Object.hash(runtimeType, did);
 
+  /// Create a copy of MessageViewSender
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -147,6 +157,9 @@ abstract class _MessageViewSender implements MessageViewSender {
 
   @override
   String get did;
+
+  /// Create a copy of MessageViewSender
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$MessageViewSenderImplCopyWith<_$MessageViewSenderImpl> get copyWith =>

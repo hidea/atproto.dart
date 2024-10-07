@@ -25,7 +25,11 @@ mixin _$SkeletonReasonRepost {
   @AtUriConverter()
   AtUri get repost => throw _privateConstructorUsedError;
 
+  /// Serializes this SkeletonReasonRepost to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SkeletonReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SkeletonReasonRepostCopyWith<SkeletonReasonRepost> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$SkeletonReasonRepostCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SkeletonReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +95,8 @@ class __$$SkeletonReasonRepostImplCopyWithImpl<$Res>
       $Res Function(_$SkeletonReasonRepostImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SkeletonReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -143,6 +151,8 @@ class _$SkeletonReasonRepostImpl implements _SkeletonReasonRepost {
   @override
   int get hashCode => Object.hash(runtimeType, type, repost);
 
+  /// Create a copy of SkeletonReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -174,6 +184,9 @@ abstract class _SkeletonReasonRepost implements SkeletonReasonRepost {
   @override
   @AtUriConverter()
   AtUri get repost;
+
+  /// Create a copy of SkeletonReasonRepost
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SkeletonReasonRepostImplCopyWith<_$SkeletonReasonRepostImpl>

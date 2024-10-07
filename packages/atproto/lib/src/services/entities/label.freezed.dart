@@ -52,7 +52,11 @@ mixin _$Label {
   /// Signature of dag-cbor encoded label.
   List<int>? get sig => throw _privateConstructorUsedError;
 
+  /// Serializes this Label to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Label
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelCopyWith<Label> get copyWith => throw _privateConstructorUsedError;
 }
@@ -84,6 +88,8 @@ class _$LabelCopyWithImpl<$Res, $Val extends Label>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Label
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,6 +171,8 @@ class __$$LabelImplCopyWithImpl<$Res>
       _$LabelImpl _value, $Res Function(_$LabelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Label
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -316,6 +324,8 @@ class _$LabelImpl implements _Label {
   int get hashCode => Object.hash(runtimeType, ver, src, uri, cid, value,
       isNegate, createdAt, exp, const DeepCollectionEquality().hash(_sig));
 
+  /// Create a copy of Label
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -344,47 +354,49 @@ abstract class _Label implements Label {
 
   factory _Label.fromJson(Map<String, dynamic> json) = _$LabelImpl.fromJson;
 
-  @override
-
   /// The AT Protocol version of the label object."
-  int? get ver;
   @override
+  int? get ver;
 
   /// DID of the actor who created this label.
-  String get src;
   @override
+  String get src;
 
   /// AT URI of the record, repository (account),
   /// or other resource which this label applies to.
-  String get uri;
   @override
+  String get uri;
 
   /// Optionally, CID specifying the specific version of 'uri'
   /// resource this label applies to.
-  String? get cid;
   @override
+  String? get cid;
 
   /// The short string name of the value or type of this label.
+  @override
   @JsonKey(name: 'val')
   String get value;
-  @override
 
   /// If true, this is a negation label, overwriting a previous label.
+  @override
   @JsonKey(name: 'neg')
   bool get isNegate;
-  @override
 
   /// Timestamp when this label was created.
+  @override
   @JsonKey(name: 'cts')
   DateTime get createdAt;
-  @override
 
   /// Timestamp at which this label expires (no longer applies).
-  DateTime? get exp;
   @override
+  DateTime? get exp;
 
   /// Signature of dag-cbor encoded label.
+  @override
   List<int>? get sig;
+
+  /// Create a copy of Label
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelImplCopyWith<_$LabelImpl> get copyWith =>

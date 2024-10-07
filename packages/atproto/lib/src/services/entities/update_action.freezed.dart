@@ -28,7 +28,11 @@ mixin _$UpdateAction {
   @JsonKey(name: 'value')
   Map<String, dynamic> get record => throw _privateConstructorUsedError;
 
+  /// Serializes this UpdateAction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of UpdateAction
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $UpdateActionCopyWith<UpdateAction> get copyWith =>
       throw _privateConstructorUsedError;
@@ -57,6 +61,8 @@ class _$UpdateActionCopyWithImpl<$Res, $Val extends UpdateAction>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UpdateAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +115,8 @@ class __$$UpdateActionImplCopyWithImpl<$Res>
       _$UpdateActionImpl _value, $Res Function(_$UpdateActionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UpdateAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -191,6 +199,8 @@ class _$UpdateActionImpl implements _UpdateAction {
   int get hashCode => Object.hash(runtimeType, type, collection, rkey,
       const DeepCollectionEquality().hash(_record));
 
+  /// Create a copy of UpdateAction
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -227,6 +237,9 @@ abstract class _UpdateAction implements UpdateAction {
   @override
   @JsonKey(name: 'value')
   Map<String, dynamic> get record;
+
+  /// Create a copy of UpdateAction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$UpdateActionImplCopyWith<_$UpdateActionImpl> get copyWith =>

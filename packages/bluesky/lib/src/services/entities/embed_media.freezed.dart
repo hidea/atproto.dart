@@ -161,7 +161,7 @@ class _$UEmbedMediaImagesImpl implements UEmbedMediaImages {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedMediaImagesImplCopyWith<_$UEmbedMediaImagesImpl> get copyWith =>
@@ -252,7 +252,7 @@ abstract class UEmbedMediaImages implements EmbedMedia {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedMediaImagesImplCopyWith<_$UEmbedMediaImagesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -328,7 +328,7 @@ class _$UEmbedMediaVideoImpl implements UEmbedMediaVideo {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedMediaVideoImplCopyWith<_$UEmbedMediaVideoImpl> get copyWith =>
@@ -419,7 +419,7 @@ abstract class UEmbedMediaVideo implements EmbedMedia {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedMediaVideoImplCopyWith<_$UEmbedMediaVideoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -495,7 +495,7 @@ class _$UEmbedMediaExternalImpl implements UEmbedMediaExternal {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedMediaExternalImplCopyWith<_$UEmbedMediaExternalImpl> get copyWith =>
@@ -586,7 +586,7 @@ abstract class UEmbedMediaExternal implements EmbedMedia {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedMediaExternalImplCopyWith<_$UEmbedMediaExternalImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -657,7 +657,7 @@ class _$UEmbedMediaUnknownImpl implements UEmbedMediaUnknown {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UEmbedMediaUnknownImplCopyWith<_$UEmbedMediaUnknownImpl> get copyWith =>
@@ -748,7 +748,7 @@ abstract class UEmbedMediaUnknown implements EmbedMedia {
 
   /// Create a copy of EmbedMedia
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UEmbedMediaUnknownImplCopyWith<_$UEmbedMediaUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

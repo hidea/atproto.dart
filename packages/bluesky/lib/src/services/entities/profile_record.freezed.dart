@@ -29,7 +29,11 @@ mixin _$ProfileRecord {
   Labels? get labels => throw _privateConstructorUsedError;
   Blob? get banner => throw _privateConstructorUsedError;
 
+  /// Serializes this ProfileRecord to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ProfileRecordCopyWith<ProfileRecord> get copyWith =>
       throw _privateConstructorUsedError;
@@ -64,6 +68,8 @@ class _$ProfileRecordCopyWithImpl<$Res, $Val extends ProfileRecord>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -102,6 +108,8 @@ class _$ProfileRecordCopyWithImpl<$Res, $Val extends ProfileRecord>
     ) as $Val);
   }
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BlobCopyWith<$Res>? get avatar {
@@ -114,6 +122,8 @@ class _$ProfileRecordCopyWithImpl<$Res, $Val extends ProfileRecord>
     });
   }
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelsCopyWith<$Res>? get labels {
@@ -126,6 +136,8 @@ class _$ProfileRecordCopyWithImpl<$Res, $Val extends ProfileRecord>
     });
   }
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BlobCopyWith<$Res>? get banner {
@@ -171,6 +183,8 @@ class __$$ProfileRecordImplCopyWithImpl<$Res>
       _$ProfileRecordImpl _value, $Res Function(_$ProfileRecordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -265,6 +279,8 @@ class _$ProfileRecordImpl implements _ProfileRecord {
   int get hashCode => Object.hash(
       runtimeType, type, displayName, description, avatar, labels, banner);
 
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -305,6 +321,9 @@ abstract class _ProfileRecord implements ProfileRecord {
   Labels? get labels;
   @override
   Blob? get banner;
+
+  /// Create a copy of ProfileRecord
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ProfileRecordImplCopyWith<_$ProfileRecordImpl> get copyWith =>

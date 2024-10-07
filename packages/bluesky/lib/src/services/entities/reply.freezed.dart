@@ -26,7 +26,11 @@ mixin _$Reply {
   ReplyPost get parent => throw _privateConstructorUsedError;
   ActorBasic? get grandparentAuthor => throw _privateConstructorUsedError;
 
+  /// Serializes this Reply to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ReplyCopyWith<Reply> get copyWith => throw _privateConstructorUsedError;
 }
@@ -56,6 +60,8 @@ class _$ReplyCopyWithImpl<$Res, $Val extends Reply>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -79,6 +85,8 @@ class _$ReplyCopyWithImpl<$Res, $Val extends Reply>
     ) as $Val);
   }
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReplyPostCopyWith<$Res> get root {
@@ -87,6 +95,8 @@ class _$ReplyCopyWithImpl<$Res, $Val extends Reply>
     });
   }
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReplyPostCopyWith<$Res> get parent {
@@ -95,6 +105,8 @@ class _$ReplyCopyWithImpl<$Res, $Val extends Reply>
     });
   }
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorBasicCopyWith<$Res>? get grandparentAuthor {
@@ -136,6 +148,8 @@ class __$$ReplyImplCopyWithImpl<$Res>
       _$ReplyImpl _value, $Res Function(_$ReplyImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -200,6 +214,8 @@ class _$ReplyImpl implements _Reply {
   @override
   int get hashCode => Object.hash(runtimeType, root, parent, grandparentAuthor);
 
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -230,6 +246,9 @@ abstract class _Reply implements Reply {
   ReplyPost get parent;
   @override
   ActorBasic? get grandparentAuthor;
+
+  /// Create a copy of Reply
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ReplyImplCopyWith<_$ReplyImpl> get copyWith =>

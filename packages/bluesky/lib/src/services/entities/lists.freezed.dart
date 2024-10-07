@@ -23,7 +23,11 @@ mixin _$Lists {
   List<ListView> get lists => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this Lists to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Lists
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ListsCopyWith<Lists> get copyWith => throw _privateConstructorUsedError;
 }
@@ -46,6 +50,8 @@ class _$ListsCopyWithImpl<$Res, $Val extends Lists>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Lists
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -83,6 +89,8 @@ class __$$ListsImplCopyWithImpl<$Res>
       _$ListsImpl _value, $Res Function(_$ListsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Lists
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -143,6 +151,8 @@ class _$ListsImpl extends _Lists {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_lists), cursor);
 
+  /// Create a copy of Lists
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -169,6 +179,9 @@ abstract class _Lists extends Lists {
   List<ListView> get lists;
   @override
   String? get cursor;
+
+  /// Create a copy of Lists
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ListsImplCopyWith<_$ListsImpl> get copyWith =>

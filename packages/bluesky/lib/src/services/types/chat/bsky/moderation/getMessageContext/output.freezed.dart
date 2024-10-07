@@ -24,7 +24,11 @@ mixin _$GetMessageContextOutput {
   @unionConvoMessageViewConverter
   List<UConvoMessageView> get messages => throw _privateConstructorUsedError;
 
+  /// Serializes this GetMessageContextOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of GetMessageContextOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $GetMessageContextOutputCopyWith<GetMessageContextOutput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$GetMessageContextOutputCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetMessageContextOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$GetMessageContextOutputImplCopyWithImpl<$Res>
       $Res Function(_$GetMessageContextOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetMessageContextOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +147,8 @@ class _$GetMessageContextOutputImpl implements _GetMessageContextOutput {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_messages));
 
+  /// Create a copy of GetMessageContextOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -166,6 +176,9 @@ abstract class _GetMessageContextOutput implements GetMessageContextOutput {
   @override
   @unionConvoMessageViewConverter
   List<UConvoMessageView> get messages;
+
+  /// Create a copy of GetMessageContextOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$GetMessageContextOutputImplCopyWith<_$GetMessageContextOutputImpl>

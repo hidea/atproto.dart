@@ -23,7 +23,11 @@ mixin _$LabelerViewerState {
   @AtUriConverter()
   AtUri? get like => throw _privateConstructorUsedError;
 
+  /// Serializes this LabelerViewerState to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelerViewerState
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelerViewerStateCopyWith<LabelerViewerState> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$LabelerViewerStateCopyWithImpl<$Res, $Val extends LabelerViewerState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelerViewerState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$LabelerViewerStateImplCopyWithImpl<$Res>
       $Res Function(_$LabelerViewerStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelerViewerState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -125,6 +133,8 @@ class _$LabelerViewerStateImpl implements _LabelerViewerState {
   @override
   int get hashCode => Object.hash(runtimeType, like);
 
+  /// Create a copy of LabelerViewerState
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -150,6 +160,9 @@ abstract class _LabelerViewerState implements LabelerViewerState {
   @override
   @AtUriConverter()
   AtUri? get like;
+
+  /// Create a copy of LabelerViewerState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelerViewerStateImplCopyWith<_$LabelerViewerStateImpl> get copyWith =>

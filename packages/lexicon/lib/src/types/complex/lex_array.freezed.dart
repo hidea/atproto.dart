@@ -27,7 +27,11 @@ mixin _$LexArray {
   int? get minLength => throw _privateConstructorUsedError;
   int? get maxLength => throw _privateConstructorUsedError;
 
+  /// Serializes this LexArray to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexArrayCopyWith<LexArray> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,6 +62,8 @@ class _$LexArrayCopyWithImpl<$Res, $Val extends LexArray>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +97,8 @@ class _$LexArrayCopyWithImpl<$Res, $Val extends LexArray>
     ) as $Val);
   }
 
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexArrayItemCopyWith<$Res> get items {
@@ -127,6 +135,8 @@ class __$$LexArrayImplCopyWithImpl<$Res>
       _$LexArrayImpl _value, $Res Function(_$LexArrayImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -213,6 +223,8 @@ class _$LexArrayImpl implements _LexArray {
   int get hashCode =>
       Object.hash(runtimeType, type, description, items, minLength, maxLength);
 
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -249,6 +261,9 @@ abstract class _LexArray implements LexArray {
   int? get minLength;
   @override
   int? get maxLength;
+
+  /// Create a copy of LexArray
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexArrayImplCopyWith<_$LexArrayImpl> get copyWith =>

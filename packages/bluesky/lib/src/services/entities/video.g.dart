@@ -20,8 +20,8 @@ _$VideoImpl _$$VideoImplFromJson(Map json) => $checkedCreate(
                   ?.map((e) =>
                       Caption.fromJson(Map<String, Object?>.from(e as Map)))
                   .toList()),
-          video: $checkedConvert('video',
-              (v) => const BlobConverter().fromJson(v as Map<String, dynamic>)),
+          blob: $checkedConvert('video',
+              (v) => Blob.fromJson(Map<String, Object?>.from(v as Map))),
           aspectRatio: $checkedConvert(
               'aspectRatio',
               (v) => v == null
@@ -31,6 +31,7 @@ _$VideoImpl _$$VideoImplFromJson(Map json) => $checkedCreate(
         );
         return val;
       },
+      fieldKeyMap: const {'blob': 'video'},
     );
 
 Map<String, dynamic> _$$VideoImplToJson(_$VideoImpl instance) {
@@ -44,7 +45,7 @@ Map<String, dynamic> _$$VideoImplToJson(_$VideoImpl instance) {
 
   writeNotNull('alt', instance.alt);
   writeNotNull('captions', instance.captions?.map((e) => e.toJson()).toList());
-  val['video'] = const BlobConverter().toJson(instance.video);
+  val['video'] = instance.blob.toJson();
   writeNotNull('aspectRatio', instance.aspectRatio?.toJson());
   return val;
 }

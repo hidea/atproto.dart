@@ -73,6 +73,9 @@ class _$SkeletonReasonCopyWithImpl<$Res, $Val extends SkeletonReason>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -95,6 +98,8 @@ class __$$USkeletonReasonRepostImplCopyWithImpl<$Res>
       $Res Function(_$USkeletonReasonRepostImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -108,6 +113,8 @@ class __$$USkeletonReasonRepostImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SkeletonReasonRepostCopyWith<$Res> get data {
@@ -141,6 +148,8 @@ class _$USkeletonReasonRepostImpl implements USkeletonReasonRepost {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -217,6 +226,9 @@ abstract class USkeletonReasonRepost implements SkeletonReason {
 
   @override
   SkeletonReasonRepost get data;
+
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$USkeletonReasonRepostImplCopyWith<_$USkeletonReasonRepostImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -241,6 +253,8 @@ class __$$USkeletonReasonUnknownImplCopyWithImpl<$Res>
       $Res Function(_$USkeletonReasonUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -286,6 +300,8 @@ class _$USkeletonReasonUnknownImpl implements USkeletonReasonUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -362,6 +378,9 @@ abstract class USkeletonReasonUnknown implements SkeletonReason {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of SkeletonReason
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$USkeletonReasonUnknownImplCopyWith<_$USkeletonReasonUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;

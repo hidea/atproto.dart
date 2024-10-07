@@ -72,6 +72,9 @@ class _$LexIpldCopyWithImpl<$Res, $Val extends LexIpld>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -93,6 +96,8 @@ class __$$ULexIpldBytesImplCopyWithImpl<$Res>
       _$ULexIpldBytesImpl _value, $Res Function(_$ULexIpldBytesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,6 +111,8 @@ class __$$ULexIpldBytesImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexBytesCopyWith<$Res> get data {
@@ -139,6 +146,8 @@ class _$ULexIpldBytesImpl extends ULexIpldBytes {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -215,6 +224,9 @@ abstract class ULexIpldBytes extends LexIpld {
 
   @override
   LexBytes get data;
+
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexIpldBytesImplCopyWith<_$ULexIpldBytesImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -239,6 +251,8 @@ class __$$ULexIpldCidLinkImplCopyWithImpl<$Res>
       _$ULexIpldCidLinkImpl _value, $Res Function(_$ULexIpldCidLinkImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -252,6 +266,8 @@ class __$$ULexIpldCidLinkImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexCidLinkCopyWith<$Res> get data {
@@ -285,6 +301,8 @@ class _$ULexIpldCidLinkImpl extends ULexIpldCidLink {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -362,6 +380,9 @@ abstract class ULexIpldCidLink extends LexIpld {
 
   @override
   LexCidLink get data;
+
+  /// Create a copy of LexIpld
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexIpldCidLinkImplCopyWith<_$ULexIpldCidLinkImpl> get copyWith =>
       throw _privateConstructorUsedError;

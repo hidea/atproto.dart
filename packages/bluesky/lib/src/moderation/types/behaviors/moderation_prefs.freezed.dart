@@ -23,6 +23,8 @@ mixin _$ModerationPrefs {
   List<MutedWord> get mutedWords => throw _privateConstructorUsedError;
   List<AtUri> get hiddenPosts => throw _privateConstructorUsedError;
 
+  /// Create a copy of ModerationPrefs
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ModerationPrefsCopyWith<ModerationPrefs> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,6 +54,8 @@ class _$ModerationPrefsCopyWithImpl<$Res, $Val extends ModerationPrefs>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ModerationPrefs
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -110,6 +114,8 @@ class __$$ModerationPrefsImplCopyWithImpl<$Res>
       _$ModerationPrefsImpl _value, $Res Function(_$ModerationPrefsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationPrefs
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -222,6 +228,8 @@ class _$ModerationPrefsImpl implements _ModerationPrefs {
       const DeepCollectionEquality().hash(_mutedWords),
       const DeepCollectionEquality().hash(_hiddenPosts));
 
+  /// Create a copy of ModerationPrefs
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -248,6 +256,9 @@ abstract class _ModerationPrefs implements ModerationPrefs {
   List<MutedWord> get mutedWords;
   @override
   List<AtUri> get hiddenPosts;
+
+  /// Create a copy of ModerationPrefs
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ModerationPrefsImplCopyWith<_$ModerationPrefsImpl> get copyWith =>

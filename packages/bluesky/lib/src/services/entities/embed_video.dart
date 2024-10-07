@@ -10,7 +10,9 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 // 🌎 Project imports:
 import '../../ids.g.dart';
-import 'video.dart';
+//import 'video.dart';
+import 'caption.dart';
+import 'image_aspect_ratio.dart';
 
 part 'embed_video.freezed.dart';
 part 'embed_video.g.dart';
@@ -20,7 +22,11 @@ part 'embed_video.g.dart';
 class EmbedVideo with _$EmbedVideo {
   const factory EmbedVideo({
     @typeKey @Default(appBskyEmbedVideo) String type,
-    required Video video,
+    //required Video video,
+    String? alt,
+    List<Caption>? captions,
+    @JsonKey(name: 'video') required Blob blob,
+    ImageAspectRatio? aspectRatio,
   }) = _EmbedVideo;
 
   factory EmbedVideo.fromJson(Map<String, Object?> json) =>

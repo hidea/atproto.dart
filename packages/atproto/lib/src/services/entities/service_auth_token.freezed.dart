@@ -22,7 +22,11 @@ ServiceAuthToken _$ServiceAuthTokenFromJson(Map<String, dynamic> json) {
 mixin _$ServiceAuthToken {
   String get token => throw _privateConstructorUsedError;
 
+  /// Serializes this ServiceAuthToken to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ServiceAuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ServiceAuthTokenCopyWith<ServiceAuthToken> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$ServiceAuthTokenCopyWithImpl<$Res, $Val extends ServiceAuthToken>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServiceAuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$ServiceAuthTokenImplCopyWithImpl<$Res>
       $Res Function(_$ServiceAuthTokenImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServiceAuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -123,6 +131,8 @@ class _$ServiceAuthTokenImpl implements _ServiceAuthToken {
   @override
   int get hashCode => Object.hash(runtimeType, token);
 
+  /// Create a copy of ServiceAuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -147,6 +157,9 @@ abstract class _ServiceAuthToken implements ServiceAuthToken {
 
   @override
   String get token;
+
+  /// Create a copy of ServiceAuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ServiceAuthTokenImplCopyWith<_$ServiceAuthTokenImpl> get copyWith =>

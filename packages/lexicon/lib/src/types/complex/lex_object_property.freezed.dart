@@ -91,6 +91,9 @@ class _$LexObjectPropertyCopyWithImpl<$Res, $Val extends LexObjectProperty>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -115,6 +118,8 @@ class __$$ULexObjectPropertyRefVariantImplCopyWithImpl<$Res>
       $Res Function(_$ULexObjectPropertyRefVariantImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,6 +133,8 @@ class __$$ULexObjectPropertyRefVariantImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexRefVariantCopyWith<$Res> get data {
@@ -161,6 +168,8 @@ class _$ULexObjectPropertyRefVariantImpl extends ULexObjectPropertyRefVariant {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -257,6 +266,9 @@ abstract class ULexObjectPropertyRefVariant extends LexObjectProperty {
 
   @override
   LexRefVariant get data;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexObjectPropertyRefVariantImplCopyWith<
           _$ULexObjectPropertyRefVariantImpl>
@@ -284,6 +296,8 @@ class __$$ULexObjectPropertyIpldImplCopyWithImpl<$Res>
       $Res Function(_$ULexObjectPropertyIpldImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -297,6 +311,8 @@ class __$$ULexObjectPropertyIpldImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexIpldCopyWith<$Res> get data {
@@ -330,6 +346,8 @@ class _$ULexObjectPropertyIpldImpl extends ULexObjectPropertyIpld {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -425,6 +443,9 @@ abstract class ULexObjectPropertyIpld extends LexObjectProperty {
 
   @override
   LexIpld get data;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexObjectPropertyIpldImplCopyWith<_$ULexObjectPropertyIpldImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -451,6 +472,8 @@ class __$$ULexObjectPropertyArrayImplCopyWithImpl<$Res>
       $Res Function(_$ULexObjectPropertyArrayImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -464,6 +487,8 @@ class __$$ULexObjectPropertyArrayImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexArrayCopyWith<$Res> get data {
@@ -497,6 +522,8 @@ class _$ULexObjectPropertyArrayImpl extends ULexObjectPropertyArray {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -592,6 +619,9 @@ abstract class ULexObjectPropertyArray extends LexObjectProperty {
 
   @override
   LexArray get data;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexObjectPropertyArrayImplCopyWith<_$ULexObjectPropertyArrayImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -618,6 +648,8 @@ class __$$ULexObjectPropertyBlobImplCopyWithImpl<$Res>
       $Res Function(_$ULexObjectPropertyBlobImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -631,6 +663,8 @@ class __$$ULexObjectPropertyBlobImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexBlobCopyWith<$Res> get data {
@@ -664,6 +698,8 @@ class _$ULexObjectPropertyBlobImpl extends ULexObjectPropertyBlob {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -759,6 +795,9 @@ abstract class ULexObjectPropertyBlob extends LexObjectProperty {
 
   @override
   LexBlob get data;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexObjectPropertyBlobImplCopyWith<_$ULexObjectPropertyBlobImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -786,6 +825,8 @@ class __$$ULexObjectPropertyPrimitiveImplCopyWithImpl<$Res>
       $Res Function(_$ULexObjectPropertyPrimitiveImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -799,6 +840,8 @@ class __$$ULexObjectPropertyPrimitiveImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexPrimitiveCopyWith<$Res> get data {
@@ -832,6 +875,8 @@ class _$ULexObjectPropertyPrimitiveImpl extends ULexObjectPropertyPrimitive {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -927,6 +972,9 @@ abstract class ULexObjectPropertyPrimitive extends LexObjectProperty {
 
   @override
   LexPrimitive get data;
+
+  /// Create a copy of LexObjectProperty
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$ULexObjectPropertyPrimitiveImplCopyWith<_$ULexObjectPropertyPrimitiveImpl>
       get copyWith => throw _privateConstructorUsedError;

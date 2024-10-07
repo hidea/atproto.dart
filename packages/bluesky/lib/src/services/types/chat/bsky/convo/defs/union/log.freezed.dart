@@ -92,6 +92,9 @@ class _$UConvoLogCopyWithImpl<$Res, $Val extends UConvoLog>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -115,6 +118,8 @@ class __$$UConvoLogConvoLogBeginConvoImplCopyWithImpl<$Res>
       $Res Function(_$UConvoLogConvoLogBeginConvoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,6 +133,8 @@ class __$$UConvoLogConvoLogBeginConvoImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LogBeginConvoCopyWith<$Res> get data {
@@ -161,6 +168,8 @@ class _$UConvoLogConvoLogBeginConvoImpl extends UConvoLogConvoLogBeginConvo {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -258,6 +267,9 @@ abstract class UConvoLogConvoLogBeginConvo extends UConvoLog {
 
   @override
   LogBeginConvo get data;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoLogConvoLogBeginConvoImplCopyWith<_$UConvoLogConvoLogBeginConvoImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -284,6 +296,8 @@ class __$$UConvoLogConvoLogLeaveConvoImplCopyWithImpl<$Res>
       $Res Function(_$UConvoLogConvoLogLeaveConvoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -297,6 +311,8 @@ class __$$UConvoLogConvoLogLeaveConvoImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LogLeaveConvoCopyWith<$Res> get data {
@@ -330,6 +346,8 @@ class _$UConvoLogConvoLogLeaveConvoImpl extends UConvoLogConvoLogLeaveConvo {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -427,6 +445,9 @@ abstract class UConvoLogConvoLogLeaveConvo extends UConvoLog {
 
   @override
   LogLeaveConvo get data;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoLogConvoLogLeaveConvoImplCopyWith<_$UConvoLogConvoLogLeaveConvoImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -453,6 +474,8 @@ class __$$UConvoLogConvoLogCreateMessageImplCopyWithImpl<$Res>
       $Res Function(_$UConvoLogConvoLogCreateMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -466,6 +489,8 @@ class __$$UConvoLogConvoLogCreateMessageImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LogCreateMessageCopyWith<$Res> get data {
@@ -500,6 +525,8 @@ class _$UConvoLogConvoLogCreateMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -599,6 +626,9 @@ abstract class UConvoLogConvoLogCreateMessage extends UConvoLog {
 
   @override
   LogCreateMessage get data;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoLogConvoLogCreateMessageImplCopyWith<
           _$UConvoLogConvoLogCreateMessageImpl>
@@ -626,6 +656,8 @@ class __$$UConvoLogConvoLogDeleteMessageImplCopyWithImpl<$Res>
       $Res Function(_$UConvoLogConvoLogDeleteMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -639,6 +671,8 @@ class __$$UConvoLogConvoLogDeleteMessageImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LogDeleteMessageCopyWith<$Res> get data {
@@ -673,6 +707,8 @@ class _$UConvoLogConvoLogDeleteMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -772,6 +808,9 @@ abstract class UConvoLogConvoLogDeleteMessage extends UConvoLog {
 
   @override
   LogDeleteMessage get data;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoLogConvoLogDeleteMessageImplCopyWith<
           _$UConvoLogConvoLogDeleteMessageImpl>
@@ -795,6 +834,8 @@ class __$$UConvoLogUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UConvoLogUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -841,6 +882,8 @@ class _$UConvoLogUnknownImpl extends UConvoLogUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -938,6 +981,9 @@ abstract class UConvoLogUnknown extends UConvoLog {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of UConvoLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UConvoLogUnknownImplCopyWith<_$UConvoLogUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;

@@ -23,7 +23,11 @@ mixin _$SuggestionsSkeleton {
   List<SkeletonActor> get actors => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this SuggestionsSkeleton to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SuggestionsSkeleton
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SuggestionsSkeletonCopyWith<SuggestionsSkeleton> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$SuggestionsSkeletonCopyWithImpl<$Res, $Val extends SuggestionsSkeleton>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SuggestionsSkeleton
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$SuggestionsSkeletonImplCopyWithImpl<$Res>
       $Res Function(_$SuggestionsSkeletonImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SuggestionsSkeleton
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -145,6 +153,8 @@ class _$SuggestionsSkeletonImpl implements _SuggestionsSkeleton {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_actors), cursor);
 
+  /// Create a copy of SuggestionsSkeleton
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -172,6 +182,9 @@ abstract class _SuggestionsSkeleton implements SuggestionsSkeleton {
   List<SkeletonActor> get actors;
   @override
   String? get cursor;
+
+  /// Create a copy of SuggestionsSkeleton
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SuggestionsSkeletonImplCopyWith<_$SuggestionsSkeletonImpl> get copyWith =>

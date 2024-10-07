@@ -28,7 +28,11 @@ mixin _$ActorRelationship {
   @AtUriConverter()
   AtUri? get followedBy => throw _privateConstructorUsedError;
 
+  /// Serializes this ActorRelationship to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ActorRelationship
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ActorRelationshipCopyWith<ActorRelationship> get copyWith =>
       throw _privateConstructorUsedError;
@@ -57,6 +61,8 @@ class _$ActorRelationshipCopyWithImpl<$Res, $Val extends ActorRelationship>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ActorRelationship
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +115,8 @@ class __$$ActorRelationshipImplCopyWithImpl<$Res>
       $Res Function(_$ActorRelationshipImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ActorRelationship
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -185,6 +193,8 @@ class _$ActorRelationshipImpl implements _ActorRelationship {
   int get hashCode =>
       Object.hash(runtimeType, type, did, following, followedBy);
 
+  /// Create a copy of ActorRelationship
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -221,6 +231,9 @@ abstract class _ActorRelationship implements ActorRelationship {
   @override
   @AtUriConverter()
   AtUri? get followedBy;
+
+  /// Create a copy of ActorRelationship
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ActorRelationshipImplCopyWith<_$ActorRelationshipImpl> get copyWith =>

@@ -24,7 +24,11 @@ mixin _$ListItems {
   List<ListItem> get items => throw _privateConstructorUsedError;
   String? get cursor => throw _privateConstructorUsedError;
 
+  /// Serializes this ListItems to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ListItemsCopyWith<ListItems> get copyWith =>
       throw _privateConstructorUsedError;
@@ -50,6 +54,8 @@ class _$ListItemsCopyWithImpl<$Res, $Val extends ListItems>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -73,6 +79,8 @@ class _$ListItemsCopyWithImpl<$Res, $Val extends ListItems>
     ) as $Val);
   }
 
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ListViewCopyWith<$Res> get list {
@@ -104,6 +112,8 @@ class __$$ListItemsImplCopyWithImpl<$Res>
       _$ListItemsImpl _value, $Res Function(_$ListItemsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -171,6 +181,8 @@ class _$ListItemsImpl implements _ListItems {
   int get hashCode => Object.hash(
       runtimeType, list, const DeepCollectionEquality().hash(_items), cursor);
 
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -200,6 +212,9 @@ abstract class _ListItems implements ListItems {
   List<ListItem> get items;
   @override
   String? get cursor;
+
+  /// Create a copy of ListItems
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ListItemsImplCopyWith<_$ListItemsImpl> get copyWith =>

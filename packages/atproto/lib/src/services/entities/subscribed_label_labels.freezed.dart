@@ -25,7 +25,11 @@ mixin _$SubscribedLabelLabels {
   int get sequence => throw _privateConstructorUsedError;
   List<Label> get labels => throw _privateConstructorUsedError;
 
+  /// Serializes this SubscribedLabelLabels to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SubscribedLabelLabels
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SubscribedLabelLabelsCopyWith<SubscribedLabelLabels> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$SubscribedLabelLabelsCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubscribedLabelLabels
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +97,8 @@ class __$$SubscribedLabelLabelsImplCopyWithImpl<$Res>
       $Res Function(_$SubscribedLabelLabelsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubscribedLabelLabels
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,6 +161,8 @@ class _$SubscribedLabelLabelsImpl implements _SubscribedLabelLabels {
   int get hashCode => Object.hash(
       runtimeType, sequence, const DeepCollectionEquality().hash(_labels));
 
+  /// Create a copy of SubscribedLabelLabels
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -181,6 +191,9 @@ abstract class _SubscribedLabelLabels implements SubscribedLabelLabels {
   int get sequence;
   @override
   List<Label> get labels;
+
+  /// Create a copy of SubscribedLabelLabels
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SubscribedLabelLabelsImplCopyWith<_$SubscribedLabelLabelsImpl>

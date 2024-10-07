@@ -25,7 +25,11 @@ mixin _$LexRefUnion {
   List<String>? get refs => throw _privateConstructorUsedError;
   bool? get closed => throw _privateConstructorUsedError;
 
+  /// Serializes this LexRefUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexRefUnion
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexRefUnionCopyWith<LexRefUnion> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$LexRefUnionCopyWithImpl<$Res, $Val extends LexRefUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexRefUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -100,6 +106,8 @@ class __$$LexRefUnionImplCopyWithImpl<$Res>
       _$LexRefUnionImpl _value, $Res Function(_$LexRefUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexRefUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -183,6 +191,8 @@ class _$LexRefUnionImpl implements _LexRefUnion {
   int get hashCode => Object.hash(runtimeType, type, description,
       const DeepCollectionEquality().hash(_refs), closed);
 
+  /// Create a copy of LexRefUnion
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -215,6 +225,9 @@ abstract class _LexRefUnion implements LexRefUnion {
   List<String>? get refs;
   @override
   bool? get closed;
+
+  /// Create a copy of LexRefUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexRefUnionImplCopyWith<_$LexRefUnionImpl> get copyWith =>

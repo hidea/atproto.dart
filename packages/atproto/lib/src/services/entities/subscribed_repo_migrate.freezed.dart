@@ -27,7 +27,11 @@ mixin _$Migrate {
   @JsonKey(name: 'time')
   DateTime get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this Migrate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of Migrate
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $MigrateCopyWith<Migrate> get copyWith => throw _privateConstructorUsedError;
 }
@@ -54,6 +58,8 @@ class _$MigrateCopyWithImpl<$Res, $Val extends Migrate>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Migrate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -105,6 +111,8 @@ class __$$MigrateImplCopyWithImpl<$Res>
       _$MigrateImpl _value, $Res Function(_$MigrateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Migrate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -181,6 +189,8 @@ class _$MigrateImpl implements _Migrate {
   int get hashCode =>
       Object.hash(runtimeType, did, migrateTo, cursor, createdAt);
 
+  /// Create a copy of Migrate
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -215,6 +225,9 @@ abstract class _Migrate implements Migrate {
   @override
   @JsonKey(name: 'time')
   DateTime get createdAt;
+
+  /// Create a copy of Migrate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$MigrateImplCopyWith<_$MigrateImpl> get copyWith =>

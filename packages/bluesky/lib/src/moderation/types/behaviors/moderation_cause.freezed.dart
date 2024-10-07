@@ -103,6 +103,9 @@ class _$ModerationCauseCopyWithImpl<$Res, $Val extends ModerationCause>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -126,6 +129,8 @@ class __$$UModerationCauseBlockingImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseBlockingImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +144,8 @@ class __$$UModerationCauseBlockingImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseBlockingCopyWith<$Res> get data {
@@ -172,6 +179,8 @@ class _$UModerationCauseBlockingImpl extends UModerationCauseBlocking {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -280,6 +289,9 @@ abstract class UModerationCauseBlocking extends ModerationCause {
 
   @override
   ModerationCauseBlocking get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseBlockingImplCopyWith<_$UModerationCauseBlockingImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -306,6 +318,8 @@ class __$$UModerationCauseBlockedByImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseBlockedByImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -319,6 +333,8 @@ class __$$UModerationCauseBlockedByImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseBlockedByCopyWith<$Res> get data {
@@ -352,6 +368,8 @@ class _$UModerationCauseBlockedByImpl extends UModerationCauseBlockedBy {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -460,6 +478,9 @@ abstract class UModerationCauseBlockedBy extends ModerationCause {
 
   @override
   ModerationCauseBlockedBy get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseBlockedByImplCopyWith<_$UModerationCauseBlockedByImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -487,6 +508,8 @@ class __$$UModerationCauseBlockOtherImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseBlockOtherImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -500,6 +523,8 @@ class __$$UModerationCauseBlockOtherImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseBlockOtherCopyWith<$Res> get data {
@@ -533,6 +558,8 @@ class _$UModerationCauseBlockOtherImpl extends UModerationCauseBlockOther {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -641,6 +668,9 @@ abstract class UModerationCauseBlockOther extends ModerationCause {
 
   @override
   ModerationCauseBlockOther get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseBlockOtherImplCopyWith<_$UModerationCauseBlockOtherImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -666,6 +696,8 @@ class __$$UModerationCauseLabelImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseLabelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -679,6 +711,8 @@ class __$$UModerationCauseLabelImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseLabelCopyWith<$Res> get data {
@@ -712,6 +746,8 @@ class _$UModerationCauseLabelImpl extends UModerationCauseLabel {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -819,6 +855,9 @@ abstract class UModerationCauseLabel extends ModerationCause {
 
   @override
   ModerationCauseLabel get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseLabelImplCopyWith<_$UModerationCauseLabelImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -844,6 +883,8 @@ class __$$UModerationCauseMutedImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseMutedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -857,6 +898,8 @@ class __$$UModerationCauseMutedImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseMutedCopyWith<$Res> get data {
@@ -890,6 +933,8 @@ class _$UModerationCauseMutedImpl extends UModerationCauseMuted {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -997,6 +1042,9 @@ abstract class UModerationCauseMuted extends ModerationCause {
 
   @override
   ModerationCauseMuted get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseMutedImplCopyWith<_$UModerationCauseMutedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1023,6 +1071,8 @@ class __$$UModerationCauseMuteWordImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseMuteWordImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1036,6 +1086,8 @@ class __$$UModerationCauseMuteWordImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseMuteWordCopyWith<$Res> get data {
@@ -1069,6 +1121,8 @@ class _$UModerationCauseMuteWordImpl extends UModerationCauseMuteWord {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1177,6 +1231,9 @@ abstract class UModerationCauseMuteWord extends ModerationCause {
 
   @override
   ModerationCauseMuteWord get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseMuteWordImplCopyWith<_$UModerationCauseMuteWordImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1203,6 +1260,8 @@ class __$$UModerationCauseHiddenImplCopyWithImpl<$Res>
       $Res Function(_$UModerationCauseHiddenImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1216,6 +1275,8 @@ class __$$UModerationCauseHiddenImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ModerationCauseHiddenCopyWith<$Res> get data {
@@ -1249,6 +1310,8 @@ class _$UModerationCauseHiddenImpl extends UModerationCauseHidden {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1357,6 +1420,9 @@ abstract class UModerationCauseHidden extends ModerationCause {
 
   @override
   ModerationCauseHidden get data;
+
+  /// Create a copy of ModerationCause
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UModerationCauseHiddenImplCopyWith<_$UModerationCauseHiddenImpl>
       get copyWith => throw _privateConstructorUsedError;

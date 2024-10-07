@@ -23,7 +23,11 @@ mixin _$RepoCommits {
   /// The list of [RepoCommit] objects.
   List<RepoCommit> get commits => throw _privateConstructorUsedError;
 
+  /// Serializes this RepoCommits to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RepoCommits
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $RepoCommitsCopyWith<RepoCommits> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$RepoCommitsCopyWithImpl<$Res, $Val extends RepoCommits>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RepoCommits
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$RepoCommitsImplCopyWithImpl<$Res>
       _$RepoCommitsImpl _value, $Res Function(_$RepoCommitsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RepoCommits
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -134,6 +142,8 @@ class _$RepoCommitsImpl implements _RepoCommits {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_commits));
 
+  /// Create a copy of RepoCommits
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -155,10 +165,12 @@ abstract class _RepoCommits implements RepoCommits {
   factory _RepoCommits.fromJson(Map<String, dynamic> json) =
       _$RepoCommitsImpl.fromJson;
 
-  @override
-
   /// The list of [RepoCommit] objects.
+  @override
   List<RepoCommit> get commits;
+
+  /// Create a copy of RepoCommits
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$RepoCommitsImplCopyWith<_$RepoCommitsImpl> get copyWith =>

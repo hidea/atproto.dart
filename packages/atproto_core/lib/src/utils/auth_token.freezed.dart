@@ -37,7 +37,11 @@ mixin _$AuthToken {
   @JsonKey(name: 'iat')
   DateTime get issuedAt => throw _privateConstructorUsedError;
 
+  /// Serializes this AuthToken to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of AuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $AuthTokenCopyWith<AuthToken> get copyWith =>
       throw _privateConstructorUsedError;
@@ -65,6 +69,8 @@ class _$AuthTokenCopyWithImpl<$Res, $Val extends AuthToken>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,6 +123,8 @@ class __$$AuthTokenImplCopyWithImpl<$Res>
       _$AuthTokenImpl _value, $Res Function(_$AuthTokenImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -204,6 +212,8 @@ class _$AuthTokenImpl extends _AuthToken {
   int get hashCode =>
       Object.hash(runtimeType, scope, subject, expiresAt, issuedAt);
 
+  /// Create a copy of AuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -233,27 +243,29 @@ abstract class _AuthToken extends AuthToken {
   factory _AuthToken.fromJson(Map<String, dynamic> json) =
       _$AuthTokenImpl.fromJson;
 
-  @override
-
   /// A scope of this token.
-  AuthScope get scope;
   @override
+  AuthScope get scope;
 
   /// Authenticated subject.
+  @override
   @JsonKey(name: 'sub')
   String get subject;
-  @override
 
   /// Date and time this token will expire.
+  @override
   @dateTimeConverter
   @JsonKey(name: 'exp')
   DateTime get expiresAt;
-  @override
 
   /// Date and time this token was issued.
+  @override
   @dateTimeConverter
   @JsonKey(name: 'iat')
   DateTime get issuedAt;
+
+  /// Create a copy of AuthToken
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$AuthTokenImplCopyWith<_$AuthTokenImpl> get copyWith =>

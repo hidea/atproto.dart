@@ -31,7 +31,11 @@ mixin _$LexInteger {
   @JsonKey(name: 'const')
   int? get constValue => throw _privateConstructorUsedError;
 
+  /// Serializes this LexInteger to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexInteger
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexIntegerCopyWith<LexInteger> get copyWith =>
       throw _privateConstructorUsedError;
@@ -63,6 +67,8 @@ class _$LexIntegerCopyWithImpl<$Res, $Val extends LexInteger>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexInteger
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +139,8 @@ class __$$LexIntegerImplCopyWithImpl<$Res>
       _$LexIntegerImpl _value, $Res Function(_$LexIntegerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexInteger
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -256,6 +264,8 @@ class _$LexIntegerImpl implements _LexInteger {
       const DeepCollectionEquality().hash(_enumValues),
       constValue);
 
+  /// Create a copy of LexInteger
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -300,6 +310,9 @@ abstract class _LexInteger implements LexInteger {
   @override
   @JsonKey(name: 'const')
   int? get constValue;
+
+  /// Create a copy of LexInteger
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexIntegerImplCopyWith<_$LexIntegerImpl> get copyWith =>

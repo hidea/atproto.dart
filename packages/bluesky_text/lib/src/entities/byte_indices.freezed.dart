@@ -23,7 +23,11 @@ mixin _$ByteIndices {
   int get start => throw _privateConstructorUsedError;
   int get end => throw _privateConstructorUsedError;
 
+  /// Serializes this ByteIndices to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ByteIndices
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ByteIndicesCopyWith<ByteIndices> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$ByteIndicesCopyWithImpl<$Res, $Val extends ByteIndices>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ByteIndices
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$ByteIndicesImplCopyWithImpl<$Res>
       _$ByteIndicesImpl _value, $Res Function(_$ByteIndicesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ByteIndices
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,6 +144,8 @@ class _$ByteIndicesImpl implements _ByteIndices {
   @override
   int get hashCode => Object.hash(runtimeType, start, end);
 
+  /// Create a copy of ByteIndices
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -161,6 +171,9 @@ abstract class _ByteIndices implements ByteIndices {
   int get start;
   @override
   int get end;
+
+  /// Create a copy of ByteIndices
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ByteIndicesImplCopyWith<_$ByteIndicesImpl> get copyWith =>

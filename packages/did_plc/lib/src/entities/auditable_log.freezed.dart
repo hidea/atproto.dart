@@ -22,7 +22,11 @@ AuditableLog _$AuditableLogFromJson(Map<String, dynamic> json) {
 mixin _$AuditableLog {
   List<ExportedOperation> get log => throw _privateConstructorUsedError;
 
+  /// Serializes this AuditableLog to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of AuditableLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $AuditableLogCopyWith<AuditableLog> get copyWith =>
       throw _privateConstructorUsedError;
@@ -47,6 +51,8 @@ class _$AuditableLogCopyWithImpl<$Res, $Val extends AuditableLog>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditableLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$AuditableLogImplCopyWithImpl<$Res>
       _$AuditableLogImpl _value, $Res Function(_$AuditableLogImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditableLog
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,6 +138,8 @@ class _$AuditableLogImpl implements _AuditableLog {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_log));
 
+  /// Create a copy of AuditableLog
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -153,6 +163,9 @@ abstract class _AuditableLog implements AuditableLog {
 
   @override
   List<ExportedOperation> get log;
+
+  /// Create a copy of AuditableLog
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$AuditableLogImplCopyWith<_$AuditableLogImpl> get copyWith =>

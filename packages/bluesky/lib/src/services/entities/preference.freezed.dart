@@ -133,6 +133,9 @@ class _$PreferenceCopyWithImpl<$Res, $Val extends Preference>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -156,6 +159,8 @@ class __$$UPreferenceAdultContentImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceAdultContentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -169,6 +174,8 @@ class __$$UPreferenceAdultContentImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AdultContentPreferenceCopyWith<$Res> get data {
@@ -202,6 +209,8 @@ class _$UPreferenceAdultContentImpl extends UPreferenceAdultContent {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -340,6 +349,9 @@ abstract class UPreferenceAdultContent extends Preference {
 
   @override
   AdultContentPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceAdultContentImplCopyWith<_$UPreferenceAdultContentImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -366,6 +378,8 @@ class __$$UPreferenceContentLabelImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceContentLabelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -379,6 +393,8 @@ class __$$UPreferenceContentLabelImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContentLabelPreferenceCopyWith<$Res> get data {
@@ -412,6 +428,8 @@ class _$UPreferenceContentLabelImpl extends UPreferenceContentLabel {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -550,6 +568,9 @@ abstract class UPreferenceContentLabel extends Preference {
 
   @override
   ContentLabelPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceContentLabelImplCopyWith<_$UPreferenceContentLabelImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -575,6 +596,8 @@ class __$$UPreferenceSavedFeedsImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceSavedFeedsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -588,6 +611,8 @@ class __$$UPreferenceSavedFeedsImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SavedFeedsPreferenceCopyWith<$Res> get data {
@@ -621,6 +646,8 @@ class _$UPreferenceSavedFeedsImpl extends UPreferenceSavedFeeds {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -758,6 +785,9 @@ abstract class UPreferenceSavedFeeds extends Preference {
 
   @override
   SavedFeedsPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceSavedFeedsImplCopyWith<_$UPreferenceSavedFeedsImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -784,6 +814,8 @@ class __$$UPreferenceSavedFeedsV2ImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceSavedFeedsV2Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -797,6 +829,8 @@ class __$$UPreferenceSavedFeedsV2ImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SavedFeedsPrefV2CopyWith<$Res> get data {
@@ -830,6 +864,8 @@ class _$UPreferenceSavedFeedsV2Impl extends UPreferenceSavedFeedsV2 {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -967,6 +1003,9 @@ abstract class UPreferenceSavedFeedsV2 extends Preference {
 
   @override
   SavedFeedsPrefV2 get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceSavedFeedsV2ImplCopyWith<_$UPreferenceSavedFeedsV2Impl>
       get copyWith => throw _privateConstructorUsedError;
@@ -993,6 +1032,8 @@ class __$$UPreferencePersonalDetailsImplCopyWithImpl<$Res>
       $Res Function(_$UPreferencePersonalDetailsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1006,6 +1047,8 @@ class __$$UPreferencePersonalDetailsImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PersonalDetailsPreferenceCopyWith<$Res> get data {
@@ -1039,6 +1082,8 @@ class _$UPreferencePersonalDetailsImpl extends UPreferencePersonalDetails {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1177,6 +1222,9 @@ abstract class UPreferencePersonalDetails extends Preference {
 
   @override
   PersonalDetailsPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferencePersonalDetailsImplCopyWith<_$UPreferencePersonalDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1201,6 +1249,8 @@ class __$$UPreferenceFeedViewImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceFeedViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1214,6 +1264,8 @@ class __$$UPreferenceFeedViewImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FeedViewPreferenceCopyWith<$Res> get data {
@@ -1247,6 +1299,8 @@ class _$UPreferenceFeedViewImpl extends UPreferenceFeedView {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1384,6 +1438,9 @@ abstract class UPreferenceFeedView extends Preference {
 
   @override
   FeedViewPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceFeedViewImplCopyWith<_$UPreferenceFeedViewImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1409,6 +1466,8 @@ class __$$UPreferenceThreadViewImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceThreadViewImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1422,6 +1481,8 @@ class __$$UPreferenceThreadViewImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ThreadViewPreferenceCopyWith<$Res> get data {
@@ -1455,6 +1516,8 @@ class _$UPreferenceThreadViewImpl extends UPreferenceThreadView {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1592,6 +1655,9 @@ abstract class UPreferenceThreadView extends Preference {
 
   @override
   ThreadViewPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceThreadViewImplCopyWith<_$UPreferenceThreadViewImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1616,6 +1682,8 @@ class __$$UPreferenceInterestsImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceInterestsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1629,6 +1697,8 @@ class __$$UPreferenceInterestsImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $InterestsPreferenceCopyWith<$Res> get data {
@@ -1662,6 +1732,8 @@ class _$UPreferenceInterestsImpl extends UPreferenceInterests {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -1800,6 +1872,9 @@ abstract class UPreferenceInterests extends Preference {
 
   @override
   InterestsPreference get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceInterestsImplCopyWith<_$UPreferenceInterestsImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1825,6 +1900,8 @@ class __$$UPreferenceMutedWordsImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceMutedWordsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1838,6 +1915,8 @@ class __$$UPreferenceMutedWordsImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MutedWordsPrefCopyWith<$Res> get data {
@@ -1871,6 +1950,8 @@ class _$UPreferenceMutedWordsImpl extends UPreferenceMutedWords {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -2008,6 +2089,9 @@ abstract class UPreferenceMutedWords extends Preference {
 
   @override
   MutedWordsPref get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceMutedWordsImplCopyWith<_$UPreferenceMutedWordsImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2034,6 +2118,8 @@ class __$$UPreferenceHiddenPostsImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceHiddenPostsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2047,6 +2133,8 @@ class __$$UPreferenceHiddenPostsImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HiddenPostsPrefCopyWith<$Res> get data {
@@ -2080,6 +2168,8 @@ class _$UPreferenceHiddenPostsImpl extends UPreferenceHiddenPosts {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -2217,6 +2307,9 @@ abstract class UPreferenceHiddenPosts extends Preference {
 
   @override
   HiddenPostsPref get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceHiddenPostsImplCopyWith<_$UPreferenceHiddenPostsImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2243,6 +2336,8 @@ class __$$UPreferenceLabelersPrefImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceLabelersPrefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2256,6 +2351,8 @@ class __$$UPreferenceLabelersPrefImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LabelersPrefCopyWith<$Res> get data {
@@ -2289,6 +2386,8 @@ class _$UPreferenceLabelersPrefImpl extends UPreferenceLabelersPref {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -2426,6 +2525,9 @@ abstract class UPreferenceLabelersPref extends Preference {
 
   @override
   LabelersPref get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceLabelersPrefImplCopyWith<_$UPreferenceLabelersPrefImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2448,6 +2550,8 @@ class __$$UPreferenceUnknownImplCopyWithImpl<$Res>
       $Res Function(_$UPreferenceUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2494,6 +2598,8 @@ class _$UPreferenceUnknownImpl extends UPreferenceUnknown {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -2631,6 +2737,9 @@ abstract class UPreferenceUnknown extends Preference {
 
   @override
   Map<String, dynamic> get data;
+
+  /// Create a copy of Preference
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   _$$UPreferenceUnknownImplCopyWith<_$UPreferenceUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;

@@ -28,7 +28,11 @@ mixin _$ActorBasic {
   ActorViewer get viewer => throw _privateConstructorUsedError;
   List<Label>? get labels => throw _privateConstructorUsedError;
 
+  /// Serializes this ActorBasic to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $ActorBasicCopyWith<ActorBasic> get copyWith =>
       throw _privateConstructorUsedError;
@@ -63,6 +67,8 @@ class _$ActorBasicCopyWithImpl<$Res, $Val extends ActorBasic>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,6 +112,8 @@ class _$ActorBasicCopyWithImpl<$Res, $Val extends ActorBasic>
     ) as $Val);
   }
 
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ProfileAssociatedCopyWith<$Res>? get associated {
@@ -118,6 +126,8 @@ class _$ActorBasicCopyWithImpl<$Res, $Val extends ActorBasic>
     });
   }
 
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorViewerCopyWith<$Res> get viewer {
@@ -158,6 +168,8 @@ class __$$ActorBasicImplCopyWithImpl<$Res>
       _$ActorBasicImpl _value, $Res Function(_$ActorBasicImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -269,6 +281,8 @@ class _$ActorBasicImpl extends _ActorBasic {
   int get hashCode => Object.hash(runtimeType, did, handle, displayName, avatar,
       associated, viewer, const DeepCollectionEquality().hash(_labels));
 
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -311,6 +325,9 @@ abstract class _ActorBasic extends ActorBasic {
   ActorViewer get viewer;
   @override
   List<Label>? get labels;
+
+  /// Create a copy of ActorBasic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$ActorBasicImplCopyWith<_$ActorBasicImpl> get copyWith =>

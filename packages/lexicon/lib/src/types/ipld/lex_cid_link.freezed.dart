@@ -23,7 +23,11 @@ mixin _$LexCidLink {
   String get type => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
 
+  /// Serializes this LexCidLink to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexCidLink
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexCidLinkCopyWith<LexCidLink> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,8 @@ class _$LexCidLinkCopyWithImpl<$Res, $Val extends LexCidLink>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexCidLink
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$LexCidLinkImplCopyWithImpl<$Res>
       _$LexCidLinkImpl _value, $Res Function(_$LexCidLinkImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexCidLink
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,6 +147,8 @@ class _$LexCidLinkImpl implements _LexCidLink {
   @override
   int get hashCode => Object.hash(runtimeType, type, description);
 
+  /// Create a copy of LexCidLink
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -164,6 +174,9 @@ abstract class _LexCidLink implements LexCidLink {
   String get type;
   @override
   String? get description;
+
+  /// Create a copy of LexCidLink
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexCidLinkImplCopyWith<_$LexCidLinkImpl> get copyWith =>

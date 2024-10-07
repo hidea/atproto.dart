@@ -23,7 +23,11 @@ SendMessageBatchOutput _$SendMessageBatchOutputFromJson(
 mixin _$SendMessageBatchOutput {
   List<MessageView> get items => throw _privateConstructorUsedError;
 
+  /// Serializes this SendMessageBatchOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of SendMessageBatchOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $SendMessageBatchOutputCopyWith<SendMessageBatchOutput> get copyWith =>
       throw _privateConstructorUsedError;
@@ -49,6 +53,8 @@ class _$SendMessageBatchOutputCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SendMessageBatchOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +91,8 @@ class __$$SendMessageBatchOutputImplCopyWithImpl<$Res>
       $Res Function(_$SendMessageBatchOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SendMessageBatchOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -135,6 +143,8 @@ class _$SendMessageBatchOutputImpl implements _SendMessageBatchOutput {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_items));
 
+  /// Create a copy of SendMessageBatchOutput
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -159,6 +169,9 @@ abstract class _SendMessageBatchOutput implements SendMessageBatchOutput {
 
   @override
   List<MessageView> get items;
+
+  /// Create a copy of SendMessageBatchOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$SendMessageBatchOutputImplCopyWith<_$SendMessageBatchOutputImpl>

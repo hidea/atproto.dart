@@ -27,7 +27,11 @@ mixin _$LexXrpcSubscription {
   List<LexXrpcError>? get infos => throw _privateConstructorUsedError;
   List<LexXrpcError>? get errors => throw _privateConstructorUsedError;
 
+  /// Serializes this LexXrpcSubscription to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LexXrpcSubscriptionCopyWith<LexXrpcSubscription> get copyWith =>
       throw _privateConstructorUsedError;
@@ -61,6 +65,8 @@ class _$LexXrpcSubscriptionCopyWithImpl<$Res, $Val extends LexXrpcSubscription>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -99,6 +105,8 @@ class _$LexXrpcSubscriptionCopyWithImpl<$Res, $Val extends LexXrpcSubscription>
     ) as $Val);
   }
 
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexXrpcParametersCopyWith<$Res>? get parameters {
@@ -111,6 +119,8 @@ class _$LexXrpcSubscriptionCopyWithImpl<$Res, $Val extends LexXrpcSubscription>
     });
   }
 
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LexXrpcSubscriptionMessageCopyWith<$Res>? get message {
@@ -154,6 +164,8 @@ class __$$LexXrpcSubscriptionImplCopyWithImpl<$Res>
       $Res Function(_$LexXrpcSubscriptionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -270,6 +282,8 @@ class _$LexXrpcSubscriptionImpl implements _LexXrpcSubscription {
       const DeepCollectionEquality().hash(_infos),
       const DeepCollectionEquality().hash(_errors));
 
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -309,6 +323,9 @@ abstract class _LexXrpcSubscription implements LexXrpcSubscription {
   List<LexXrpcError>? get infos;
   @override
   List<LexXrpcError>? get errors;
+
+  /// Create a copy of LexXrpcSubscription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LexXrpcSubscriptionImplCopyWith<_$LexXrpcSubscriptionImpl> get copyWith =>

@@ -24,7 +24,11 @@ mixin _$LabelerPolicies {
   List<LabelValueDefinition>? get labelValueDefinitions =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this LabelerPolicies to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of LabelerPolicies
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   $LabelerPoliciesCopyWith<LabelerPolicies> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +55,8 @@ class _$LabelerPoliciesCopyWithImpl<$Res, $Val extends LabelerPolicies>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LabelerPolicies
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +97,8 @@ class __$$LabelerPoliciesImplCopyWithImpl<$Res>
       _$LabelerPoliciesImpl _value, $Res Function(_$LabelerPoliciesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LabelerPolicies
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,6 +173,8 @@ class _$LabelerPoliciesImpl implements _LabelerPolicies {
       const DeepCollectionEquality().hash(_labelValues),
       const DeepCollectionEquality().hash(_labelValueDefinitions));
 
+  /// Create a copy of LabelerPolicies
+  /// with the given fields replaced by the non-null parameter values.
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
@@ -193,6 +203,9 @@ abstract class _LabelerPolicies implements LabelerPolicies {
   List<String> get labelValues;
   @override
   List<LabelValueDefinition>? get labelValueDefinitions;
+
+  /// Create a copy of LabelerPolicies
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(ignore: true)
   _$$LabelerPoliciesImplCopyWith<_$LabelerPoliciesImpl> get copyWith =>
