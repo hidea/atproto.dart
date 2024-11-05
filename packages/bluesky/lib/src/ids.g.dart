@@ -244,6 +244,9 @@ const appBskyFeedDefsNotFoundPost = 'app.bsky.feed.defs#notFoundPost';
 /// `app.bsky.feed.defs#postView`
 const appBskyFeedDefsPostView = 'app.bsky.feed.defs#postView';
 
+/// `app.bsky.feed.defs#reasonPin`
+const appBskyFeedDefsReasonPin = 'app.bsky.feed.defs#reasonPin';
+
 /// `app.bsky.feed.defs#reasonRepost`
 const appBskyFeedDefsReasonRepost = 'app.bsky.feed.defs#reasonRepost';
 
@@ -258,6 +261,9 @@ const appBskyFeedDefsRequestMore = 'app.bsky.feed.defs#requestMore';
 
 /// `app.bsky.feed.defs#skeletonFeedPost`
 const appBskyFeedDefsSkeletonFeedPost = 'app.bsky.feed.defs#skeletonFeedPost';
+
+/// `app.bsky.feed.defs#skeletonReasonPin`
+const appBskyFeedDefsSkeletonReasonPin = 'app.bsky.feed.defs#skeletonReasonPin';
 
 /// `app.bsky.feed.defs#skeletonReasonRepost`
 const appBskyFeedDefsSkeletonReasonRepost =
@@ -570,6 +576,9 @@ const appBskyUnspeccedDefsSkeletonSearchActor =
 /// `app.bsky.unspecced.defs#skeletonSearchPost`
 const appBskyUnspeccedDefsSkeletonSearchPost =
     'app.bsky.unspecced.defs#skeletonSearchPost';
+
+/// `app.bsky.unspecced.getConfig`
+const appBskyUnspeccedGetConfig = 'app.bsky.unspecced.getConfig';
 
 /// `app.bsky.unspecced.getPopularFeedGenerators`
 const appBskyUnspeccedGetPopularFeedGenerators =

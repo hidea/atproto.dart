@@ -32,10 +32,16 @@ mixin _$ActorProfile {
   ProfileAssociated? get associated => throw _privateConstructorUsedError;
   ActorViewer get viewer => throw _privateConstructorUsedError;
   List<Label>? get labels => throw _privateConstructorUsedError;
+  DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get indexedAt => throw _privateConstructorUsedError;
+  StrongRef? get pinnedPost => throw _privateConstructorUsedError;
 
+  /// Serializes this ActorProfile to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ActorProfileCopyWith<ActorProfile> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -59,10 +65,13 @@ abstract class $ActorProfileCopyWith<$Res> {
       ProfileAssociated? associated,
       ActorViewer viewer,
       List<Label>? labels,
-      DateTime? indexedAt});
+      DateTime? createdAt,
+      DateTime? indexedAt,
+      StrongRef? pinnedPost});
 
   $ProfileAssociatedCopyWith<$Res>? get associated;
   $ActorViewerCopyWith<$Res> get viewer;
+  $StrongRefCopyWith<$Res>? get pinnedPost;
 }
 
 /// @nodoc
@@ -75,6 +84,8 @@ class _$ActorProfileCopyWithImpl<$Res, $Val extends ActorProfile>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -90,7 +101,9 @@ class _$ActorProfileCopyWithImpl<$Res, $Val extends ActorProfile>
     Object? associated = freezed,
     Object? viewer = null,
     Object? labels = freezed,
+    Object? createdAt = freezed,
     Object? indexedAt = freezed,
+    Object? pinnedPost = freezed,
   }) {
     return _then(_value.copyWith(
       did: null == did
@@ -141,13 +154,23 @@ class _$ActorProfileCopyWithImpl<$Res, $Val extends ActorProfile>
           ? _value.labels
           : labels // ignore: cast_nullable_to_non_nullable
               as List<Label>?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
       indexedAt: freezed == indexedAt
           ? _value.indexedAt
           : indexedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      pinnedPost: freezed == pinnedPost
+          ? _value.pinnedPost
+          : pinnedPost // ignore: cast_nullable_to_non_nullable
+              as StrongRef?,
     ) as $Val);
   }
 
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ProfileAssociatedCopyWith<$Res>? get associated {
@@ -160,11 +183,27 @@ class _$ActorProfileCopyWithImpl<$Res, $Val extends ActorProfile>
     });
   }
 
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ActorViewerCopyWith<$Res> get viewer {
     return $ActorViewerCopyWith<$Res>(_value.viewer, (value) {
       return _then(_value.copyWith(viewer: value) as $Val);
+    });
+  }
+
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $StrongRefCopyWith<$Res>? get pinnedPost {
+    if (_value.pinnedPost == null) {
+      return null;
+    }
+
+    return $StrongRefCopyWith<$Res>(_value.pinnedPost!, (value) {
+      return _then(_value.copyWith(pinnedPost: value) as $Val);
     });
   }
 }
@@ -190,12 +229,16 @@ abstract class _$$ActorProfileImplCopyWith<$Res>
       ProfileAssociated? associated,
       ActorViewer viewer,
       List<Label>? labels,
-      DateTime? indexedAt});
+      DateTime? createdAt,
+      DateTime? indexedAt,
+      StrongRef? pinnedPost});
 
   @override
   $ProfileAssociatedCopyWith<$Res>? get associated;
   @override
   $ActorViewerCopyWith<$Res> get viewer;
+  @override
+  $StrongRefCopyWith<$Res>? get pinnedPost;
 }
 
 /// @nodoc
@@ -206,6 +249,8 @@ class __$$ActorProfileImplCopyWithImpl<$Res>
       _$ActorProfileImpl _value, $Res Function(_$ActorProfileImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -221,7 +266,9 @@ class __$$ActorProfileImplCopyWithImpl<$Res>
     Object? associated = freezed,
     Object? viewer = null,
     Object? labels = freezed,
+    Object? createdAt = freezed,
     Object? indexedAt = freezed,
+    Object? pinnedPost = freezed,
   }) {
     return _then(_$ActorProfileImpl(
       did: null == did
@@ -272,10 +319,18 @@ class __$$ActorProfileImplCopyWithImpl<$Res>
           ? _value._labels
           : labels // ignore: cast_nullable_to_non_nullable
               as List<Label>?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
       indexedAt: freezed == indexedAt
           ? _value.indexedAt
           : indexedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      pinnedPost: freezed == pinnedPost
+          ? _value.pinnedPost
+          : pinnedPost // ignore: cast_nullable_to_non_nullable
+              as StrongRef?,
     ));
   }
 }
@@ -297,7 +352,9 @@ class _$ActorProfileImpl extends _ActorProfile {
       this.associated,
       this.viewer = defaultActorViewer,
       final List<Label>? labels,
-      this.indexedAt})
+      this.createdAt,
+      this.indexedAt,
+      this.pinnedPost})
       : _labels = labels,
         super._();
 
@@ -341,11 +398,15 @@ class _$ActorProfileImpl extends _ActorProfile {
   }
 
   @override
+  final DateTime? createdAt;
+  @override
   final DateTime? indexedAt;
+  @override
+  final StrongRef? pinnedPost;
 
   @override
   String toString() {
-    return 'ActorProfile(did: $did, handle: $handle, displayName: $displayName, description: $description, avatar: $avatar, banner: $banner, followsCount: $followsCount, followersCount: $followersCount, postsCount: $postsCount, associated: $associated, viewer: $viewer, labels: $labels, indexedAt: $indexedAt)';
+    return 'ActorProfile(did: $did, handle: $handle, displayName: $displayName, description: $description, avatar: $avatar, banner: $banner, followsCount: $followsCount, followersCount: $followersCount, postsCount: $postsCount, associated: $associated, viewer: $viewer, labels: $labels, createdAt: $createdAt, indexedAt: $indexedAt, pinnedPost: $pinnedPost)';
   }
 
   @override
@@ -371,11 +432,15 @@ class _$ActorProfileImpl extends _ActorProfile {
                 other.associated == associated) &&
             (identical(other.viewer, viewer) || other.viewer == viewer) &&
             const DeepCollectionEquality().equals(other._labels, _labels) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
             (identical(other.indexedAt, indexedAt) ||
-                other.indexedAt == indexedAt));
+                other.indexedAt == indexedAt) &&
+            (identical(other.pinnedPost, pinnedPost) ||
+                other.pinnedPost == pinnedPost));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -391,9 +456,13 @@ class _$ActorProfileImpl extends _ActorProfile {
       associated,
       viewer,
       const DeepCollectionEquality().hash(_labels),
-      indexedAt);
+      createdAt,
+      indexedAt,
+      pinnedPost);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ActorProfileImplCopyWith<_$ActorProfileImpl> get copyWith =>
@@ -421,7 +490,9 @@ abstract class _ActorProfile extends ActorProfile {
       final ProfileAssociated? associated,
       final ActorViewer viewer,
       final List<Label>? labels,
-      final DateTime? indexedAt}) = _$ActorProfileImpl;
+      final DateTime? createdAt,
+      final DateTime? indexedAt,
+      final StrongRef? pinnedPost}) = _$ActorProfileImpl;
   const _ActorProfile._() : super._();
 
   factory _ActorProfile.fromJson(Map<String, dynamic> json) =
@@ -452,9 +523,16 @@ abstract class _ActorProfile extends ActorProfile {
   @override
   List<Label>? get labels;
   @override
+  DateTime? get createdAt;
+  @override
   DateTime? get indexedAt;
   @override
-  @JsonKey(ignore: true)
+  StrongRef? get pinnedPost;
+
+  /// Create a copy of ActorProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ActorProfileImplCopyWith<_$ActorProfileImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

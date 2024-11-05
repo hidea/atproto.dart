@@ -1,5 +1,24 @@
 # Release Note
 
+## v0.16.15
+
+- Support known followers. ([#1789](https://github.com/myConsciousness/atproto.dart/pull/1789))
+  - Add property`.knownFollowers` on `ActorViewer`.
+  - Add `.getKnownFollowers` on `GraphService`.
+- Support pinned post. ([#1790](https://github.com/myConsciousness/atproto.dart/pull/1790))
+  - Add property `.pinnedPost` on `ActorProfile` and `ProfileRecord`.
+  - Add parameter `pinnedPost` on `ActorService.profile`.
+- Add union `video` on `EmbedView`. ([#1791](https://github.com/myConsciousness/atproto.dart/pull/1791))
+
+## v0.16.14
+
+- Optimize video features. ([#1788](https://github.com/myConsciousness/atproto.dart/pull/1788))
+
+## v0.16.13
+
+- Add `VideoService`. ([#1783](https://github.com/myConsciousness/atproto.dart/pull/1783))
+- Add `EmbedVideo` and `EmbedVideoView` objects. ([#1783](https://github.com/myConsciousness/atproto.dart/pull/1783))
+
 ## v0.16.12
 
 - Fixed a bug that prevented `RepoService.deleteRecord` from working.
